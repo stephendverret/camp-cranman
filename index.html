@@ -260,7 +260,7 @@ const firebaseConfig = {
 /* ============================================================ */
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-import { getAuth, signInAnonymously, onAuthStateChanged, GoogleAuthProvider, signInWithPopup, signInWithRedirect, getRedirectResult, signOut } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+import { getAuth, signInAnonymously, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 import { initializeFirestore, getFirestore, persistentLocalCache, persistentMultipleTabManager,
   collection, doc, getDoc, setDoc, updateDoc, deleteDoc, onSnapshot, query, orderBy, limit, arrayRemove
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
@@ -387,7 +387,7 @@ function renderGate(){
    <h3 style="text-align:center">🔒 Crew only</h3><p style="text-align:center;margin:-2px 0 6px;font-family:Oswald,Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;font-size:12px;color:var(--rust)">Thanksgiving at Indian Creek · Est. 2024</p>
    <div id="gIntro"></div>
    <form id="gateForm" novalidate>
-     <div class="field"><label for="uName">Your name</label><input class="inp" id="uName" maxlength="40" placeholder="So we know who found what" value="${esc(ls.get("ic_name")||"")}"></div>
+     <div class="field"><label for="uName">Your name</label><input class="inp" id="uName" maxlength="40" placeholder="So we know it" value="${esc(ls.get("ic_name")||"")}"></div>
      <div class="field"><label for="uPass">Camp password</label><input class="inp" id="uPass" autocomplete="off" autocapitalize="off"></div>
      <div class="covenant">
        <div class="cov-head">Camp Cranman Covenant of Silence</div>
@@ -405,30 +405,7 @@ function renderGate(){
 }
 function paintGate(){
   if(!$("#gIntro"))return;
-  const u=auth&&auth.currentUser, g=u&&!u.isAnonymous;
-  $("#gIntro").innerHTML=g
-    ? `<p style="text-align:center;margin-top:0">Signed in as <b>${esc(u.email||u.displayName||"your Google account")}</b>. Enter the camp password once and this account is in on every device.</p>
-       <p style="text-align:center;margin:-4px 0 12px"><a href="#" id="gOut" style="font-size:13px">Use a different account</a></p>`
-    : `<button type="button" class="btn" id="gGoogle" style="width:100%;justify-content:center;background:#fff;border-color:#D8CDB8;margin:4px 0 6px">
-         <svg width="18" height="18" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.8 2.4 30.3 0 24 0 14.6 0 6.6 5.4 2.7 13.3l7.9 6.1C12.5 13.6 17.8 9.5 24 9.5z"/><path fill="#4285F4" d="M46.5 24.5c0-1.6-.1-3.1-.4-4.5H24v9h12.7c-.6 3-2.3 5.5-4.8 7.2l7.7 6c4.5-4.2 6.9-10.3 6.9-17.7z"/><path fill="#FBBC05" d="M10.6 28.6c-.5-1.4-.8-3-.8-4.6s.3-3.2.8-4.6l-7.9-6.1C1 16.6 0 20.2 0 24s1 7.4 2.7 10.7l7.9-6.1z"/><path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.7-6c-2.2 1.5-5 2.3-8.2 2.3-6.2 0-11.5-4.1-13.4-9.8l-7.9 6.1C6.6 42.6 14.6 48 24 48z"/></svg>
-         Continue with Google</button>
-       <p class="meta" style="text-align:center;margin:0 0 10px">Recommended: sign in once and you're in on every device.</p>
-       <div style="display:flex;align-items:center;gap:10px;margin:6px 0 14px;color:var(--muted);font-size:12px"><span style="flex:1;border-top:1px solid var(--line)"></span>or just use the password on this phone<span style="flex:1;border-top:1px solid var(--line)"></span></div>`;
-  if(g){const n=$("#uName");if(n&&!n.value)n.value=(u.displayName||"").split(" ")[0];}
-  const gb=$("#gGoogle");if(gb)gb.onclick=googleIn;
-  const go=$("#gOut");if(go)go.onclick=async e=>{e.preventDefault();try{await signOut(auth);}catch(x){}};
-}
-async function googleIn(){
-  const b=$("#gGoogle");if(b){b.disabled=true;}
-  const prov=new GoogleAuthProvider();prov.setCustomParameters({prompt:"select_account"});
-  try{await signInWithPopup(auth,prov);}
-  catch(x){
-    const c=x&&x.code;
-    if(c==="auth/popup-blocked"||c==="auth/operation-not-supported-in-this-environment"){try{await signInWithRedirect(auth,prov);return;}catch(y){x=y;}}
-    if(b)b.disabled=false;
-    if(c==="auth/popup-closed-by-user"||c==="auth/cancelled-popup-request")return;
-    $("#uErr").innerHTML=`<div class="notice warn">${c==="auth/operation-not-allowed"?"Google sign-in isn't turned on in Firebase yet.":c==="auth/unauthorized-domain"?"This web address isn't on Firebase's authorized domains list yet.":"Google sign-in didn't work — you can use the password instead."}</div>`;
-  }
+  $("#gIntro").innerHTML=`<p style="text-align:center;margin-top:0">Enter the camp password once on this phone and you're in from then on.</p>`;
 }
 function renderStatus(){
   let h="";
@@ -519,8 +496,7 @@ function renderSpotList(){
 }
 function renderTools(){
   if(!spots.length){$("#tools").innerHTML="";return;}
-  $("#tools").innerHTML=`<div class="meta">Take the whole list with you</div><button class="btn small" id="csvBtn">Download CSV (Google My Maps)</button><button class="btn small" id="copyAll">Copy all spots as text</button><span class="meta" style="width:auto;margin-left:auto">Signed in as ${esc(myName||"a camper")}${auth&&auth.currentUser&&!auth.currentUser.isAnonymous?` · <a href="#" id="sOut">sign out</a>`:""}</span>`;
-  const so=$("#sOut");if(so)so.onclick=async e=>{e.preventDefault();try{await signOut(auth);}catch(x){}location.reload();};
+  $("#tools").innerHTML=`<div class="meta">Take the whole list with you</div><button class="btn small" id="csvBtn">Download CSV (Google My Maps)</button><button class="btn small" id="copyAll">Copy all spots as text</button><span class="meta" style="width:auto;margin-left:auto">Signed in as ${esc(myName||"a camper")}</span>`;
   $("#csvBtn").onclick=exportCSV;$("#copyAll").onclick=()=>copy(allText(),"All spots copied");
 }
 
@@ -907,7 +883,7 @@ function renderMusic(t){
       try{await updateDoc(doc(fs,"trips",t.id),{spotify:s});}catch(e){toast(writeMsg(e));}};
     return;
   }
-  box.innerHTML=`<iframe title="Spotify playlist" src="https://open.spotify.com/embed/playlist/${sid}" width="100%" height="352" frameborder="0" style="border-radius:12px;display:block" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  box.innerHTML=`<div class="panel" style="margin-top:0;text-align:center;background:#1DB954;color:#fff;border:none"><b>🎶 Spotify player</b><div style="font-size:13px;opacity:.9">The playlist plays right here on the live site (previews can't load Spotify).</div></div><iframe hidden title="Spotify playlist" src="https://open.spotify.com/embed/playlist/${sid}" width="100%" height="352" frameborder="0" style="border-radius:12px;display:block" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:8px"><a class="btn small" href="https://open.spotify.com/playlist/${sid}" target="_blank" rel="noopener">Open in Spotify</a><span class="meta" style="align-self:center">Change it via Edit trip.</span></div>`;
 }
 
@@ -1038,7 +1014,7 @@ async function unlock(e){
     const ref=doc(fs,"members",uid);const ex=await getDoc(ref);if(!ex.exists())await setDoc(ref,{k:pass,name,at:Date.now()});
     isMember=true;myName=name;ls.set("ic_name",name);$("#status").innerHTML="";startListening();renderAll();toast("Welcome, "+name);
   }catch(x){b.disabled=false;b.textContent="I Agree & Unlock";
-    err(x&&x.code==="permission-denied"?"That password didn't work.":x&&x.code==="auth/operation-not-allowed"?"Password sign-in isn't turned on in Firebase yet (enable Anonymous under Authentication).":"Couldn't check right now — try again with better signal.");}
+    err(x&&x.code==="permission-denied"?"That password didn't work.":x&&x.code==="auth/operation-not-allowed"?"Sign-in isn't turned on in Firebase yet (enable Anonymous under Authentication).":"Couldn't check right now — try again with better signal.");}
 }
 function writeMsg(e){const c=e&&e.code;
   if(c==="permission-denied")return "This phone isn't unlocked anymore — reload the page and enter the camp password.";
@@ -1080,11 +1056,9 @@ if(String(firebaseConfig.apiKey).includes("PASTE")){
   const app=initializeApp(firebaseConfig);
   try{fs=initializeFirestore(app,{localCache:persistentLocalCache({tabManager:persistentMultipleTabManager()})});}catch(e){fs=getFirestore(app);}
   auth=getAuth(app);renderStatus();
-  getRedirectResult(auth).catch(()=>{});
   onAuthStateChanged(auth,async u=>{
     uid=u?u.uid:null;isMember=false;
     if(uid){try{const m=await getDoc(doc(fs,"members",uid));if(m.exists()){isMember=true;myName=m.data().name||ls.get("ic_name")||"";}}catch(e){}}
-    if(isMember&&u&&!u.isAnonymous&&!myName)myName=(u.displayName||"").split(" ")[0];
     authChecked=true;if(isMember)startListening();renderAll();paintGate();
   });
 }
