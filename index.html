@@ -1286,16 +1286,28 @@ function cranmanSays(){
 }
 async function unlock(e){
   e.preventDefault();const name=$("#uName").value.trim(),pass=$("#uPass").value.trim();
-  const err=m=>$("#uErr").innerHTML=`<div class="notice warn">${esc(m)}</div>`;
+  const err=(m,code)=>$("#uErr").innerHTML=`<div class="notice warn">${esc(m)}${code?`<div class="meta" style="margin-top:4px;opacity:.7">(${esc(code)})</div>`:""}</div>`;
   if(!name)return err("Add your name.");if(!pass||pass.includes("/"))return err("Enter the camp password.");
   if(!$("#uSwear").checked){$(".covenant").classList.add("cov-need");return err("You must swear the Covenant of Silence before entering the Camp.");}
-  const b=$("#uGo");b.disabled=true;b.textContent="Checking…";
-  try{if(!auth.currentUser)await signInAnonymously(auth);uid=auth.currentUser.uid;
-    const ref=doc(fs,"members",uid);const ex=await getDoc(ref);if(!ex.exists())await setDoc(ref,{k:pass,name,at:Date.now()});
+  const b=$("#uGo");if(b.disabled)return;b.disabled=true;b.textContent="Checking…";$("#uErr").innerHTML="";
+  const step=(p,what)=>Promise.race([p,new Promise((_,rej)=>setTimeout(()=>rej({code:"timeout",what}),15000))]);
+  try{
+    if(!auth.currentUser)await step(signInAnonymously(auth),"sign-in");
+    uid=auth.currentUser.uid;
+    const ref=doc(fs,"members",uid);
+    let ex=null;try{ex=await step(getDoc(ref),"member check");}catch(x){if(x&&x.code==="timeout")throw x;ex=null;}
+    if(!ex||!ex.exists())await step(setDoc(ref,{k:pass,name,at:Date.now()}),"password check");
     isMember=true;myName=name;ls.set("ic_name",name);$("#status").innerHTML="";startListening();renderAll();toast("Welcome, "+name);
-  }catch(x){b.disabled=false;b.textContent="I Agree & Unlock";
-    if(x&&x.code==="permission-denied")cranmanSays();
-    err(x&&x.code==="permission-denied"?"That password didn't work.":x&&x.code==="auth/operation-not-allowed"?"Sign-in isn't turned on in Firebase yet (enable Anonymous under Authentication).":"Couldn't check right now — try again with better signal.");}
+  }catch(x){
+    b.disabled=false;b.textContent="I Agree & Unlock";const c=x&&x.code||"";
+    if(c==="permission-denied"){cranmanSays();return err("That password didn't work.");}
+    if(c==="auth/operation-not-allowed"||c==="auth/admin-restricted-operation")return err("Sign-in isn't turned on in Firebase yet: enable Anonymous under Authentication → Sign-in method.",c);
+    if(c==="auth/unauthorized-domain")return err("This web address isn't on Firebase's Authorized domains list yet.",c);
+    if(c==="timeout")return err(`Firebase didn't answer (${x.what}). Check your signal, or that the Firestore database exists, then try again.`,c);
+    if(c==="unavailable"||c==="failed-precondition")return err("Couldn't reach the camp database. Check your signal and try again.",c);
+    if(c==="not-found")return err("The Firestore database hasn't been created yet in Firebase.",c);
+    err("Couldn't check right now. Try again in a moment.",c||String(x&&x.message||x).slice(0,80));
+  }
 }
 function writeMsg(e){const c=e&&e.code;
   if(c==="permission-denied")return "This phone isn't unlocked anymore — reload the page and enter the camp password.";
@@ -1335,7 +1347,7 @@ if(String(firebaseConfig.apiKey).includes("PASTE")){
   loadErr="Almost there — this page still needs its Firebase settings pasted in (setup step 5).";renderStatus();
 }else{
   const app=initializeApp(firebaseConfig);
-  try{fs=initializeFirestore(app,{localCache:persistentLocalCache({tabManager:persistentMultipleTabManager()})});}catch(e){fs=getFirestore(app);}
+  fs=getFirestore(app);   // in-memory cache: the on-device cache was stalling some phones
   auth=getAuth(app);renderStatus();
   onAuthStateChanged(auth,async u=>{
     uid=u?u.uid:null;isMember=false;
