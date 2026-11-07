@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Camp Cranman</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNjAgMTYwIj48Y2lyY2xlIGN4PSI4MCIgY3k9IjgwIiByPSI3OCIgZmlsbD0iIzJFNEEzNCIgc3Ryb2tlPSIjQTk0NjFGIiBzdHJva2Utd2lkdGg9IjYiLz48cGF0aCBkPSJNMzMxLjMgMTA0LjIgTDMyNC45IDEwNy40IEwzMjEuNSAxMTUuNiBMMzI1LjkgMTMyLjkgTDMyOC45IDE1My41IEwzMjEuMSAxNzUuNSBMMzI4LjEgMTkwLjUgTDMyOC45IDE5Ni4xIEwzMjQuMiAyMDQuOSBMMzE0LjUgMjExLjEgTDMwNy4wIDIxMS41IEwyOTYuNyAyMDcuNSBMMjkwLjAgMjAyLjIgTDI3OC45IDE4OC4xIEwyNjMuNSAxODEuOSBMMjQ5LjQgMTY5LjQgTDIzNS4xIDE2Mi41IEwyMzAuNyAxNTcuNiBMMjI0LjkgMTQ0LjggTDIxOC4xIDE0MC4xIEwyMTAuMSAxMzguNCBMMTk0LjcgMTM5LjggTDE3OC41IDEzOC4yIEwxNzIuOCAxNDMuOCBMMTcxLjggMTU0LjQgTDE3My44IDE2MC4wIEwxNzcuNiAxNjMuNiBMMjAwLjcgMTcwLjcgTDIwOC40IDE3NS4yIEwyMTIuOSAxODAuNyBMMjE2LjMgMTkzLjEgTDIyMC4wIDE5Ny45IEwyMjcuMCAyMDEuMSBMMjQ4LjUgMjA1LjggTDI1NS40IDIxMS4yIEwyNTkuNSAyMTguMSBMMjU5LjUgMjI2LjAgTDI1NC4zIDIzMy4wIEwyNDguNSAyMzUuNyBMMjMzLjUgMjM4LjIgTDIyNi42IDI0My4xIEwyMjAuMyAyNTMuOCBMMjEwLjkgMjY1LjYgTDIxMC40IDI3MC4zIEwyMTMuMCAyNzQuNSBMMjE3LjcgMjc2LjUgTDIyNC4xIDI3NS44IEwyNDAuMSAyNjUuNSBMMjQ1LjcgMjYzLjQgTDI1MS44IDI2My40IEwyNjcuMiAyNjcuNiBMMjc3LjUgMjY4LjMgTDI4NC4wIDI2Ni42IEwyOTYuNyAyNjAuMyBMMzAyLjggMjU5LjggTDMwOS4zIDI2Mi42IEwzMTYuMiAyNjguNSBMMzQwLjQgMjk3LjAgTDM1MC41IDMxOS42IEwzNDUuOCAzMzcuNCBMMzQ3LjIgMzQzLjggTDM2NS4zIDM2Mi4wIEwzNzIuMCAzNzguNyBMMzg1LjEgMzg3LjIgTDM4OS42IDM5My41IEwzOTAuMiAzOTguNyBMMzg3LjAgNDEzLjIgTDM5NC41IDQzMS40IEwzOTQuNCA0MzcuMSBMMzkyLjEgNDQyLjYgTDM4Ny42IDQ0Ny42IEwzODAuNCA0NTEuNyBMMzQ2LjMgNDYyLjMgTDM0MC43IDQ2MC43IEwzMzUuNiA0NTcuMSBMMzE4LjcgNDM3LjkgTDMxMy4xIDQzNi41IEwzMDcuNyA0MzkuMCBMMzAzLjkgNDQ1LjAgTDMwNC44IDQ1MS45IEwzMjkuNSA0ODAuMSBMMzM0LjEgNDkwLjQgTDMzMi43IDQ5Ni40IEwzMjguMiA1MDIuMCBMMzIwLjEgNTA4LjMgTDMxMS4yIDUxMi4xIEwyOTEuNSA1MDkuNSBMMjcwLjkgNTE0LjggTDI2My41IDUxMy44IEwyNTguMyA1MTAuMCBMMjUxLjUgNTAxLjIgTDI0My4zIDQ4MC4zIEwyMzcuMiA0NzYuNyBMMjMxLjUgNDc4LjcgTDIyMC42IDQ5MC43IEwyMDYuNSA0OTguMSBMMjAzLjkgNTAzLjEgTDIwMS43IDUxNy45IEwxOTcuNiA1MjIuOCBMMTkxLjkgNTI1LjUgTDE2MS40IDUyMS42IEwxMzQuOCA1MDMuMyBMMTA5LjUgNDk0LjYgTDEwMi41IDQ5NC4yIEw5NS41IDQ5Ni4zIEw5MC40IDUwMC4xIEw4OC42IDUwNC45IEw5MC45IDUxMS40IEw5Ny4zIDUxOC40IEwxMDQuNCA1MjIuNiBMMTE3LjAgNTI1LjMgTDEyMy4xIDUyOC4zIEwxNDQuNiA1NDkuNiBMMTUxLjIgNTU0LjQgTDE3Ny44IDU2NS42IEwyMDEuMiA1NjYuMiBMMjA4LjcgNTY3LjYgTDIxNi41IDU3My40IEwyMjAuMyA1ODEuNyBMMjE5LjkgNTg2LjggTDIxNy4zIDU5MS41IEwyMDQuNyA2MDAuNiBMMjAxLjEgNjA1LjYgTDIwMS4yIDY0Ni4yIEwyMDAuMSA2NTEuOCBMMTk3LjQgNjU2LjUgTDE5My4yIDY1OS45IEwxODguMSA2NjEuNSBMMTczLjYgNjU5LjAgTDE2Ny42IDY2MC40IEwxNjMuMSA2NjUuMSBMMTUxLjAgNjg2LjUgTDE0MS45IDY5Ni42IEwxMzUuMiA3MDAuNiBMMTIzLjUgNzAzLjMgTDEwNi44IDcwOS44IEwxMDEuNCA3MTMuOCBMOTguMCA3MTkuMiBMOTUuNSA3MjguNiBMOTguMSA3MzYuNiBMMTEyLjEgNzU0LjAgTDEzNC44IDc3NC4zIEwxMzkuMCA3NzUuMyBMMTQzLjYgNzc0LjUgTDE1OS42IDc2NC42IEwxODcuMiA3NTIuNyBMMjAzLjYgNzUwLjkgTDIwOC4yIDc0OS4xIEwyMTkuMSA3MzEuNCBMMjM2LjggNzIyLjMgTDI0My43IDcxNi4xIEwyNTYuNCA2OTkuMSBMMjY1LjEgNjgxLjQgTDI3MS4wIDY3Ny4zIEwyODIuNiA2NzMuNCBMMjg3LjcgNjcwLjMgTDI5OS4xIDY1NS41IEwzMTUuNiA2NDUuNSBMMzI2LjIgNjI5LjkgTDMzMS4zIDYyNi45IEwzMzYuOSA2MjYuMyBMMzQyLjggNjI4LjcgTDM0Ni45IDYzMi45IEwzNDkuMCA2MzguNyBMMzQ4LjEgNjQ1LjggTDMzOC41IDY2NC4xIEwzMjguOSA2OTEuNiBMMzI4LjcgNjk3LjIgTDMzMS4zIDcwOC41IEwzMzAuNSA3MTMuMSBMMzI2LjUgNzE4LjggTDMxNS40IDcyNS43IEwzMTAuOSA3MzAuNiBMMzAyLjQgNzQ5LjYgTDMwMC4xIDc1OC41IEwzMDEuMyA3NzQuNSBMMzA3LjkgNzkxLjMgTDMwNy4zIDgwNC45IEwzMTAuOCA4MTkuOCBMMzA1LjkgODM3LjYgTDMwNS43IDg0My4yIEwzMTkuOCA4NjcuMiBMMzIzLjMgODcwLjUgTDMyNy4xIDg3MS41IEwzMzIuNyA4NjkuNSBMMzQ1LjQgODU4LjggTDM1Mi44IDg1NS45IEwzNjMuMSA4NTUuMiBMMzc3LjYgODU5LjYgTDM4My40IDg1OS4wIEwzOTYuNCA4NDkuMCBMNDEyLjAgODQ0LjAgTDQyNS4xIDgyNy43IEw0MzUuNyA4MTguNCBMNDQyLjcgODE1LjYgTDQ2Mi4zIDgxMi44IEw0NjguNSA4MDguOSBMNDcyLjkgODAzLjAgTDQ3NC4wIDc5Ny45IEw0NzIuMSA3OTMuMSBMNDY3LjggNzkwLjIgTDQ2Mi44IDc5MC4xIEw0MzQuNyA3OTcuOCBMNDE5LjcgODA2LjYgTDM5My41IDgxOC42IEwzNzMuMCA4MjAuOCBMMzYwLjggODE1LjIgTDM1Mi4yIDgwNi4yIEwzNTAuNyA4MDEuMSBMMzQ5LjUgNzc0LjAgTDM1NC4zIDc1OS41IEwzNTYuMCA3NDUuOSBMMzY4LjEgNzI5LjAgTDM2OS4yIDcxNS4wIEwzNzEuOCA3MDguNiBMMzc3LjcgNzAzLjIgTDQxMC42IDY4NC45IEw0MTUuNiA2NzguOSBMNDE2LjMgNjcyLjAgTDQxNC4xIDY2NS42IEw0MDAuNSA2NTMuNiBMMzk3LjMgNjQ4LjEgTDM5Ny4yIDY0MS42IEw0MDEuNCA2MzEuNyBMNDIwLjMgNjAwLjggTDQ0NC42IDU4Ni4zIEw0NDguNyA1ODAuNiBMNDUxLjIgNTY5LjUgTDQ1My45IDU2NC4yIEw0NjguNCA1NTQuMCBMNDcyLjUgNTQ5LjIgTDQ3OC42IDUzNi4zIEw0ODguMiA1MjIuOSBMNDkxLjEgNTE2LjEgTDQ5MC44IDUwNy43IEw0ODQuOSA0OTEuMyBMNDg2LjIgNDg0LjQgTDQ5OC45IDQ3MS45IEw1MDguNiA0NTcuNSBMNTEzLjggNDU0LjMgTDUyNC45IDQ1MC44IEw1MzAuNCA0NDYuNiBMNTM0LjIgNDM4LjAgTDUzNi45IDQyMi42IEw1MzQuMSA0MTQuNiBMNTI2LjQgNDA5LjUgTDUxNS43IDQwNy43IEw0OTcuMCA0MTAuNyBMNDkxLjEgNDA4LjYgTDQ4Ni41IDQwNC4xIEw0ODQuMiAzOTguMiBMNDg0LjYgMzg3LjUgTDQ4My4yIDM4MS44IEw0NzMuMCAzNjEuMyBMNDU5LjcgMzQwLjIgTDQ1Ni44IDMyOC41IEw0NTYuNSAzMTMuMSBMNDU0LjQgMzA1LjYgTDQ0Ni43IDI5NS4zIEwzOTcuNyAyNDIuOSBMMzg5LjcgMjE2LjMgTDM3MS4yIDE5NS45IEwzNjYuNyAxODguNiBMMzY1LjMgMTgyLjAgTDM2NS42IDE2NC43IEwzNTguNyAxMzguNSBMMzQyLjIgMTExLjQgTDMzNi40IDEwNS45IFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQzLjMgMjAuMCkgc2NhbGUoMC4xMikiIGZpbGw9IiMzRDZGOEUiIHN0cm9rZT0iI0Y2RUVEQyIgc3Ryb2tlLXdpZHRoPSIyNS4wIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PGNpcmNsZSBjeD0iNzcuNCIgY3k9Ijc0LjYiIHI9IjgiIGZpbGw9IiNFMkE5MzgiIHN0cm9rZT0iIzJBMUQxNiIgc3Ryb2tlLXdpZHRoPSIyIi8+PC9zdmc+">
+<meta name="theme-color" content="#3A2943">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F2E8D5; --card:#FBF5EA; --ink:#2B1D14; --muted:#6B5D4F; --line:#E2D2B6;
+  --pine:#2F4636; --pine-2:#46604A; --moss:#7E8B4E; --rust:#A9461F; --cran:#8E2C3A; --gold:#D99A2B; --water:#3E5D78; --water-soft:#E6E9E2;
+  --dusk:linear-gradient(180deg,#3A2943 0%,#6E3238 42%,#B2552C 78%,#DE913B 100%);
+  --stitch:1.5px dashed rgba(169,70,31,.38);
+  --radius:14px; color-scheme:light;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html,body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 Inter,system-ui,sans-serif;-webkit-text-size-adjust:100%}
+button,input,textarea,select{font:inherit;color:inherit}
+a{color:var(--water)}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px 80px}
+header.hero{background:var(--dusk);color:#FBF0DC;padding:22px 16px 34px;position:relative;overflow:hidden}
+header.hero .scene{position:absolute;left:0;right:0;bottom:0;width:100%;height:70px;pointer-events:none}
+header.hero .inner{max-width:860px;margin:0 auto;position:relative;z-index:1}
+.kicker{font-family:Oswald,Inter,sans-serif;font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;opacity:.9;font-weight:500;color:#F6CF8C}
+h1{font-family:Oswald,Inter,sans-serif;font-weight:700;font-size:38px;line-height:1;margin:4px 0 6px;letter-spacing:.04em;text-transform:uppercase;text-shadow:0 2px 0 rgba(0,0,0,.18)}
+.hero p{margin:0;opacity:.95;max-width:520px;font-size:14px}
+.hero p b{color:#F6CF8C}
+.herogrid{position:relative;z-index:1;max-width:860px;margin:0 auto}
+.toprow{display:flex;gap:14px;align-items:center}
+.toprow .htext{flex:1;min-width:0}
+.toprow .logo{width:112px;height:132px;flex:0 0 auto;filter:drop-shadow(0 3px 4px rgba(0,0,0,.35))}
+@media(min-width:700px){.toprow .logo{width:140px;height:168px}}
+.legend{display:flex;gap:16px;align-items:center;margin-top:14px;padding:10px 14px;border:1.5px dashed rgba(246,207,140,.45);border-radius:14px;background:rgba(36,23,15,.22)}
+.lakemap{width:78px;height:124px;flex:0 0 auto;transform:rotate(-3deg)}
+.legtitle{font-family:Oswald,Inter,sans-serif;font-weight:600;letter-spacing:.12em;text-transform:uppercase;font-size:15px;color:#FBF0DC}
+.legsub{font-size:12.5px;opacity:.9;margin-top:2px}
+.legstar{color:#E0A43A}
+.legend .stats{margin-top:8px}
+@media(min-width:700px){.herogrid{display:flex;gap:24px;align-items:center}.toprow{flex:1}.legend{margin-top:0;flex:0 0 330px}}
+.brand{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.brand>div{flex:1;min-width:200px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+h1 .wordmark{display:block;width:100%;max-width:330px;height:auto;margin:2px 0 4px}
+.brand .logo{width:100px;height:120px;flex:0 0 auto;filter:drop-shadow(0 2px 3px rgba(0,0,0,.3))}
+.brand{position:relative;z-index:1}
+.stats{width:100%}
+.stats{display:flex;gap:18px;margin-top:10px;font-size:12.5px;opacity:.95;font-family:Oswald,Inter,sans-serif;letter-spacing:.06em;text-transform:uppercase}
+.stats b{font-family:Oswald,Inter,sans-serif;font-size:22px;display:block;line-height:1.1;color:#F6CF8C}
+nav.tabs{position:sticky;top:0;z-index:6;background:#23362A;display:flex;justify-content:center;box-shadow:0 2px 0 var(--rust)}
+nav.tabs a{flex:1;max-width:215px;text-align:center;color:#D9CDB4;text-decoration:none;padding:12px 4px 9px;font-family:Oswald,Inter,sans-serif;font-weight:600;font-size:15px;letter-spacing:.12em;text-transform:uppercase;border-bottom:3px solid transparent}
+nav.tabs a.on{color:#F6CF8C;border-bottom-color:var(--gold)}
+.toolbar{padding:12px 0 10px;display:flex;gap:8px;border-bottom:1px solid var(--line)}
+.search{flex:1;min-width:0;border:1px solid var(--line);background:var(--card);border-radius:999px;padding:10px 14px;outline:none}
+.search:focus{border-color:var(--pine-2)}
+.btn{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:9px 14px;cursor:pointer;font-weight:500;white-space:nowrap;text-decoration:none;display:inline-flex;align-items:center;gap:6px;color:var(--ink)}
+.btn:hover{border-color:var(--pine-2)}
+.btn.primary{background:var(--rust);border-color:var(--rust);color:#FFF8EC}
+.btn.primary:hover{background:#8F3A18}
+.btn.pine{background:var(--pine);border-color:var(--pine);color:#fff}
+.btn.small{padding:6px 11px;font-size:13px}
+.btn.tiny{padding:3px 9px;font-size:12px}
+.btn:disabled{opacity:.5;cursor:default}
+.notice{background:var(--water-soft);border-radius:10px;padding:10px 12px;font-size:13px;margin:12px 0;color:#24394B}
+.notice.warn{background:#F5E1D6;color:#6B2F14}
+.notice.alert{background:#7A2E14;color:#fff}
+h2{font-family:Oswald,Inter,sans-serif;font-size:22px;margin:20px 0 8px;letter-spacing:.08em;text-transform:uppercase;color:var(--pine)}
+.secthead{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.secthead h2{margin:20px 0 8px}
+.mapbox{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-top:14px}
+.mapbox svg{display:block;width:100%;height:auto;touch-action:manipulation}
+.mapcap{display:flex;justify-content:space-between;gap:10px;padding:8px 12px;font-size:12px;color:var(--muted);border-top:1px solid var(--line)}
+.chips{display:flex;gap:6px;overflow-x:auto;padding:12px 0 4px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:5px 11px;font-size:13px;white-space:nowrap;cursor:pointer}
+.chip.on{background:var(--pine);border-color:var(--pine);color:#FBF0DC}
+.list{display:grid;grid-template-columns:1fr;gap:14px;margin-top:10px}
+@media(min-width:640px){.list{grid-template-columns:1fr 1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;cursor:pointer;outline:var(--stitch);outline-offset:-6px;box-shadow:0 1px 0 rgba(43,29,20,.06)}
+.card .ph{aspect-ratio:16/10;background:linear-gradient(135deg,#D8DCCB,#C3CBB2);position:relative}
+.card .ph img{width:100%;height:100%;object-fit:cover;display:block}
+.num{position:absolute;left:12px;top:12px;background:var(--cran);font-family:Oswald,Inter,sans-serif;color:#fff;font-weight:600;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;font-size:13px;box-shadow:0 1px 3px rgba(0,0,0,.25)}
+.phcount{position:absolute;right:10px;bottom:10px;background:rgba(0,0,0,.55);color:#fff;font-size:12px;border-radius:999px;padding:2px 8px}
+.nophoto{position:absolute;inset:0;display:grid;place-items:center;color:#55634A;font-size:13px}
+.card .body{padding:12px 14px 14px;display:flex;flex-direction:column;gap:6px;flex:1}
+.card h3{font-family:Fraunces,Georgia,serif;font-size:20px;margin:0;line-height:1.2;color:var(--ink)}
+.meta{font-size:12px;color:var(--muted)}
+.desc{margin:0;color:#333B33;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.tags{display:flex;flex-wrap:wrap;gap:5px}
+.tag{font-size:11.5px;background:#E8E4D6;border-radius:6px;padding:2px 7px;color:#3D4636}
+.tag.warnt{background:#F2D9CB;color:#7A3417}
+.tag.goodt{background:#D9E6D3;color:#2D5A33}
+.actions{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:6px}
+.empty{text-align:center;padding:36px 16px;color:var(--muted);background:var(--card);border:1px dashed var(--line);border-radius:var(--radius);margin-top:14px}
+.empty h3{font-family:Oswald,Inter,sans-serif;text-transform:uppercase;letter-spacing:.08em;color:var(--pine);margin:0 0 6px}
+footer.tools{margin-top:28px;padding-top:16px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+footer.tools .meta{width:100%}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px;margin-top:12px;outline:var(--stitch);outline-offset:-6px}
+/* overlay */
+.overlay{position:fixed;inset:0;background:rgba(20,28,22,.55);z-index:50;display:flex;align-items:flex-end;justify-content:center}
+@media(min-width:700px){.overlay{align-items:center}}
+.sheet{background:var(--bg);width:100%;max-width:640px;max-height:92vh;overflow-y:auto;border-radius:18px 18px 0 0;padding:0 0 24px;-webkit-overflow-scrolling:touch}
+@media(min-width:700px){.sheet{border-radius:18px}}
+.sheet-head{position:sticky;top:0;background:var(--bg);display:flex;justify-content:space-between;align-items:center;gap:10px;padding:12px 16px;border-bottom:1px solid var(--line);z-index:2}
+.sheet-head h3{font-family:Oswald,Inter,sans-serif;margin:0;font-size:19px;letter-spacing:.06em;text-transform:uppercase;color:var(--pine)}
+.x{border:none;background:#E5DFD0;border-radius:50%;width:32px;height:32px;cursor:pointer;font-size:16px;flex:0 0 auto}
+.sheet .pad{padding:14px 16px}
+.gallery{display:flex;gap:8px;overflow-x:auto;scroll-snap-type:x mandatory;padding:12px 16px 0}
+.gallery img{height:240px;border-radius:12px;scroll-snap-align:start;flex:0 0 auto;max-width:88%;object-fit:cover;background:#D8DCCB;min-width:160px}
+.coord{font-family:ui-monospace,Menlo,monospace;font-size:14px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px;display:flex;justify-content:space-between;align-items:center;gap:8px}
+.navgrid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}
+.navgrid .btn{justify-content:center;white-space:normal;text-align:center;min-width:0}
+.longdesc{white-space:pre-wrap;margin:8px 0 0}
+.lbl{font-family:Oswald,Inter,sans-serif;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--rust);font-weight:600;margin:18px 0 6px}
+/* form */
+.field{margin-bottom:14px}
+.field label{display:block;font-weight:600;font-size:13px;margin-bottom:5px}
+.field .hint{font-size:12px;color:var(--muted);margin-top:4px}
+.inp{width:100%;border:1px solid var(--line);background:var(--card);border-radius:10px;padding:10px 12px;outline:none}
+.inp:focus{border-color:var(--pine-2)}
+textarea.inp{min-height:90px;resize:vertical}
+.ok{color:#2D6A3E}.bad{color:#9B3412}
+.thumbs{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.thumb{position:relative;width:84px;height:84px;border-radius:10px;overflow:hidden;background:#D8DCCB}
+.thumb img{width:100%;height:100%;object-fit:cover}
+.thumb button{position:absolute;right:3px;top:3px;border:none;background:rgba(0,0,0,.6);color:#fff;width:22px;height:22px;border-radius:50%;cursor:pointer;font-size:12px;line-height:1}
+.thumb .busy{position:absolute;inset:0;display:grid;place-items:center;font-size:11px;color:#333}
+.filebtn{display:inline-flex;align-items:center;gap:6px;border:1px dashed var(--pine-2);border-radius:10px;padding:10px 14px;cursor:pointer;color:var(--pine);font-weight:500;background:transparent}
+.filebtn input{display:none}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--ink);color:#fff;padding:10px 16px;border-radius:999px;font-size:14px;z-index:99;opacity:0;transition:opacity .2s;pointer-events:none;max-width:90vw;text-align:center}
+.toast.show{opacity:1}
+details.help{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:8px 12px;font-size:13px;margin-top:6px}
+details.help summary{cursor:pointer;font-weight:500;color:var(--pine)}
+details.help ol{margin:6px 0 2px;padding-left:18px}
+/* lists / rows */
+.rows{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card)}
+.rowi{display:flex;align-items:center;gap:10px;padding:9px 12px;border-top:1px solid var(--line)}
+.rowi:first-child{border-top:none}
+.rowi .grow{flex:1;min-width:0}
+.rowi.done .txt{text-decoration:line-through;color:var(--muted)}
+.chk{width:22px;height:22px;border-radius:6px;border:2px solid var(--pine-2);background:#fff;display:grid;place-items:center;cursor:pointer;flex:0 0 auto;color:#fff;font-size:13px;padding:0}
+.chk.on{background:var(--pine-2)}
+.who{font-size:12px;border-radius:999px;padding:2px 9px;border:1px dashed var(--line);background:transparent;cursor:pointer;white-space:nowrap;color:var(--muted)}
+.who.mine{border-style:solid;border-color:var(--pine-2);color:var(--pine);background:#E6EEE5}
+.who.set{border-style:solid;color:var(--ink)}
+.del{border:none;background:transparent;color:#9B8E78;cursor:pointer;font-size:15px;padding:2px 4px}
+.addrow{display:flex;gap:6px;margin-top:8px}
+.addrow .inp{padding:8px 11px}
+.rsvp{display:flex;gap:6px;flex-wrap:wrap}
+.rsvp .chip{padding:7px 14px;font-size:14px}
+.people{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.person{font-size:13px;background:#E6EEE5;border-radius:999px;padding:3px 10px}
+.person.maybe{background:#EFE8D2}
+.person.out{background:#EEE;color:#888;text-decoration:line-through}
+.mealday{border:1px solid var(--line);border-radius:12px;background:var(--card);margin-top:8px;overflow:hidden}
+.mealday h4{margin:0;padding:8px 12px;background:var(--pine);color:#FBF0DC;font-family:Oswald,Inter,sans-serif;font-weight:500;letter-spacing:.1em;text-transform:uppercase;font-size:13px}
+.meal{display:flex;gap:10px;padding:8px 12px;border-top:1px solid var(--line);align-items:flex-start}
+.meal .slot{width:74px;flex:0 0 auto;font-size:12px;font-weight:600;color:var(--muted);padding-top:2px}
+.meal .dish{flex:1;min-width:0}
+.meal .addm{color:var(--water);background:none;border:none;padding:0;cursor:pointer;font-size:13px}
+.logday{font-family:Oswald,Inter,sans-serif;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--pine);margin:12px 0 6px;border-bottom:1px dashed var(--line);padding-bottom:3px}
+.logentry{display:flex;gap:10px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin-bottom:8px}
+.logentry.quote{border-left:4px solid var(--rust)}
+.logentry .grow{flex:1;min-width:0}
+.logicon{font-size:20px;line-height:1.2;flex:0 0 auto}
+.logquote{font-family:Fraunces,Georgia,serif;font-style:italic;font-size:17px;line-height:1.35}
+.logwho{font-family:Oswald,Inter,sans-serif;letter-spacing:.06em;font-size:13px;color:var(--rust);margin-top:2px}
+.logtext{white-space:pre-wrap}
+.tripcard{background:var(--card);border:1px solid var(--line);border-left:6px solid var(--rust);border-radius:var(--radius);padding:16px;cursor:pointer;margin-top:10px;outline:var(--stitch);outline-offset:-6px}
+.tripcard h3{font-family:Fraunces,serif;margin:0 0 2px;font-size:20px}
+.prog{height:6px;background:#E5DFD0;border-radius:3px;overflow:hidden;margin-top:6px}
+.prog>i{display:block;height:100%;background:var(--moss)}
+/* weather */
+.wxnow{display:flex;align-items:center;gap:16px}
+.wxnow .big{font-family:Oswald,Inter,sans-serif;font-size:56px;line-height:1;color:var(--rust)}
+.wxnow .ico{font-size:44px}
+.hourly{display:flex;gap:6px;overflow-x:auto;padding:4px 0 2px;scrollbar-width:thin}
+.hr{flex:0 0 auto;width:56px;text-align:center;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:6px 2px;font-size:12px}
+.hr .t{font-weight:600}
+.hr .i{font-size:20px}
+.hr .p{color:var(--water)}
+.day{display:grid;grid-template-columns:78px 30px 1fr 46px;gap:8px;align-items:center;padding:9px 12px;border-top:1px solid var(--line)}
+.day:first-child{border-top:none}
+.day .d{font-weight:600;font-size:13px}
+.day .i{font-size:20px;text-align:center}
+.day .rng{position:relative;height:6px;background:#E5DFD0;border-radius:3px}
+.day .rng i{position:absolute;top:0;bottom:0;border-radius:3px;background:linear-gradient(90deg,#7FA6C4,#D58A5A)}
+.day .hl{display:flex;justify-content:space-between;font-size:12px;margin-top:3px}
+.day .rp{font-size:12px;color:var(--water);text-align:right}
+.day .flags{grid-column:2/-1;font-size:12px;color:#7A3417;margin-top:-4px}
+/* album */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;margin-top:10px}
+@media(min-width:640px){.grid{grid-template-columns:repeat(4,1fr)}}
+.grid button{aspect-ratio:1;border:none;padding:0;background:#D8DCCB;cursor:pointer;border-radius:6px;overflow:hidden}
+.grid img{width:100%;height:100%;object-fit:cover;display:block}
+.lightimg{width:100%;max-height:70vh;object-fit:contain;background:#111;display:block;min-height:200px}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="ccLake" viewBox="20 0 560 660"><clipPath id="cc-lk"><path d="M328.0 65.4 L315.9 67.2 L305.1 72.2 L296.3 79.9 L279.0 101.0 L270.9 106.6 L263.0 109.5 L248.5 110.0 L219.0 102.6 L184.4 98.5 L173.6 98.5 L163.3 101.2 L152.3 108.0 L142.6 118.4 L136.8 130.1 L134.6 142.7 L135.0 163.3 L138.6 176.4 L145.2 186.4 L162.8 202.4 L169.6 210.6 L175.8 222.7 L178.3 235.8 L176.6 247.1 L171.0 257.8 L164.5 264.9 L143.2 282.1 L132.6 299.0 L129.4 309.8 L129.0 320.5 L131.2 330.4 L136.0 339.7 L147.4 351.5 L162.8 360.7 L175.9 364.0 L188.6 363.1 L199.8 358.8 L210.7 350.5 L222.0 339.1 L239.0 318.1 L248.0 310.7 L263.0 305.7 L279.8 307.3 L288.7 311.1 L296.6 317.0 L302.9 324.8 L307.0 333.6 L312.0 367.3 L309.9 377.6 L304.8 386.9 L282.1 408.0 L267.1 425.7 L259.2 431.9 L249.9 435.9 L222.3 441.4 L168.9 467.7 L154.9 469.2 L139.9 465.8 L128.9 459.2 L111.0 441.2 L102.0 434.8 L88.0 430.0 L71.6 428.4 L55.2 431.6 L41.2 440.7 L31.7 453.9 L28.2 469.8 L29.0 478.2 L31.9 487.1 L55.6 529.0 L81.4 551.0 L105.8 563.6 L118.1 573.3 L137.0 593.4 L141.3 601.3 L143.4 609.7 L143.2 619.1 L140.6 628.5 L131.0 646.7 L122.9 658.6 L110.9 668.4 L90.8 675.9 L82.9 680.2 L74.6 687.7 L68.5 696.8 L62.3 714.6 L59.8 730.5 L61.6 745.0 L66.9 756.2 L79.1 771.6 L104.2 796.7 L116.5 805.6 L131.5 811.7 L141.8 812.9 L152.6 811.3 L179.2 798.0 L190.5 795.1 L234.9 796.6 L242.9 798.3 L250.8 802.2 L260.3 810.7 L266.4 821.2 L268.3 829.2 L270.5 854.9 L287.1 899.9 L293.9 908.5 L302.8 915.2 L312.1 919.1 L322.4 920.5 L337.9 917.7 L368.3 900.3 L393.5 894.0 L430.5 878.5 L438.6 872.7 L458.2 854.2 L481.0 843.3 L490.3 837.0 L501.2 826.4 L509.5 814.2 L512.9 804.4 L513.6 794.1 L511.8 784.3 L507.7 775.4 L501.5 767.6 L493.2 761.1 L465.6 750.8 L454.1 742.5 L448.3 735.1 L444.9 727.7 L443.2 718.8 L443.7 710.8 L451.6 685.1 L452.7 657.9 L457.0 644.4 L469.6 618.2 L522.9 537.2 L526.5 526.9 L529.4 505.8 L533.2 496.5 L539.3 488.5 L557.6 470.2 L565.0 459.1 L569.6 444.5 L572.5 421.6 L569.5 404.8 L560.3 390.2 L548.0 380.4 L524.2 369.0 L513.9 358.9 L495.9 326.6 L490.6 300.9 L484.1 286.4 L475.4 274.7 L441.7 239.1 L432.4 227.0 L421.8 200.3 L404.3 173.1 L392.9 128.2 L373.8 95.0 L363.4 82.3 L352.4 73.2 L340.7 67.6 Z" transform="translate(116.7 20.0) scale(0.6000)"/></clipPath><path d="M328.0 65.4 L315.9 67.2 L305.1 72.2 L296.3 79.9 L279.0 101.0 L270.9 106.6 L263.0 109.5 L248.5 110.0 L219.0 102.6 L184.4 98.5 L173.6 98.5 L163.3 101.2 L152.3 108.0 L142.6 118.4 L136.8 130.1 L134.6 142.7 L135.0 163.3 L138.6 176.4 L145.2 186.4 L162.8 202.4 L169.6 210.6 L175.8 222.7 L178.3 235.8 L176.6 247.1 L171.0 257.8 L164.5 264.9 L143.2 282.1 L132.6 299.0 L129.4 309.8 L129.0 320.5 L131.2 330.4 L136.0 339.7 L147.4 351.5 L162.8 360.7 L175.9 364.0 L188.6 363.1 L199.8 358.8 L210.7 350.5 L222.0 339.1 L239.0 318.1 L248.0 310.7 L263.0 305.7 L279.8 307.3 L288.7 311.1 L296.6 317.0 L302.9 324.8 L307.0 333.6 L312.0 367.3 L309.9 377.6 L304.8 386.9 L282.1 408.0 L267.1 425.7 L259.2 431.9 L249.9 435.9 L222.3 441.4 L168.9 467.7 L154.9 469.2 L139.9 465.8 L128.9 459.2 L111.0 441.2 L102.0 434.8 L88.0 430.0 L71.6 428.4 L55.2 431.6 L41.2 440.7 L31.7 453.9 L28.2 469.8 L29.0 478.2 L31.9 487.1 L55.6 529.0 L81.4 551.0 L105.8 563.6 L118.1 573.3 L137.0 593.4 L141.3 601.3 L143.4 609.7 L143.2 619.1 L140.6 628.5 L131.0 646.7 L122.9 658.6 L110.9 668.4 L90.8 675.9 L82.9 680.2 L74.6 687.7 L68.5 696.8 L62.3 714.6 L59.8 730.5 L61.6 745.0 L66.9 756.2 L79.1 771.6 L104.2 796.7 L116.5 805.6 L131.5 811.7 L141.8 812.9 L152.6 811.3 L179.2 798.0 L190.5 795.1 L234.9 796.6 L242.9 798.3 L250.8 802.2 L260.3 810.7 L266.4 821.2 L268.3 829.2 L270.5 854.9 L287.1 899.9 L293.9 908.5 L302.8 915.2 L312.1 919.1 L322.4 920.5 L337.9 917.7 L368.3 900.3 L393.5 894.0 L430.5 878.5 L438.6 872.7 L458.2 854.2 L481.0 843.3 L490.3 837.0 L501.2 826.4 L509.5 814.2 L512.9 804.4 L513.6 794.1 L511.8 784.3 L507.7 775.4 L501.5 767.6 L493.2 761.1 L465.6 750.8 L454.1 742.5 L448.3 735.1 L444.9 727.7 L443.2 718.8 L443.7 710.8 L451.6 685.1 L452.7 657.9 L457.0 644.4 L469.6 618.2 L522.9 537.2 L526.5 526.9 L529.4 505.8 L533.2 496.5 L539.3 488.5 L557.6 470.2 L565.0 459.1 L569.6 444.5 L572.5 421.6 L569.5 404.8 L560.3 390.2 L548.0 380.4 L524.2 369.0 L513.9 358.9 L495.9 326.6 L490.6 300.9 L484.1 286.4 L475.4 274.7 L441.7 239.1 L432.4 227.0 L421.8 200.3 L404.3 173.1 L392.9 128.2 L373.8 95.0 L363.4 82.3 L352.4 73.2 L340.7 67.6 Z" transform="translate(116.7 20.0) scale(0.6000)" fill="#2E4A34" stroke="#A9461F" stroke-width="40.0" stroke-linejoin="round" paint-order="stroke"/><g clip-path="url(#cc-lk)"><path d="M316.5 196.2 L318.8 202.7 L314.3 202.7 Z M316.5 199.1 L319.8 205.1 L313.3 205.1 Z M316.5 202.1 L320.8 207.5 L312.3 207.5 Z M314.9 205.2 h3.2 v2.3 h-3.2 Z" fill="#4E6B44"/><path d="M312.3 252.6 L314.5 258.9 L310.1 258.9 Z M312.3 255.4 L315.4 261.2 L309.1 261.2 Z M312.3 258.3 L316.4 263.5 L308.2 263.5 Z M310.7 261.3 h3.2 v2.2 h-3.2 Z" fill="#4E6B44"/><path d="M347.8 482.4 L349.9 488.4 L345.7 488.4 Z M347.8 485.1 L350.8 490.6 L344.8 490.6 Z M347.8 487.8 L351.7 492.8 L343.9 492.8 Z M346.2 490.7 h3.2 v2.1 h-3.2 Z" fill="#4E6B44"/><path d="M276.0 96.2 L278.7 103.9 L273.4 103.9 Z M276.0 99.6 L279.9 106.7 L272.2 106.7 Z M276.0 103.1 L281.1 109.5 L271.0 109.5 Z M274.4 106.9 h3.2 v2.7 h-3.2 Z" fill="#4E6B44"/><path d="M264.7 96.4 L267.0 103.1 L262.5 103.1 Z M264.7 99.4 L268.0 105.5 L261.4 105.5 Z M264.7 102.4 L269.1 107.9 L260.4 107.9 Z M263.1 105.6 h3.2 v2.3 h-3.2 Z" fill="#4E6B44"/><path d="M265.3 175.5 L267.6 182.2 L263.0 182.2 Z M265.3 178.5 L268.7 184.7 L262.0 184.7 Z M265.3 181.5 L269.7 187.1 L260.9 187.1 Z M263.7 184.8 h3.2 v2.3 h-3.2 Z" fill="#4E6B44"/><path d="M316.6 211.3 L319.0 218.4 L314.1 218.4 Z M316.6 214.5 L320.1 221.0 L313.0 221.0 Z M316.6 217.7 L321.2 223.6 L311.9 223.6 Z M315.0 221.2 h3.2 v2.5 h-3.2 Z" fill="#4E6B44"/><path d="M291.5 80.6 L294.0 87.9 L289.1 87.9 Z M291.5 83.9 L295.1 90.5 L287.9 90.5 Z M291.5 87.1 L296.3 93.1 L286.8 93.1 Z M289.9 90.6 h3.2 v2.5 h-3.2 Z" fill="#4E6B44"/><path d="M395.5 188.3 L397.9 195.3 L393.1 195.3 Z M395.5 191.4 L399.0 197.9 L392.0 197.9 Z M395.5 194.6 L400.0 200.4 L390.9 200.4 Z M393.9 198.0 h3.2 v2.4 h-3.2 Z" fill="#4E6B44"/><path d="M354.2 491.0 L356.5 497.8 L351.9 497.8 Z M354.2 494.0 L357.6 500.2 L350.8 500.2 Z M354.2 497.1 L358.7 502.7 L349.8 502.7 Z M352.6 500.4 h3.2 v2.3 h-3.2 Z" fill="#4E6B44"/><path d="M343.8 265.3 L346.1 272.2 L341.4 272.2 Z M343.8 268.4 L347.2 274.7 L340.4 274.7 Z M343.8 271.5 L348.3 277.2 L339.3 277.2 Z M342.2 274.8 h3.2 v2.4 h-3.2 Z" fill="#4E6B44"/><path d="M399.9 500.4 L402.1 506.9 L397.6 506.9 Z M399.9 503.3 L403.1 509.3 L396.6 509.3 Z M399.9 506.3 L404.1 511.7 L395.6 511.7 Z M398.3 509.4 h3.2 v2.3 h-3.2 Z" fill="#4E6B44"/><path d="M260.7 138.3 L262.9 144.7 L258.5 144.7 Z M260.7 141.2 L263.9 147.0 L257.5 147.0 Z M260.7 144.0 L264.9 149.4 L256.5 149.4 Z M259.1 147.2 h3.2 v2.2 h-3.2 Z" fill="#4E6B44"/><path d="M409.5 225.3 L411.9 232.5 L407.0 232.5 Z M409.5 228.5 L413.1 235.1 L405.9 235.1 Z M409.5 231.7 L414.2 237.7 L404.8 237.7 Z M407.9 235.2 h3.2 v2.5 h-3.2 Z" fill="#4E6B44"/><path d="M256.8 182.4 L259.2 189.3 L254.4 189.3 Z M256.8 185.5 L260.2 191.8 L253.3 191.8 Z M256.8 188.6 L261.3 194.4 L252.2 194.4 Z M255.2 192.0 h3.2 v2.4 h-3.2 Z" fill="#4E6B44"/><path d="M372.2 481.1 L374.6 488.2 L369.7 488.2 Z M372.2 484.3 L375.7 490.8 L368.6 490.8 Z M372.2 487.5 L376.8 493.4 L367.5 493.4 Z M370.6 490.9 h3.2 v2.5 h-3.2 Z" fill="#4E6B44"/><path d="M279.0 292.8 L281.0 298.8 L276.9 298.8 Z M279.0 295.5 L282.0 301.0 L276.0 301.0 Z M279.0 298.2 L282.9 303.1 L275.1 303.1 Z M277.4 301.1 h3.2 v2.1 h-3.2 Z" fill="#4E6B44"/><path d="M297.9 532.6 L300.0 538.5 L295.9 538.5 Z M297.9 535.3 L300.9 540.7 L295.0 540.7 Z M297.9 537.9 L301.8 542.8 L294.1 542.8 Z M296.3 540.8 h3.2 v2.0 h-3.2 Z" fill="#4E6B44"/><path d="M332.6 77.6 L335.1 85.1 L330.0 85.1 Z M332.6 80.9 L336.3 87.8 L328.9 87.8 Z M332.6 84.3 L337.4 90.5 L327.7 90.5 Z M331.0 87.9 h3.2 v2.6 h-3.2 Z" fill="#4E6B44"/><path d="M136.8 89.2 L133.6 91.6 L133.4 95.2 L135.9 98.6 L145.6 106.0 L148.6 119.0 L152.6 122.1 L164.7 126.9 L170.0 132.9 L170.9 152.6 L162.5 166.1 L161.9 170.3 L163.3 173.2 L165.8 174.6 L168.9 174.3 L178.3 167.5 L183.0 166.1 L197.0 169.1 L205.0 172.2 L212.4 177.4 L214.5 180.7 L214.7 183.4 L211.7 188.0 L200.4 193.0 L199.5 196.5 L201.3 199.8 L215.8 209.5 L228.4 204.3 L248.8 204.8 L254.0 209.0 L258.2 214.5 L264.1 230.2 L262.5 234.9 L258.3 237.5 L252.2 237.7 L240.1 235.6 L226.0 238.2 L222.4 240.0 L220.6 243.4 L221.8 251.8 L220.7 255.6 L210.3 262.2 L205.5 274.1 L192.2 288.6 L185.3 298.2 L181.1 301.1 L172.3 302.8 L169.0 304.8 L162.6 316.3 L162.2 319.1 L163.3 321.6 L177.8 329.2 L181.1 329.4 L183.9 328.1 L190.5 319.3 L199.4 312.1 L202.6 302.3 L206.4 296.5 L217.3 287.8 L222.6 279.0 L231.1 273.6 L237.3 265.2 L241.0 262.6 L248.9 262.6 L255.9 264.5 L265.4 269.2 L275.5 270.1 L280.5 273.7 L288.0 282.4 L292.9 284.4 L296.2 282.8 L297.7 279.3 L293.2 268.1 L293.6 263.6 L297.7 260.2 L304.6 259.9 L311.6 263.9 L324.2 277.7 L330.0 288.2 L341.6 296.2 L344.2 307.7 L351.4 318.2 L352.2 323.8 L344.8 335.5 L344.3 343.7 L347.0 347.1 L355.8 353.4 L366.5 358.5 L369.5 364.1 L367.1 370.5 L357.0 377.2 L356.4 380.0 L357.8 383.4 L361.7 386.7 L367.2 388.6 L378.1 384.3 L394.5 381.0 L398.6 383.0 L401.0 387.0 L399.4 393.4 L393.4 399.1 L387.9 401.0 L374.6 401.0 L372.1 402.3 L370.9 404.8 L372.3 409.0 L382.7 415.1 L396.6 429.2 L396.8 434.7 L391.8 445.4 L388.7 448.6 L384.7 450.6 L370.1 455.1 L359.6 456.4 L352.4 463.5 L349.1 465.3 L345.8 465.1 L341.1 462.7 L332.5 454.4 L325.3 444.1 L320.7 433.7 L313.3 425.7 L304.6 410.6 L300.0 408.9 L295.3 412.0 L293.9 415.5 L294.3 419.3 L301.9 431.4 L303.7 436.6 L302.1 447.4 L303.1 451.6 L312.3 460.9 L317.2 468.6 L333.8 484.4 L335.5 488.1 L334.4 494.6 L330.4 500.9 L312.1 513.9 L306.0 513.4 L293.9 507.6 L278.0 511.0 L273.3 510.9 L269.9 509.5 L267.6 506.7 L265.7 498.4 L263.7 495.6 L260.6 494.2 L252.3 493.7 L248.7 491.0 L247.2 486.7 L244.9 466.6 L242.8 463.6 L239.2 462.7 L235.2 465.8 L225.2 488.4 L220.8 492.3 L216.7 492.1 L212.7 489.6 L205.2 477.9 L201.8 474.8 L198.2 474.7 L194.6 477.9 L194.0 482.9 L201.8 501.6 L203.7 514.7 L209.6 526.4 L208.3 530.3 L204.9 533.3 L200.7 534.8 L196.1 534.9 L191.1 532.8 L181.1 524.7 L157.7 521.4 L154.7 519.3 L147.7 510.8 L131.5 501.1 L118.9 498.1 L109.3 492.0 L99.0 489.6 L96.1 486.1 L89.5 469.4 L85.4 465.3 L73.0 463.3 L61.3 464.3 L56.3 465.9 L54.5 469.0 L55.2 472.2 L58.2 474.8 L71.1 477.7 L75.5 480.2 L77.2 483.9 L76.8 494.6 L81.8 505.7 L102.3 523.3 L106.2 524.8 L115.1 524.2 L120.3 525.9 L131.5 535.4 L148.5 553.6 L179.3 568.2 L197.5 567.0 L206.8 564.5 L210.0 565.2 L213.8 568.3 L220.3 576.8 L230.2 584.3 L232.5 587.8 L232.6 592.0 L231.0 596.1 L227.6 599.8 L223.7 601.4 L219.5 600.8 L198.9 590.9 L195.4 591.1 L192.5 594.0 L192.2 599.4 L199.6 610.7 L201.6 618.2 L201.2 640.1 L202.7 651.8 L199.8 658.1 L193.3 661.6 L185.8 663.1 L172.7 656.5 L166.5 656.8 L163.7 659.9 L160.7 670.1 L154.9 681.3 L141.5 698.6 L135.2 701.5 L123.5 702.7 L113.7 706.8 L102.6 705.7 L99.2 708.7 L94.3 731.9 L95.2 737.1 L103.8 743.7 L111.1 754.2 L122.9 761.4 L128.8 772.1 L139.2 779.5 L142.2 780.2 L145.2 778.8 L150.7 769.9 L154.5 766.6 L190.9 751.3 L199.8 752.1 L213.4 761.5 L216.1 761.9 L218.9 760.8 L221.2 758.0 L221.6 754.4 L214.3 741.7 L213.6 737.5 L214.9 733.3 L219.5 729.0 L232.6 725.0 L243.4 717.6 L250.4 707.1 L258.4 698.3 L261.0 686.5 L264.8 680.6 L270.0 677.0 L282.2 674.0 L288.0 671.0 L291.6 666.8 L294.7 657.0 L297.9 653.1 L301.4 651.9 L309.3 652.0 L312.9 650.2 L316.6 645.3 L322.9 631.7 L327.1 627.1 L331.3 625.5 L341.0 624.4 L351.9 614.4 L356.0 614.6 L359.5 617.5 L360.5 621.0 L359.3 625.6 L338.4 662.6 L333.8 677.9 L328.9 681.8 L316.4 680.9 L311.7 684.4 L311.6 687.2 L313.5 690.3 L331.3 705.1 L333.0 708.5 L333.1 711.7 L331.0 716.3 L327.1 720.1 L315.6 723.6 L312.3 726.5 L299.1 758.1 L299.7 767.0 L298.1 777.9 L300.7 780.9 L308.4 785.9 L311.0 791.3 L305.6 804.9 L311.4 816.6 L311.7 821.2 L304.1 840.0 L303.4 846.4 L304.9 849.3 L312.8 854.3 L316.1 858.7 L317.9 869.0 L315.7 882.0 L318.1 885.5 L322.9 886.4 L328.0 884.2 L332.1 880.6 L334.3 876.9 L337.5 865.7 L346.7 857.4 L353.3 855.4 L364.1 854.9 L368.7 856.1 L377.6 860.9 L381.4 861.3 L387.0 858.6 L392.6 849.2 L396.4 846.5 L400.6 846.2 L412.3 849.3 L416.2 848.7 L419.1 845.0 L417.9 837.2 L418.5 833.6 L433.6 817.9 L438.9 815.7 L463.3 813.1 L477.3 801.5 L491.3 795.3 L494.9 791.9 L494.4 787.3 L489.9 784.9 L473.6 788.4 L463.3 788.9 L451.6 793.9 L433.4 797.7 L420.2 806.4 L405.8 811.7 L394.9 819.2 L385.6 819.5 L373.4 822.0 L355.8 813.1 L351.5 808.6 L349.9 802.1 L351.3 790.4 L349.0 774.0 L351.2 768.8 L359.9 761.1 L359.6 757.8 L354.5 749.6 L354.3 745.9 L356.8 741.0 L366.3 733.7 L368.8 730.5 L369.7 725.8 L368.7 715.0 L371.3 707.8 L375.8 704.6 L387.0 703.7 L398.2 692.0 L403.4 688.5 L412.4 684.9 L416.8 679.5 L417.0 673.8 L413.5 662.2 L409.9 659.5 L399.2 656.6 L395.1 652.6 L393.9 646.2 L395.8 640.1 L403.7 629.6 L409.5 626.3 L414.8 628.5 L421.0 638.4 L424.3 638.7 L427.1 636.5 L428.8 626.1 L432.6 615.0 L429.8 611.3 L419.3 604.6 L417.9 601.3 L418.5 598.2 L422.2 594.9 L433.3 593.7 L448.3 586.1 L450.9 581.2 L449.5 567.2 L450.8 561.9 L454.9 559.0 L466.5 556.9 L471.8 552.6 L480.7 532.1 L490.6 523.3 L492.4 519.9 L490.8 503.5 L484.0 494.8 L482.5 490.9 L483.3 481.2 L485.6 478.4 L489.5 476.8 L506.3 479.8 L511.9 477.6 L513.5 472.2 L508.3 462.3 L508.6 458.2 L510.9 455.2 L513.8 453.7 L525.3 453.3 L532.1 447.3 L534.7 442.1 L534.6 433.8 L537.4 423.0 L537.3 419.3 L535.0 414.4 L530.7 410.7 L515.2 406.8 L509.1 407.4 L491.3 414.8 L487.7 414.2 L484.7 411.5 L483.3 407.6 L483.2 399.6 L485.3 384.2 L476.5 372.4 L474.1 360.6 L465.0 351.0 L460.8 343.5 L456.2 326.6 L457.4 313.5 L455.7 307.0 L449.1 297.6 L402.5 249.4 L397.0 242.4 L394.4 235.8 L390.7 215.9 L372.2 197.7 L365.4 186.7 L364.6 181.6 L366.2 167.1 L360.7 141.8 L348.5 120.3 L335.4 103.8 L319.1 95.3 L314.4 96.2 L311.9 99.7 L312.8 103.9 L318.5 111.0 L320.1 121.0 L325.6 130.1 L325.9 139.4 L329.0 154.4 L328.0 161.0 L319.0 170.7 L317.7 177.3 L320.9 182.1 L331.2 186.9 L333.5 193.3 L332.1 199.3 L329.0 203.7 L314.4 212.7 L310.2 213.6 L290.4 203.2 L280.2 186.1 L267.2 184.0 L260.0 179.6 L256.5 175.3 L253.7 167.2 L251.6 164.5 L248.0 163.6 L239.1 165.1 L233.3 162.0 L228.7 154.9 L228.6 143.2 L226.4 139.3 L206.9 134.2 L204.1 135.1 L196.5 141.2 L190.5 140.5 L186.6 136.6 L182.9 127.3 L178.5 120.9 L172.6 116.9 L151.4 108.3 L148.5 104.3 L147.9 96.4 L146.5 93.2 L142.3 89.9 Z" transform="translate(116.7 20.0) scale(0.6000)" fill="#3D6F8E" stroke="#F6EEDC" stroke-width="4.0" stroke-linejoin="round"/></g><circle cx="287.1" cy="293.0" r="12" fill="#E2A938" stroke="#2A1D16" stroke-width="2.5"/><path d="M287.10 285.00 L289.07 290.28 L294.71 290.53 L290.30 294.04 L291.80 299.47 L287.10 296.36 L282.40 299.47 L283.90 294.04 L279.49 290.53 L285.13 290.28 Z" fill="#2A1D16"/><path d="M38 360.0 L104 360.0 L104 466.0 L38 466.0 L62 413.0 Z M562 360.0 L496 360.0 L496 466.0 L562 466.0 L538 413.0 Z" fill="#7A3014"/><path d="M88 342.0 L512 342.0 L512 456.0 L88 456.0 Z" fill="#A9461F" stroke="#7A3014" stroke-width="7"/><g fill="none" stroke="#E2A938" stroke-linecap="butt" stroke-linejoin="round"><path d="M277.62 356.78 L277.19 356.12 L276.71 355.55 L276.19 355.07 L275.64 354.69 L275.07 354.42 L274.47 354.25 L273.87 354.20 L273.27 354.26 L272.68 354.43 L272.11 354.72 L271.56 355.11 L271.05 355.60 L270.57 356.18 L270.15 356.84 L269.78 357.58 L269.47 358.39 L269.22 359.24 L269.04 360.14 L268.94 361.06 L268.90 362.00 L268.94 362.94 L269.04 363.86 L269.22 364.76 L269.47 365.61 L269.78 366.42 L270.15 367.16 L270.57 367.82 L271.05 368.40 L271.56 368.89 L272.11 369.28 L272.68 369.57 L273.27 369.74 L273.87 369.80 L274.47 369.75 L275.07 369.58 L275.64 369.31 L276.19 368.93 L276.71 368.45 L277.19 367.88 L277.62 367.22" stroke-width="4.40"/><path d="M278.30 354.40 L278.30 354.68 L278.30 354.95 L278.30 355.23 L278.30 355.50 L278.30 355.77 L278.30 356.05 L278.30 356.32 L278.30 356.60 L278.30 356.88 L278.30 357.15 L278.30 357.43 L278.30 357.70 L278.30 357.98 L278.30 358.25 L278.30 358.52 L278.30 358.80" stroke-width="1.80"/><path d="M278.30 365.20 L278.30 365.48 L278.30 365.75 L278.30 366.02 L278.30 366.30 L278.30 366.57 L278.30 366.85 L278.30 367.12 L278.30 367.40 L278.30 367.68 L278.30 367.95 L278.30 368.23 L278.30 368.50 L278.30 368.77 L278.30 369.05 L278.30 369.32 L278.30 369.60" stroke-width="1.80"/><path d="M283.90 372.00 L284.18 370.77 L284.45 369.55 L284.73 368.32 L285.00 367.10 L285.27 365.88 L285.55 364.65 L285.82 363.43 L286.10 362.20 L286.38 360.98 L286.65 359.75 L286.93 358.52 L287.20 357.30 L287.48 356.07 L287.75 354.85 L288.02 353.62 L288.30 352.40" stroke-width="4.40"/><path d="M294.70 372.00 L294.43 370.77 L294.15 369.55 L293.88 368.32 L293.60 367.10 L293.32 365.88 L293.05 364.65 L292.77 363.43 L292.50 362.20 L292.23 360.98 L291.95 359.75 L291.68 358.52 L291.40 357.30 L291.12 356.07 L290.85 354.85 L290.57 353.62 L290.30 352.40" stroke-width="4.40"/><path d="M287.30 354.20 L287.55 354.20 L287.80 354.20 L288.05 354.20 L288.30 354.20 L288.55 354.20 L288.80 354.20 L289.05 354.20 L289.30 354.20 L289.55 354.20 L289.80 354.20 L290.05 354.20 L290.30 354.20 L290.55 354.20 L290.80 354.20 L291.05 354.20 L291.30 354.20" stroke-width="4.40"/><path d="M286.10 365.60 L286.50 365.60 L286.90 365.60 L287.30 365.60 L287.70 365.60 L288.10 365.60 L288.50 365.60 L288.90 365.60 L289.30 365.60 L289.70 365.60 L290.10 365.60 L290.50 365.60 L290.90 365.60 L291.30 365.60 L291.70 365.60 L292.10 365.60 L292.50 365.60" stroke-width="2.60"/><path d="M281.30 371.00 L281.64 371.00 L281.98 371.00 L282.31 371.00 L282.65 371.00 L282.99 371.00 L283.32 371.00 L283.66 371.00 L284.00 371.00 L284.34 371.00 L284.68 371.00 L285.01 371.00 L285.35 371.00 L285.69 371.00 L286.02 371.00 L286.36 371.00 L286.70 371.00" stroke-width="2.00"/><path d="M291.90 371.00 L292.24 371.00 L292.57 371.00 L292.91 371.00 L293.25 371.00 L293.59 371.00 L293.93 371.00 L294.26 371.00 L294.60 371.00 L294.94 371.00 L295.27 371.00 L295.61 371.00 L295.95 371.00 L296.29 371.00 L296.62 371.00 L296.96 371.00 L297.30 371.00" stroke-width="2.00"/><path d="M301.10 352.40 L301.10 353.62 L301.10 354.85 L301.10 356.07 L301.10 357.30 L301.10 358.52 L301.10 359.75 L301.10 360.98 L301.10 362.20 L301.10 363.43 L301.10 364.65 L301.10 365.88 L301.10 367.10 L301.10 368.32 L301.10 369.55 L301.10 370.77 L301.10 372.00" stroke-width="4.40"/><path d="M315.90 352.40 L315.90 353.62 L315.90 354.85 L315.90 356.07 L315.90 357.30 L315.90 358.52 L315.90 359.75 L315.90 360.98 L315.90 362.20 L315.90 363.43 L315.90 364.65 L315.90 365.88 L315.90 367.10 L315.90 368.32 L315.90 369.55 L315.90 370.77 L315.90 372.00" stroke-width="4.40"/><path d="M301.50 353.20 L301.94 354.07 L302.38 354.95 L302.81 355.82 L303.25 356.70 L303.69 357.57 L304.12 358.45 L304.56 359.32 L305.00 360.20 L305.44 361.07 L305.88 361.95 L306.31 362.82 L306.75 363.70 L307.19 364.57 L307.62 365.45 L308.06 366.32 L308.50 367.20" stroke-width="3.80"/><path d="M315.50 353.20 L315.06 354.07 L314.62 354.95 L314.19 355.82 L313.75 356.70 L313.31 357.57 L312.88 358.45 L312.44 359.32 L312.00 360.20 L311.56 361.07 L311.12 361.95 L310.69 362.82 L310.25 363.70 L309.81 364.57 L309.38 365.45 L308.94 366.32 L308.50 367.20" stroke-width="3.80"/><path d="M298.70 371.00 L299.02 371.00 L299.35 371.00 L299.68 371.00 L300.00 371.00 L300.32 371.00 L300.65 371.00 L300.98 371.00 L301.30 371.00 L301.62 371.00 L301.95 371.00 L302.27 371.00 L302.60 371.00 L302.93 371.00 L303.25 371.00 L303.57 371.00 L303.90 371.00" stroke-width="2.00"/><path d="M313.10 371.00 L313.43 371.00 L313.75 371.00 L314.07 371.00 L314.40 371.00 L314.73 371.00 L315.05 371.00 L315.38 371.00 L315.70 371.00 L316.02 371.00 L316.35 371.00 L316.68 371.00 L317.00 371.00 L317.32 371.00 L317.65 371.00 L317.98 371.00 L318.30 371.00" stroke-width="2.00"/><path d="M298.70 353.00 L298.88 353.00 L299.05 353.00 L299.23 353.00 L299.40 353.00 L299.57 353.00 L299.75 353.00 L299.93 353.00 L300.10 353.00 L300.27 353.00 L300.45 353.00 L300.62 353.00 L300.80 353.00 L300.98 353.00 L301.15 353.00 L301.32 353.00 L301.50 353.00" stroke-width="2.00"/><path d="M315.50 353.00 L315.68 353.00 L315.85 353.00 L316.02 353.00 L316.20 353.00 L316.38 353.00 L316.55 353.00 L316.73 353.00 L316.90 353.00 L317.07 353.00 L317.25 353.00 L317.43 353.00 L317.60 353.00 L317.77 353.00 L317.95 353.00 L318.12 353.00 L318.30 353.00" stroke-width="2.00"/><path d="M322.10 352.40 L322.10 353.62 L322.10 354.85 L322.10 356.07 L322.10 357.30 L322.10 358.52 L322.10 359.75 L322.10 360.98 L322.10 362.20 L322.10 363.43 L322.10 364.65 L322.10 365.88 L322.10 367.10 L322.10 368.32 L322.10 369.55 L322.10 370.77 L322.10 372.00" stroke-width="4.40"/><path d="M321.70 354.20 L322.05 354.20 L322.40 354.20 L322.75 354.20 L323.10 354.20 L323.45 354.20 L323.80 354.20 L324.15 354.20 L324.50 354.20 L324.85 354.20 L325.20 354.20 L325.55 354.20 L325.90 354.20 L326.25 354.20 L326.60 354.20 L326.95 354.20 L327.30 354.20" stroke-width="4.40"/><path d="M321.70 363.60 L322.05 363.60 L322.40 363.60 L322.75 363.60 L323.10 363.60 L323.45 363.60 L323.80 363.60 L324.15 363.60 L324.50 363.60 L324.85 363.60 L325.20 363.60 L325.55 363.60 L325.90 363.60 L326.25 363.60 L326.60 363.60 L326.95 363.60 L327.30 363.60" stroke-width="4.40"/><path d="M327.30 354.20 L327.65 354.21 L327.99 354.26 L328.33 354.33 L328.66 354.43 L328.98 354.56 L329.30 354.71 L329.60 354.89 L329.89 355.10 L330.16 355.33 L330.41 355.58 L330.65 355.85 L330.86 356.14 L331.05 356.44 L331.22 356.77 L331.37 357.10 L331.48 357.45 L331.58 357.80 L331.65 358.16 L331.69 358.53 L331.70 358.90 L331.69 359.27 L331.65 359.64 L331.58 360.00 L331.48 360.35 L331.37 360.70 L331.22 361.03 L331.05 361.36 L330.86 361.66 L330.65 361.95 L330.41 362.22 L330.16 362.47 L329.89 362.70 L329.60 362.91 L329.30 363.09 L328.98 363.24 L328.66 363.37 L328.33 363.47 L327.99 363.54 L327.65 363.59 L327.30 363.60" stroke-width="4.40"/><path d="M319.70 371.00 L320.07 371.00 L320.45 371.00 L320.82 371.00 L321.20 371.00 L321.57 371.00 L321.95 371.00 L322.32 371.00 L322.70 371.00 L323.07 371.00 L323.45 371.00 L323.82 371.00 L324.20 371.00 L324.57 371.00 L324.95 371.00 L325.32 371.00 L325.70 371.00" stroke-width="2.00"/><path d="M319.70 353.00 L319.88 353.00 L320.05 353.00 L320.23 353.00 L320.40 353.00 L320.57 353.00 L320.75 353.00 L320.93 353.00 L321.10 353.00 L321.27 353.00 L321.45 353.00 L321.62 353.00 L321.80 353.00 L321.98 353.00 L322.15 353.00 L322.32 353.00 L322.50 353.00" stroke-width="2.00"/></g><g fill="none" stroke="#F6EEDC" stroke-linecap="butt" stroke-linejoin="round"><path d="M192.01 394.52 L191.07 393.07 L190.02 391.81 L188.89 390.75 L187.67 389.92 L186.41 389.31 L185.10 388.95 L183.78 388.84 L182.46 388.98 L181.16 389.36 L179.90 389.98 L178.69 390.83 L177.56 391.91 L176.52 393.19 L175.59 394.65 L174.77 396.28 L174.09 398.05 L173.55 399.93 L173.16 401.91 L172.92 403.94 L172.84 406.00 L172.92 408.06 L173.16 410.09 L173.55 412.07 L174.09 413.95 L174.77 415.72 L175.59 417.35 L176.52 418.81 L177.56 420.09 L178.69 421.17 L179.90 422.02 L181.16 422.64 L182.46 423.02 L183.78 423.16 L185.10 423.05 L186.41 422.69 L187.67 422.08 L188.89 421.25 L190.02 420.19 L191.07 418.93 L192.01 417.48" stroke-width="9.68"/><path d="M193.52 389.28 L193.52 389.88 L193.52 390.49 L193.52 391.10 L193.52 391.70 L193.52 392.31 L193.52 392.91 L193.52 393.51 L193.52 394.12 L193.52 394.73 L193.52 395.33 L193.52 395.94 L193.52 396.54 L193.52 397.14 L193.52 397.75 L193.52 398.36 L193.52 398.96" stroke-width="3.96"/><path d="M193.52 413.04 L193.52 413.64 L193.52 414.25 L193.52 414.86 L193.52 415.46 L193.52 416.06 L193.52 416.67 L193.52 417.27 L193.52 417.88 L193.52 418.49 L193.52 419.09 L193.52 419.69 L193.52 420.30 L193.52 420.90 L193.52 421.51 L193.52 422.12 L193.52 422.72" stroke-width="3.96"/><path d="M205.40 384.88 L205.40 387.57 L205.40 390.27 L205.40 392.96 L205.40 395.66 L205.40 398.36 L205.40 401.05 L205.40 403.75 L205.40 406.44 L205.40 409.13 L205.40 411.83 L205.40 414.52 L205.40 417.22 L205.40 419.92 L205.40 422.61 L205.40 425.31 L205.40 428.00" stroke-width="9.68"/><path d="M204.52 388.84 L205.29 388.84 L206.06 388.84 L206.83 388.84 L207.60 388.84 L208.37 388.84 L209.14 388.84 L209.91 388.84 L210.68 388.84 L211.45 388.84 L212.22 388.84 L212.99 388.84 L213.76 388.84 L214.53 388.84 L215.30 388.84 L216.07 388.84 L216.84 388.84" stroke-width="9.68"/><path d="M204.52 408.64 L205.29 408.64 L206.06 408.64 L206.83 408.64 L207.60 408.64 L208.37 408.64 L209.14 408.64 L209.91 408.64 L210.68 408.64 L211.45 408.64 L212.22 408.64 L212.99 408.64 L213.76 408.64 L214.53 408.64 L215.30 408.64 L216.07 408.64 L216.84 408.64" stroke-width="9.68"/><path d="M216.84 388.84 L217.60 388.87 L218.35 388.96 L219.10 389.11 L219.83 389.32 L220.54 389.59 L221.23 389.92 L221.90 390.30 L222.53 390.73 L223.13 391.21 L223.68 391.74 L224.20 392.31 L224.67 392.92 L225.09 393.57 L225.46 394.25 L225.78 394.95 L226.05 395.68 L226.25 396.43 L226.40 397.19 L226.49 397.96 L226.52 398.74 L226.49 399.52 L226.40 400.29 L226.25 401.05 L226.05 401.80 L225.78 402.53 L225.46 403.23 L225.09 403.91 L224.67 404.56 L224.20 405.17 L223.68 405.74 L223.13 406.27 L222.53 406.75 L221.90 407.18 L221.23 407.56 L220.54 407.89 L219.83 408.16 L219.10 408.37 L218.35 408.52 L217.60 408.61 L216.84 408.64" stroke-width="9.68"/><path d="M215.96 409.52 L216.62 410.68 L217.28 411.83 L217.94 412.99 L218.60 414.14 L219.26 415.30 L219.92 416.45 L220.58 417.61 L221.24 418.76 L221.90 419.92 L222.56 421.07 L223.22 422.23 L223.88 423.38 L224.54 424.54 L225.20 425.69 L225.86 426.85 L226.52 428.00" stroke-width="9.68"/><path d="M200.12 425.80 L200.94 425.80 L201.77 425.80 L202.59 425.80 L203.42 425.80 L204.25 425.80 L205.07 425.80 L205.89 425.80 L206.72 425.80 L207.55 425.80 L208.37 425.80 L209.19 425.80 L210.02 425.80 L210.84 425.80 L211.67 425.80 L212.50 425.80 L213.32 425.80" stroke-width="4.40"/><path d="M200.12 386.20 L200.50 386.20 L200.89 386.20 L201.28 386.20 L201.66 386.20 L202.05 386.20 L202.43 386.20 L202.81 386.20 L203.20 386.20 L203.58 386.20 L203.97 386.20 L204.36 386.20 L204.74 386.20 L205.12 386.20 L205.51 386.20 L205.89 386.20 L206.28 386.20" stroke-width="4.40"/><path d="M221.24 425.80 L221.95 425.80 L222.67 425.80 L223.38 425.80 L224.10 425.80 L224.81 425.80 L225.53 425.80 L226.25 425.80 L226.96 425.80 L227.68 425.80 L228.39 425.80 L229.11 425.80 L229.82 425.80 L230.53 425.80 L231.25 425.80 L231.97 425.80 L232.68 425.80" stroke-width="4.40"/><path d="M241.48 428.00 L242.09 425.31 L242.69 422.61 L243.30 419.92 L243.90 417.22 L244.50 414.52 L245.11 411.83 L245.72 409.13 L246.32 406.44 L246.93 403.75 L247.53 401.05 L248.13 398.36 L248.74 395.66 L249.34 392.96 L249.95 390.27 L250.56 387.57 L251.16 384.88" stroke-width="9.68"/><path d="M265.24 428.00 L264.63 425.31 L264.03 422.61 L263.43 419.92 L262.82 417.22 L262.21 414.52 L261.61 411.83 L261.00 409.13 L260.40 406.44 L259.80 403.75 L259.19 401.05 L258.58 398.36 L257.98 395.66 L257.38 392.96 L256.77 390.27 L256.17 387.57 L255.56 384.88" stroke-width="9.68"/><path d="M248.96 388.84 L249.51 388.84 L250.06 388.84 L250.61 388.84 L251.16 388.84 L251.71 388.84 L252.26 388.84 L252.81 388.84 L253.36 388.84 L253.91 388.84 L254.46 388.84 L255.01 388.84 L255.56 388.84 L256.11 388.84 L256.66 388.84 L257.21 388.84 L257.76 388.84" stroke-width="9.68"/><path d="M246.32 413.92 L247.20 413.92 L248.08 413.92 L248.96 413.92 L249.84 413.92 L250.72 413.92 L251.60 413.92 L252.48 413.92 L253.36 413.92 L254.24 413.92 L255.12 413.92 L256.00 413.92 L256.88 413.92 L257.76 413.92 L258.64 413.92 L259.52 413.92 L260.40 413.92" stroke-width="5.72"/><path d="M235.76 425.80 L236.50 425.80 L237.25 425.80 L237.99 425.80 L238.73 425.80 L239.47 425.80 L240.22 425.80 L240.96 425.80 L241.70 425.80 L242.44 425.80 L243.19 425.80 L243.93 425.80 L244.67 425.80 L245.41 425.80 L246.16 425.80 L246.90 425.80 L247.64 425.80" stroke-width="4.40"/><path d="M259.08 425.80 L259.82 425.80 L260.56 425.80 L261.31 425.80 L262.05 425.80 L262.79 425.80 L263.53 425.80 L264.28 425.80 L265.02 425.80 L265.76 425.80 L266.50 425.80 L267.25 425.80 L267.99 425.80 L268.73 425.80 L269.48 425.80 L270.22 425.80 L270.96 425.80" stroke-width="4.40"/><path d="M279.32 384.88 L279.32 387.57 L279.32 390.27 L279.32 392.96 L279.32 395.66 L279.32 398.36 L279.32 401.05 L279.32 403.75 L279.32 406.44 L279.32 409.13 L279.32 411.83 L279.32 414.52 L279.32 417.22 L279.32 419.92 L279.32 422.61 L279.32 425.31 L279.32 428.00" stroke-width="8.36"/><path d="M303.96 384.00 L303.96 386.69 L303.96 389.39 L303.96 392.08 L303.96 394.78 L303.96 397.48 L303.96 400.17 L303.96 402.87 L303.96 405.56 L303.96 408.25 L303.96 410.95 L303.96 413.64 L303.96 416.34 L303.96 419.04 L303.96 421.73 L303.96 424.43 L303.96 427.12" stroke-width="8.36"/><path d="M278.44 384.88 L280.09 387.52 L281.74 390.16 L283.39 392.80 L285.04 395.44 L286.69 398.08 L288.34 400.72 L289.99 403.36 L291.64 406.00 L293.29 408.64 L294.94 411.28 L296.59 413.92 L298.24 416.56 L299.89 419.20 L301.54 421.84 L303.19 424.48 L304.84 427.12" stroke-width="10.56"/><path d="M274.04 425.80 L274.75 425.80 L275.47 425.80 L276.19 425.80 L276.90 425.80 L277.62 425.80 L278.33 425.80 L279.05 425.80 L279.76 425.80 L280.48 425.80 L281.19 425.80 L281.90 425.80 L282.62 425.80 L283.33 425.80 L284.05 425.80 L284.76 425.80 L285.48 425.80" stroke-width="4.40"/><path d="M274.04 386.20 L274.64 386.20 L275.25 386.20 L275.86 386.20 L276.46 386.20 L277.06 386.20 L277.67 386.20 L278.27 386.20 L278.88 386.20 L279.49 386.20 L280.09 386.20 L280.69 386.20 L281.30 386.20 L281.90 386.20 L282.51 386.20 L283.12 386.20 L283.72 386.20" stroke-width="4.40"/><path d="M298.68 386.20 L299.34 386.20 L300.00 386.20 L300.66 386.20 L301.32 386.20 L301.98 386.20 L302.64 386.20 L303.30 386.20 L303.96 386.20 L304.62 386.20 L305.28 386.20 L305.94 386.20 L306.60 386.20 L307.26 386.20 L307.92 386.20 L308.58 386.20 L309.24 386.20" stroke-width="4.40"/><path d="M317.60 384.88 L317.60 387.57 L317.60 390.27 L317.60 392.96 L317.60 395.66 L317.60 398.36 L317.60 401.05 L317.60 403.75 L317.60 406.44 L317.60 409.13 L317.60 411.83 L317.60 414.52 L317.60 417.22 L317.60 419.92 L317.60 422.61 L317.60 425.31 L317.60 428.00" stroke-width="9.68"/><path d="M350.16 384.88 L350.16 387.57 L350.16 390.27 L350.16 392.96 L350.16 395.66 L350.16 398.36 L350.16 401.05 L350.16 403.75 L350.16 406.44 L350.16 409.13 L350.16 411.83 L350.16 414.52 L350.16 417.22 L350.16 419.92 L350.16 422.61 L350.16 425.31 L350.16 428.00" stroke-width="9.68"/><path d="M318.48 386.64 L319.44 388.56 L320.40 390.49 L321.37 392.42 L322.33 394.34 L323.29 396.26 L324.25 398.19 L325.22 400.12 L326.18 402.04 L327.14 403.96 L328.11 405.89 L329.07 407.81 L330.03 409.74 L330.99 411.67 L331.95 413.59 L332.92 415.51 L333.88 417.44" stroke-width="8.36"/><path d="M349.28 386.64 L348.32 388.56 L347.36 390.49 L346.39 392.42 L345.43 394.34 L344.47 396.26 L343.50 398.19 L342.54 400.12 L341.58 402.04 L340.62 403.96 L339.65 405.89 L338.69 407.81 L337.73 409.74 L336.77 411.67 L335.81 413.59 L334.84 415.51 L333.88 417.44" stroke-width="8.36"/><path d="M312.32 425.80 L313.04 425.80 L313.75 425.80 L314.46 425.80 L315.18 425.80 L315.89 425.80 L316.61 425.80 L317.32 425.80 L318.04 425.80 L318.75 425.80 L319.47 425.80 L320.19 425.80 L320.90 425.80 L321.62 425.80 L322.33 425.80 L323.05 425.80 L323.76 425.80" stroke-width="4.40"/><path d="M344.00 425.80 L344.72 425.80 L345.43 425.80 L346.14 425.80 L346.86 425.80 L347.57 425.80 L348.29 425.80 L349.00 425.80 L349.72 425.80 L350.44 425.80 L351.15 425.80 L351.87 425.80 L352.58 425.80 L353.30 425.80 L354.01 425.80 L354.73 425.80 L355.44 425.80" stroke-width="4.40"/><path d="M312.32 386.20 L312.70 386.20 L313.09 386.20 L313.48 386.20 L313.86 386.20 L314.25 386.20 L314.63 386.20 L315.01 386.20 L315.40 386.20 L315.79 386.20 L316.17 386.20 L316.56 386.20 L316.94 386.20 L317.32 386.20 L317.71 386.20 L318.10 386.20 L318.48 386.20" stroke-width="4.40"/><path d="M349.28 386.20 L349.67 386.20 L350.05 386.20 L350.44 386.20 L350.82 386.20 L351.20 386.20 L351.59 386.20 L351.98 386.20 L352.36 386.20 L352.75 386.20 L353.13 386.20 L353.51 386.20 L353.90 386.20 L354.29 386.20 L354.67 386.20 L355.06 386.20 L355.44 386.20" stroke-width="4.40"/><path d="M364.24 428.00 L364.85 425.31 L365.45 422.61 L366.06 419.92 L366.66 417.22 L367.26 414.52 L367.87 411.83 L368.48 409.13 L369.08 406.44 L369.69 403.75 L370.29 401.05 L370.89 398.36 L371.50 395.66 L372.11 392.96 L372.71 390.27 L373.31 387.57 L373.92 384.88" stroke-width="9.68"/><path d="M388.00 428.00 L387.39 425.31 L386.79 422.61 L386.19 419.92 L385.58 417.22 L384.98 414.52 L384.37 411.83 L383.76 409.13 L383.16 406.44 L382.56 403.75 L381.95 401.05 L381.35 398.36 L380.74 395.66 L380.13 392.96 L379.53 390.27 L378.93 387.57 L378.32 384.88" stroke-width="9.68"/><path d="M371.72 388.84 L372.27 388.84 L372.82 388.84 L373.37 388.84 L373.92 388.84 L374.47 388.84 L375.02 388.84 L375.57 388.84 L376.12 388.84 L376.67 388.84 L377.22 388.84 L377.77 388.84 L378.32 388.84 L378.87 388.84 L379.42 388.84 L379.97 388.84 L380.52 388.84" stroke-width="9.68"/><path d="M369.08 413.92 L369.96 413.92 L370.84 413.92 L371.72 413.92 L372.60 413.92 L373.48 413.92 L374.36 413.92 L375.24 413.92 L376.12 413.92 L377.00 413.92 L377.88 413.92 L378.76 413.92 L379.64 413.92 L380.52 413.92 L381.40 413.92 L382.28 413.92 L383.16 413.92" stroke-width="5.72"/><path d="M358.52 425.80 L359.26 425.80 L360.00 425.80 L360.75 425.80 L361.49 425.80 L362.23 425.80 L362.98 425.80 L363.72 425.80 L364.46 425.80 L365.20 425.80 L365.94 425.80 L366.69 425.80 L367.43 425.80 L368.17 425.80 L368.92 425.80 L369.66 425.80 L370.40 425.80" stroke-width="4.40"/><path d="M381.84 425.80 L382.58 425.80 L383.32 425.80 L384.07 425.80 L384.81 425.80 L385.55 425.80 L386.30 425.80 L387.04 425.80 L387.78 425.80 L388.52 425.80 L389.26 425.80 L390.01 425.80 L390.75 425.80 L391.49 425.80 L392.24 425.80 L392.98 425.80 L393.72 425.80" stroke-width="4.40"/><path d="M402.08 384.88 L402.08 387.57 L402.08 390.27 L402.08 392.96 L402.08 395.66 L402.08 398.36 L402.08 401.05 L402.08 403.75 L402.08 406.44 L402.08 409.13 L402.08 411.83 L402.08 414.52 L402.08 417.22 L402.08 419.92 L402.08 422.61 L402.08 425.31 L402.08 428.00" stroke-width="8.36"/><path d="M426.72 384.00 L426.72 386.69 L426.72 389.39 L426.72 392.08 L426.72 394.78 L426.72 397.48 L426.72 400.17 L426.72 402.87 L426.72 405.56 L426.72 408.25 L426.72 410.95 L426.72 413.64 L426.72 416.34 L426.72 419.04 L426.72 421.73 L426.72 424.43 L426.72 427.12" stroke-width="8.36"/><path d="M401.20 384.88 L402.85 387.52 L404.50 390.16 L406.15 392.80 L407.80 395.44 L409.45 398.08 L411.10 400.72 L412.75 403.36 L414.40 406.00 L416.05 408.64 L417.70 411.28 L419.35 413.92 L421.00 416.56 L422.65 419.20 L424.30 421.84 L425.95 424.48 L427.60 427.12" stroke-width="10.56"/><path d="M396.80 425.80 L397.51 425.80 L398.23 425.80 L398.94 425.80 L399.66 425.80 L400.38 425.80 L401.09 425.80 L401.81 425.80 L402.52 425.80 L403.24 425.80 L403.95 425.80 L404.67 425.80 L405.38 425.80 L406.10 425.80 L406.81 425.80 L407.52 425.80 L408.24 425.80" stroke-width="4.40"/><path d="M396.80 386.20 L397.40 386.20 L398.01 386.20 L398.62 386.20 L399.22 386.20 L399.82 386.20 L400.43 386.20 L401.03 386.20 L401.64 386.20 L402.25 386.20 L402.85 386.20 L403.45 386.20 L404.06 386.20 L404.67 386.20 L405.27 386.20 L405.88 386.20 L406.48 386.20" stroke-width="4.40"/><path d="M421.44 386.20 L422.10 386.20 L422.76 386.20 L423.42 386.20 L424.08 386.20 L424.74 386.20 L425.40 386.20 L426.06 386.20 L426.72 386.20 L427.38 386.20 L428.04 386.20 L428.70 386.20 L429.36 386.20 L430.02 386.20 L430.68 386.20 L431.34 386.20 L432.00 386.20" stroke-width="4.40"/></g><path fill="#E2A938" d="M199.99082275390626 440.3515625H202.11079833984377V447.0H203.84927490234375V440.3515625H205.96442138671875V438.63330078125H199.99082275390626Z M209.63083740234376 447.0H211.36931396484377V443.602783203125H214.10741455078124V447.0H215.84589111328125V438.63330078125H214.10741455078124V441.884521484375H211.36931396484377V438.63330078125H209.63083740234376Z M219.33363037109376 447.0H221.22180908203126L221.66125732421875 445.388427734375H224.21585205078125L224.64081298828125 447.0H226.58211181640627L224.09512451171875 438.63330078125H221.80613037109376ZM222.09587646484377 443.810546875 222.22626220703125 443.322021484375C222.47737548828127 442.389892578125 222.70917236328125 441.474609375 222.95545654296876 440.447021484375C223.19691162109376 441.474609375 223.42870849609375 442.389892578125 223.66533447265627 443.322021484375L223.79572021484375 443.810546875Z M230.06985107421875 447.0H231.80832763671876V443.512939453125C231.80832763671876 443.164794921875 231.80349853515625 442.47412109375 231.77935302734375 441.659912109375C232.15119384765626 442.446044921875 232.49406005859373 443.131103515625 232.70171142578124 443.5185546875L234.57540283203124 447.0H236.37665771484376V438.63330078125H234.63818115234375V442.2607421875C234.63818115234375 442.636962890625 234.64783935546873 443.31640625 234.66232666015625 443.97900390625C234.38223876953126 443.378173828125 234.07800537109375 442.749267578125 233.90898681640624 442.434814453125L231.86627685546875 438.63330078125H230.06985107421875Z M240.30384521484373 447.0H242.04232177734374V444.871826171875L242.95502197265623 443.602783203125L244.80456787109372 447.0H246.79415771484372L244.08986083984374 442.23828125L246.69274658203122 438.63330078125H244.65003662109373L243.04194580078124 440.92431640625C242.70873779296872 441.4072265625 242.37552978515623 441.884521484375 242.04232177734374 442.367431640625V438.63330078125H240.30384521484373Z M253.15038330078124 447.134765625C255.00475830078125 447.134765625 256.1057934570312 446.140869140625 256.1057934570312 444.456298828125C256.1057934570312 443.164794921875 255.41523193359373 442.42919921875 253.82162841796872 442.05859375L253.18901611328124 441.91259765625C252.36806884765625 441.716064453125 252.02520263671875 441.46337890625 252.02520263671875 441.008544921875C252.02520263671875 440.486328125 252.48396728515624 440.121337890625 253.14072509765623 440.121337890625C253.82645751953123 440.121337890625 254.28522216796873 440.548095703125 254.33351318359374 441.23876953125H255.94160400390624C255.89814208984373 439.526123046875 254.84056884765624 438.49853515625 253.11657958984372 438.49853515625C251.42639404296872 438.49853515625 250.28672607421873 439.548583984375 250.28672607421873 441.10400390625C250.28672607421873 442.322509765625 251.00626220703123 443.131103515625 252.41153076171872 443.468017578125L253.15038330078124 443.64208984375C254.01479248046874 443.849853515625 254.38663330078123 444.125 254.38663330078123 444.602294921875C254.38663330078123 445.152587890625 253.89889404296872 445.511962890625 253.16487060546874 445.511962890625C252.33426513671873 445.511962890625 251.82720947265622 445.040283203125 251.80306396484374 444.2373046875H250.14668212890624C250.14668212890624 446.084716796875 251.23322998046874 447.134765625 253.15038330078124 447.134765625Z M263.1574096679687 447.134765625C265.0842211914062 447.134765625 266.4122241210937 445.702880859375 266.4122241210937 443.580322265625V442.446044921875H263.2733081054687V443.928466796875H264.71238037109373C264.6978930664062 444.793212890625 264.1232299804687 445.37158203125 263.2105297851562 445.37158203125C262.0756909179687 445.37158203125 261.4285913085937 444.42822265625 261.4285913085937 442.822265625C261.4285913085937 441.210693359375 262.0708618164062 440.26171875 263.19121337890624 440.26171875C263.9686987304687 440.26171875 264.4612670898437 440.7333984375 264.59165283203123 441.474609375H266.3591040039062C266.1997436523437 439.694580078125 264.8234497070312 438.49853515625 263.1284350585937 438.49853515625C261.17264892578123 438.49853515625 259.6804565429687 440.087646484375 259.6804565429687 442.822265625C259.6804565429687 445.433349609375 261.0664086914062 447.134765625 263.1574096679687 447.134765625Z M271.9281860351562 438.63330078125H270.1897094726562V447.0H271.9281860351562Z M277.88842529296875 447.0H280.14844482421876L282.55816650390625 438.63330078125H280.67964599609377L279.70899658203126 442.311279296875C279.48685791015623 443.2041015625 279.26471923828126 444.141845703125 279.0329223632813 445.1357421875C278.7914672851563 444.141845703125 278.55967041015623 443.2041015625 278.32304443359374 442.311279296875L277.31376220703123 438.63330078125H275.4159252929687Z M287.7795532226562 438.63330078125H286.0410766601562V447.0H287.7795532226562Z M291.7067407226562 447.0H293.4452172851562V443.512939453125C293.4452172851562 443.164794921875 293.4403881835937 442.47412109375 293.41624267578123 441.659912109375C293.78808349609375 442.446044921875 294.1309497070312 443.131103515625 294.33860107421873 443.5185546875L296.21229248046876 447.0H298.01354736328125V438.63330078125H296.27507080078124V442.2607421875C296.27507080078124 442.636962890625 296.28472900390625 443.31640625 296.2992163085937 443.97900390625C296.0191284179687 443.378173828125 295.71489501953124 442.749267578125 295.54587646484373 442.434814453125L293.50316650390624 438.63330078125H291.7067407226562Z M305.2052075195312 447.134765625C307.1320190429687 447.134765625 308.4600219726562 445.702880859375 308.4600219726562 443.580322265625V442.446044921875H305.3211059570312V443.928466796875H306.76017822265624C306.7456909179687 444.793212890625 306.1710278320312 445.37158203125 305.2583276367187 445.37158203125C304.1234887695312 445.37158203125 303.4763891601562 444.42822265625 303.4763891601562 442.822265625C303.4763891601562 441.210693359375 304.1186596679687 440.26171875 305.23901123046875 440.26171875C306.0164965820312 440.26171875 306.5090649414062 440.7333984375 306.63945068359374 441.474609375H308.40690185546873C308.24754150390623 439.694580078125 306.8712475585937 438.49853515625 305.1762329101562 438.49853515625C303.22044677734374 438.49853515625 301.72825439453123 440.087646484375 301.72825439453123 442.822265625C301.72825439453123 445.433349609375 303.1142065429687 447.134765625 305.2052075195312 447.134765625Z  M318.00941162109376 444.09130859375C318.51163818359373 444.09130859375 318.91728271484374 443.61962890625 318.91728271484374 443.03564453125C318.91728271484374 442.45166015625 318.51163818359373 441.97998046875 318.00941162109376 441.97998046875C317.50718505859373 441.97998046875 317.10154052734373 442.45166015625 317.10154052734373 443.03564453125C317.10154052734373 443.61962890625 317.50718505859373 444.09130859375 318.00941162109376 444.09130859375Z  M327.7036743164062 447.0H333.0639770507812V445.28173828125H329.4421508789062V443.630859375H332.7887182617187V441.963134765625H329.4421508789062V440.3515625H333.0639770507812V438.63330078125H327.7036743164062Z M339.6906323242187 447.134765625C341.5450073242187 447.134765625 342.64604248046874 446.140869140625 342.64604248046874 444.456298828125C342.64604248046874 443.164794921875 341.9554809570312 442.42919921875 340.36187744140625 442.05859375L339.7292651367187 441.91259765625C338.90831787109374 441.716064453125 338.5654516601562 441.46337890625 338.5654516601562 441.008544921875C338.5654516601562 440.486328125 339.02421630859374 440.121337890625 339.68097412109375 440.121337890625C340.36670654296876 440.121337890625 340.8254711914062 440.548095703125 340.87376220703123 441.23876953125H342.48185302734373C342.4383911132812 439.526123046875 341.3808178710937 438.49853515625 339.6568286132812 438.49853515625C337.9666430664062 438.49853515625 336.8269750976562 439.548583984375 336.8269750976562 441.10400390625C336.8269750976562 442.322509765625 337.54651123046875 443.131103515625 338.95177978515625 443.468017578125L339.6906323242187 443.64208984375C340.55504150390624 443.849853515625 340.92688232421875 444.125 340.92688232421875 444.602294921875C340.92688232421875 445.152587890625 340.43914306640625 445.511962890625 339.70511962890623 445.511962890625C338.87451416015625 445.511962890625 338.3674584960937 445.040283203125 338.34331298828124 444.2373046875H336.68693115234373C336.68693115234373 446.084716796875 337.77347900390623 447.134765625 339.6906323242187 447.134765625Z M346.17241455078124 440.3515625H348.2923901367187V447.0H350.03086669921873V440.3515625H352.14601318359377V438.63330078125H346.17241455078124Z M356.6092309570313 447.106689453125C357.11145751953126 447.106689453125 357.51710205078126 446.635009765625 357.51710205078126 446.04541015625C357.51710205078126 445.46142578125 357.11145751953126 444.98974609375 356.6092309570313 444.98974609375C356.10700439453126 444.98974609375 355.70135986328125 445.46142578125 355.70135986328125 446.04541015625C355.70135986328125 446.635009765625 356.10700439453126 447.106689453125 356.6092309570313 447.106689453125Z  M366.21174072265626 447.0H371.54789794921874V445.410888671875H368.56834228515623V445.399658203125L369.91566162109376 444.06884765625C370.90079833984373 443.1142578125 371.52375244140626 442.344970703125 371.52375244140626 441.132080078125C371.52375244140626 439.514892578125 370.4130590820312 438.49853515625 368.8774047851563 438.49853515625C367.21136474609375 438.49853515625 366.16344970703125 439.7001953125 366.16344970703125 441.581298828125H367.7570532226562C367.7570532226562 440.63232421875 368.1965014648437 440.08203125 368.8774047851563 440.08203125C369.50035888671874 440.08203125 369.90600341796875 440.54248046875 369.90600341796875 441.23876953125C369.90600341796875 441.996826171875 369.4086059570312 442.457275390625 368.8822338867187 442.9794921875L366.21174072265626 445.556884765625Z M378.1986987304687 447.134765625C380.09653564453123 447.134765625 381.23620361328125 445.489501953125 381.23620361328125 442.822265625C381.23620361328125 440.1494140625 380.09653564453123 438.49853515625 378.1986987304687 438.49853515625C376.3008618164062 438.49853515625 375.16119384765625 440.1494140625 375.16119384765625 442.822265625C375.16119384765625 445.48388671875 376.3008618164062 447.134765625 378.1986987304687 447.134765625ZM378.1986987304687 445.55126953125C377.32946044921874 445.55126953125 376.79825927734373 444.51806640625 376.79825927734373 442.822265625C376.79825927734373 441.120849609375 377.32946044921874 440.08203125 378.1986987304687 440.08203125C379.06793701171875 440.08203125 379.6039672851562 441.120849609375 379.6039672851562 442.822265625C379.6039672851562 444.51806640625 379.06793701171875 445.55126953125 378.1986987304687 445.55126953125Z M384.8591577148438 447.0H390.19531494140625V445.410888671875H387.21575927734375V445.399658203125L388.5630786132813 444.06884765625C389.54821533203125 443.1142578125 390.1711694335938 442.344970703125 390.1711694335938 441.132080078125C390.1711694335938 439.514892578125 389.06047607421874 438.49853515625 387.5248217773438 438.49853515625C385.85878173828127 438.49853515625 384.81086669921876 439.7001953125 384.81086669921876 441.581298828125H386.40447021484374C386.40447021484374 440.63232421875 386.84391845703124 440.08203125 387.5248217773438 440.08203125C388.14777587890626 440.08203125 388.55342041015626 440.54248046875 388.55342041015626 441.23876953125C388.55342041015626 441.996826171875 388.05602294921874 442.457275390625 387.52965087890624 442.9794921875L384.8591577148438 445.556884765625Z M393.85207275390627 445.287353515625H397.40629150390623V447.0H399.03852783203126V445.287353515625H399.91259521484375V443.765625H399.03852783203126V438.63330078125H396.90889404296877L393.85207275390627 443.748779296875ZM397.40629150390623 443.765625H395.4649926757813V443.75439453125L397.4014624023437 440.491943359375H397.40629150390623Z"/></symbol></svg>
+<header class="hero">
+  <svg class="scene" viewBox="0 0 400 90" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 52 C40 34 80 44 120 32 C160 20 200 42 240 30 C280 18 330 40 400 26 L400 90 L0 90 Z" fill="#7E3326" opacity=".7"/>
+    <path d="M0 66 C30 52 70 60 100 50 C140 38 170 58 210 48 C250 38 300 58 340 46 C360 40 380 44 400 40 L400 90 L0 90 Z" fill="#A04A26" opacity=".85"/>
+    <g fill="#23362A"><path d="M6 66 L14.4 90 L-2.4 90 Z"/><path d="M18 58 L29.4 90 L6.6 90 Z"/><path d="M30 68 L37.6 90 L22.4 90 Z"/><path d="M44 62 L53.9 90 L34.1 90 Z"/><path d="M58 70 L64.8 90 L51.2 90 Z"/><path d="M72 60 L82.6 90 L61.4 90 Z"/><path d="M86 66 L94.4 90 L77.6 90 Z"/><path d="M100 72 L106.1 90 L93.9 90 Z"/><path d="M300 70 L306.8 90 L293.2 90 Z"/><path d="M314 62 L323.9 90 L304.1 90 Z"/><path d="M328 68 L335.6 90 L320.4 90 Z"/><path d="M342 58 L353.4 90 L330.6 90 Z"/><path d="M356 66 L364.4 90 L347.6 90 Z"/><path d="M370 60 L380.6 90 L359.4 90 Z"/><path d="M384 68 L391.6 90 L376.4 90 Z"/><path d="M396 62 L405.9 90 L386.1 90 Z"/><rect x="0" y="86" width="400" height="4"/></g>
+  </svg>
+  <div class="inner herogrid">
+    <div class="toprow">
+      <svg class="logo" viewBox="20 0 560 660" aria-label="Camp Cranman"><use href="#ccLake"/></svg>
+      <div class="htext">
+        <div class="kicker">Thanksgiving at Indian Creek · Est. 2024</div>
+        <h1><span class="sr">Camp Cranman</span><svg class="wordmark" viewBox="0 0 348 50" role="img" aria-label="Camp Cranman"><defs><filter id="wmf" x="-5%" y="-20%" width="110%" height="160%"><feMorphology in="SourceAlpha" operator="dilate" radius="2.2" result="d"/><feOffset in="d" dy="3.5" result="o"/><feFlood flood-color="#B44A22"/><feComposite in2="o" operator="in" result="s"/><feFlood flood-color="#24170F"/><feComposite in2="d" operator="in" result="ol"/><feMerge><feMergeNode in="s"/><feMergeNode in="ol"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><g filter="url(#wmf)"><g fill="none" stroke="#F3E6C8" stroke-linecap="butt" stroke-linejoin="round"><path d="M26.56 14.13 L25.83 13.01 L25.02 12.03 L24.14 11.22 L23.20 10.57 L22.22 10.11 L21.22 9.83 L20.20 9.74 L19.17 9.84 L18.17 10.14 L17.19 10.62 L16.26 11.28 L15.39 12.11 L14.59 13.10 L13.86 14.23 L13.23 15.49 L12.71 16.86 L12.29 18.31 L11.99 19.84 L11.80 21.41 L11.74 23.00 L11.80 24.59 L11.99 26.16 L12.29 27.69 L12.71 29.14 L13.23 30.51 L13.86 31.77 L14.59 32.90 L15.39 33.89 L16.26 34.72 L17.19 35.38 L18.17 35.86 L19.17 36.16 L20.20 36.26 L21.22 36.17 L22.22 35.89 L23.20 35.43 L24.14 34.78 L25.02 33.97 L25.83 32.99 L26.56 31.87" stroke-width="7.48"/><path d="M27.72 10.08 L27.72 10.55 L27.72 11.01 L27.72 11.48 L27.72 11.95 L27.72 12.42 L27.72 12.88 L27.72 13.35 L27.72 13.82 L27.72 14.29 L27.72 14.75 L27.72 15.22 L27.72 15.69 L27.72 16.16 L27.72 16.62 L27.72 17.09 L27.72 17.56" stroke-width="3.06"/><path d="M27.72 28.44 L27.72 28.91 L27.72 29.38 L27.72 29.84 L27.72 30.31 L27.72 30.78 L27.72 31.24 L27.72 31.71 L27.72 32.18 L27.72 32.65 L27.72 33.12 L27.72 33.58 L27.72 34.05 L27.72 34.52 L27.72 34.98 L27.72 35.45 L27.72 35.92" stroke-width="3.06"/><path d="M37.24 40.00 L37.71 37.92 L38.17 35.84 L38.64 33.75 L39.11 31.67 L39.58 29.59 L40.04 27.50 L40.51 25.42 L40.98 23.34 L41.45 21.26 L41.91 19.17 L42.38 17.09 L42.85 15.01 L43.32 12.93 L43.78 10.84 L44.25 8.76 L44.72 6.68" stroke-width="7.48"/><path d="M55.60 40.00 L55.13 37.92 L54.66 35.84 L54.20 33.75 L53.73 31.67 L53.26 29.59 L52.80 27.50 L52.33 25.42 L51.86 23.34 L51.39 21.26 L50.92 19.17 L50.46 17.09 L49.99 15.01 L49.52 12.93 L49.05 10.84 L48.59 8.76 L48.12 6.68" stroke-width="7.48"/><path d="M43.02 9.74 L43.44 9.74 L43.87 9.74 L44.29 9.74 L44.72 9.74 L45.14 9.74 L45.57 9.74 L46.00 9.74 L46.42 9.74 L46.84 9.74 L47.27 9.74 L47.69 9.74 L48.12 9.74 L48.54 9.74 L48.97 9.74 L49.39 9.74 L49.82 9.74" stroke-width="7.48"/><path d="M40.98 29.12 L41.66 29.12 L42.34 29.12 L43.02 29.12 L43.70 29.12 L44.38 29.12 L45.06 29.12 L45.74 29.12 L46.42 29.12 L47.10 29.12 L47.78 29.12 L48.46 29.12 L49.14 29.12 L49.82 29.12 L50.50 29.12 L51.18 29.12 L51.86 29.12" stroke-width="4.42"/><path d="M32.82 38.30 L33.39 38.30 L33.97 38.30 L34.54 38.30 L35.11 38.30 L35.69 38.30 L36.26 38.30 L36.84 38.30 L37.41 38.30 L37.98 38.30 L38.56 38.30 L39.13 38.30 L39.70 38.30 L40.28 38.30 L40.85 38.30 L41.43 38.30 L42.00 38.30" stroke-width="3.40"/><path d="M50.84 38.30 L51.41 38.30 L51.99 38.30 L52.56 38.30 L53.13 38.30 L53.71 38.30 L54.28 38.30 L54.86 38.30 L55.43 38.30 L56.00 38.30 L56.58 38.30 L57.15 38.30 L57.72 38.30 L58.30 38.30 L58.87 38.30 L59.45 38.30 L60.02 38.30" stroke-width="3.40"/><path d="M66.48 6.68 L66.48 8.76 L66.48 10.84 L66.48 12.93 L66.48 15.01 L66.48 17.09 L66.48 19.17 L66.48 21.26 L66.48 23.34 L66.48 25.42 L66.48 27.50 L66.48 29.59 L66.48 31.67 L66.48 33.75 L66.48 35.84 L66.48 37.92 L66.48 40.00" stroke-width="7.48"/><path d="M91.64 6.68 L91.64 8.76 L91.64 10.84 L91.64 12.93 L91.64 15.01 L91.64 17.09 L91.64 19.17 L91.64 21.26 L91.64 23.34 L91.64 25.42 L91.64 27.50 L91.64 29.59 L91.64 31.67 L91.64 33.75 L91.64 35.84 L91.64 37.92 L91.64 40.00" stroke-width="7.48"/><path d="M67.16 8.04 L67.90 9.53 L68.65 11.01 L69.39 12.50 L70.13 13.99 L70.88 15.48 L71.62 16.96 L72.37 18.45 L73.11 19.94 L73.85 21.43 L74.60 22.91 L75.34 24.40 L76.08 25.89 L76.83 27.38 L77.57 28.86 L78.32 30.35 L79.06 31.84" stroke-width="6.46"/><path d="M90.96 8.04 L90.22 9.53 L89.47 11.01 L88.73 12.50 L87.98 13.99 L87.24 15.48 L86.50 16.96 L85.75 18.45 L85.01 19.94 L84.27 21.43 L83.52 22.91 L82.78 24.40 L82.03 25.89 L81.29 27.38 L80.55 28.86 L79.80 30.35 L79.06 31.84" stroke-width="6.46"/><path d="M62.40 38.30 L62.95 38.30 L63.50 38.30 L64.06 38.30 L64.61 38.30 L65.16 38.30 L65.71 38.30 L66.27 38.30 L66.82 38.30 L67.37 38.30 L67.92 38.30 L68.48 38.30 L69.03 38.30 L69.58 38.30 L70.13 38.30 L70.69 38.30 L71.24 38.30" stroke-width="3.40"/><path d="M86.88 38.30 L87.43 38.30 L87.98 38.30 L88.54 38.30 L89.09 38.30 L89.64 38.30 L90.19 38.30 L90.75 38.30 L91.30 38.30 L91.85 38.30 L92.41 38.30 L92.96 38.30 L93.51 38.30 L94.06 38.30 L94.61 38.30 L95.17 38.30 L95.72 38.30" stroke-width="3.40"/><path d="M62.40 7.70 L62.70 7.70 L62.99 7.70 L63.29 7.70 L63.59 7.70 L63.89 7.70 L64.19 7.70 L64.48 7.70 L64.78 7.70 L65.08 7.70 L65.38 7.70 L65.67 7.70 L65.97 7.70 L66.27 7.70 L66.56 7.70 L66.86 7.70 L67.16 7.70" stroke-width="3.40"/><path d="M90.96 7.70 L91.26 7.70 L91.55 7.70 L91.85 7.70 L92.15 7.70 L92.45 7.70 L92.75 7.70 L93.04 7.70 L93.34 7.70 L93.64 7.70 L93.94 7.70 L94.23 7.70 L94.53 7.70 L94.83 7.70 L95.12 7.70 L95.42 7.70 L95.72 7.70" stroke-width="3.40"/><path d="M102.18 6.68 L102.18 8.76 L102.18 10.84 L102.18 12.93 L102.18 15.01 L102.18 17.09 L102.18 19.17 L102.18 21.26 L102.18 23.34 L102.18 25.42 L102.18 27.50 L102.18 29.59 L102.18 31.67 L102.18 33.75 L102.18 35.84 L102.18 37.92 L102.18 40.00" stroke-width="7.48"/><path d="M101.50 9.74 L102.09 9.74 L102.69 9.74 L103.28 9.74 L103.88 9.74 L104.47 9.74 L105.07 9.74 L105.66 9.74 L106.26 9.74 L106.86 9.74 L107.45 9.74 L108.05 9.74 L108.64 9.74 L109.23 9.74 L109.83 9.74 L110.42 9.74 L111.02 9.74" stroke-width="7.48"/><path d="M101.50 25.72 L102.09 25.72 L102.69 25.72 L103.28 25.72 L103.88 25.72 L104.47 25.72 L105.07 25.72 L105.66 25.72 L106.26 25.72 L106.86 25.72 L107.45 25.72 L108.05 25.72 L108.64 25.72 L109.23 25.72 L109.83 25.72 L110.42 25.72 L111.02 25.72" stroke-width="7.48"/><path d="M111.02 9.74 L111.61 9.76 L112.19 9.84 L112.77 9.96 L113.33 10.13 L113.88 10.35 L114.42 10.61 L114.93 10.92 L115.42 11.27 L115.88 11.65 L116.31 12.08 L116.71 12.54 L117.07 13.03 L117.40 13.56 L117.68 14.10 L117.93 14.67 L118.13 15.26 L118.29 15.86 L118.41 16.48 L118.48 17.10 L118.50 17.73 L118.48 18.36 L118.41 18.98 L118.29 19.60 L118.13 20.20 L117.93 20.79 L117.68 21.36 L117.40 21.90 L117.07 22.43 L116.71 22.92 L116.31 23.38 L115.88 23.81 L115.42 24.19 L114.93 24.54 L114.42 24.85 L113.88 25.11 L113.33 25.33 L112.77 25.50 L112.19 25.62 L111.61 25.70 L111.02 25.72" stroke-width="7.48"/><path d="M98.10 38.30 L98.74 38.30 L99.38 38.30 L100.01 38.30 L100.65 38.30 L101.29 38.30 L101.92 38.30 L102.56 38.30 L103.20 38.30 L103.84 38.30 L104.47 38.30 L105.11 38.30 L105.75 38.30 L106.39 38.30 L107.03 38.30 L107.66 38.30 L108.30 38.30" stroke-width="3.40"/><path d="M98.10 7.70 L98.40 7.70 L98.69 7.70 L98.99 7.70 L99.29 7.70 L99.59 7.70 L99.89 7.70 L100.18 7.70 L100.48 7.70 L100.78 7.70 L101.08 7.70 L101.37 7.70 L101.67 7.70 L101.97 7.70 L102.27 7.70 L102.56 7.70 L102.86 7.70" stroke-width="3.40"/><path d="M154.74 14.13 L154.01 13.01 L153.20 12.03 L152.32 11.22 L151.38 10.57 L150.40 10.11 L149.40 9.83 L148.38 9.74 L147.35 9.84 L146.35 10.14 L145.37 10.62 L144.44 11.28 L143.57 12.11 L142.77 13.10 L142.04 14.23 L141.41 15.49 L140.89 16.86 L140.47 18.31 L140.17 19.84 L139.98 21.41 L139.92 23.00 L139.98 24.59 L140.17 26.16 L140.47 27.69 L140.89 29.14 L141.41 30.51 L142.04 31.77 L142.77 32.90 L143.57 33.89 L144.44 34.72 L145.37 35.38 L146.35 35.86 L147.35 36.16 L148.38 36.26 L149.40 36.17 L150.40 35.89 L151.38 35.43 L152.32 34.78 L153.20 33.97 L154.01 32.99 L154.74 31.87" stroke-width="7.48"/><path d="M155.90 10.08 L155.90 10.55 L155.90 11.01 L155.90 11.48 L155.90 11.95 L155.90 12.42 L155.90 12.88 L155.90 13.35 L155.90 13.82 L155.90 14.29 L155.90 14.75 L155.90 15.22 L155.90 15.69 L155.90 16.16 L155.90 16.62 L155.90 17.09 L155.90 17.56" stroke-width="3.06"/><path d="M155.90 28.44 L155.90 28.91 L155.90 29.38 L155.90 29.84 L155.90 30.31 L155.90 30.78 L155.90 31.24 L155.90 31.71 L155.90 32.18 L155.90 32.65 L155.90 33.12 L155.90 33.58 L155.90 34.05 L155.90 34.52 L155.90 34.98 L155.90 35.45 L155.90 35.92" stroke-width="3.06"/><path d="M165.08 6.68 L165.08 8.76 L165.08 10.84 L165.08 12.93 L165.08 15.01 L165.08 17.09 L165.08 19.17 L165.08 21.26 L165.08 23.34 L165.08 25.42 L165.08 27.50 L165.08 29.59 L165.08 31.67 L165.08 33.75 L165.08 35.84 L165.08 37.92 L165.08 40.00" stroke-width="7.48"/><path d="M164.40 9.74 L165.00 9.74 L165.59 9.74 L166.19 9.74 L166.78 9.74 L167.38 9.74 L167.97 9.74 L168.56 9.74 L169.16 9.74 L169.75 9.74 L170.35 9.74 L170.94 9.74 L171.54 9.74 L172.13 9.74 L172.73 9.74 L173.33 9.74 L173.92 9.74" stroke-width="7.48"/><path d="M164.40 25.04 L165.00 25.04 L165.59 25.04 L166.19 25.04 L166.78 25.04 L167.38 25.04 L167.97 25.04 L168.56 25.04 L169.16 25.04 L169.75 25.04 L170.35 25.04 L170.94 25.04 L171.54 25.04 L172.13 25.04 L172.73 25.04 L173.33 25.04 L173.92 25.04" stroke-width="7.48"/><path d="M173.92 9.74 L174.51 9.76 L175.09 9.83 L175.67 9.95 L176.23 10.11 L176.78 10.32 L177.32 10.57 L177.83 10.87 L178.32 11.20 L178.78 11.57 L179.21 11.98 L179.61 12.42 L179.97 12.89 L180.30 13.39 L180.58 13.92 L180.83 14.46 L181.03 15.03 L181.19 15.60 L181.31 16.19 L181.38 16.79 L181.40 17.39 L181.38 17.99 L181.31 18.59 L181.19 19.18 L181.03 19.75 L180.83 20.32 L180.58 20.86 L180.30 21.39 L179.97 21.89 L179.61 22.36 L179.21 22.80 L178.78 23.21 L178.32 23.58 L177.83 23.91 L177.32 24.21 L176.78 24.46 L176.23 24.67 L175.67 24.83 L175.09 24.95 L174.51 25.02 L173.92 25.04" stroke-width="7.48"/><path d="M173.24 25.72 L173.75 26.61 L174.26 27.50 L174.77 28.40 L175.28 29.29 L175.79 30.18 L176.30 31.07 L176.81 31.97 L177.32 32.86 L177.83 33.75 L178.34 34.64 L178.85 35.54 L179.36 36.43 L179.87 37.32 L180.38 38.22 L180.89 39.11 L181.40 40.00" stroke-width="7.48"/><path d="M161.00 38.30 L161.64 38.30 L162.28 38.30 L162.91 38.30 L163.55 38.30 L164.19 38.30 L164.82 38.30 L165.46 38.30 L166.10 38.30 L166.74 38.30 L167.38 38.30 L168.01 38.30 L168.65 38.30 L169.29 38.30 L169.93 38.30 L170.56 38.30 L171.20 38.30" stroke-width="3.40"/><path d="M161.00 7.70 L161.30 7.70 L161.59 7.70 L161.89 7.70 L162.19 7.70 L162.49 7.70 L162.78 7.70 L163.08 7.70 L163.38 7.70 L163.68 7.70 L163.97 7.70 L164.27 7.70 L164.57 7.70 L164.87 7.70 L165.16 7.70 L165.46 7.70 L165.76 7.70" stroke-width="3.40"/><path d="M177.32 38.30 L177.87 38.30 L178.43 38.30 L178.98 38.30 L179.53 38.30 L180.08 38.30 L180.63 38.30 L181.19 38.30 L181.74 38.30 L182.29 38.30 L182.84 38.30 L183.40 38.30 L183.95 38.30 L184.50 38.30 L185.06 38.30 L185.61 38.30 L186.16 38.30" stroke-width="3.40"/><path d="M192.96 40.00 L193.43 37.92 L193.90 35.84 L194.36 33.75 L194.83 31.67 L195.30 29.59 L195.77 27.50 L196.23 25.42 L196.70 23.34 L197.17 21.26 L197.63 19.17 L198.10 17.09 L198.57 15.01 L199.04 12.93 L199.50 10.84 L199.97 8.76 L200.44 6.68" stroke-width="7.48"/><path d="M211.32 40.00 L210.85 37.92 L210.38 35.84 L209.92 33.75 L209.45 31.67 L208.98 29.59 L208.52 27.50 L208.05 25.42 L207.58 23.34 L207.11 21.26 L206.65 19.17 L206.18 17.09 L205.71 15.01 L205.24 12.93 L204.78 10.84 L204.31 8.76 L203.84 6.68" stroke-width="7.48"/><path d="M198.74 9.74 L199.17 9.74 L199.59 9.74 L200.02 9.74 L200.44 9.74 L200.87 9.74 L201.29 9.74 L201.72 9.74 L202.14 9.74 L202.56 9.74 L202.99 9.74 L203.42 9.74 L203.84 9.74 L204.27 9.74 L204.69 9.74 L205.12 9.74 L205.54 9.74" stroke-width="7.48"/><path d="M196.70 29.12 L197.38 29.12 L198.06 29.12 L198.74 29.12 L199.42 29.12 L200.10 29.12 L200.78 29.12 L201.46 29.12 L202.14 29.12 L202.82 29.12 L203.50 29.12 L204.18 29.12 L204.86 29.12 L205.54 29.12 L206.22 29.12 L206.90 29.12 L207.58 29.12" stroke-width="4.42"/><path d="M188.54 38.30 L189.11 38.30 L189.69 38.30 L190.26 38.30 L190.84 38.30 L191.41 38.30 L191.98 38.30 L192.56 38.30 L193.13 38.30 L193.70 38.30 L194.28 38.30 L194.85 38.30 L195.43 38.30 L196.00 38.30 L196.57 38.30 L197.15 38.30 L197.72 38.30" stroke-width="3.40"/><path d="M206.56 38.30 L207.13 38.30 L207.71 38.30 L208.28 38.30 L208.86 38.30 L209.43 38.30 L210.00 38.30 L210.58 38.30 L211.15 38.30 L211.72 38.30 L212.30 38.30 L212.87 38.30 L213.44 38.30 L214.02 38.30 L214.59 38.30 L215.17 38.30 L215.74 38.30" stroke-width="3.40"/><path d="M222.20 6.68 L222.20 8.76 L222.20 10.84 L222.20 12.93 L222.20 15.01 L222.20 17.09 L222.20 19.17 L222.20 21.26 L222.20 23.34 L222.20 25.42 L222.20 27.50 L222.20 29.59 L222.20 31.67 L222.20 33.75 L222.20 35.84 L222.20 37.92 L222.20 40.00" stroke-width="6.46"/><path d="M241.24 6.00 L241.24 8.08 L241.24 10.16 L241.24 12.25 L241.24 14.33 L241.24 16.41 L241.24 18.49 L241.24 20.58 L241.24 22.66 L241.24 24.74 L241.24 26.82 L241.24 28.91 L241.24 30.99 L241.24 33.07 L241.24 35.16 L241.24 37.24 L241.24 39.32" stroke-width="6.46"/><path d="M221.52 6.68 L222.80 8.72 L224.07 10.76 L225.34 12.80 L226.62 14.84 L227.90 16.88 L229.17 18.92 L230.44 20.96 L231.72 23.00 L233.00 25.04 L234.27 27.08 L235.55 29.12 L236.82 31.16 L238.10 33.20 L239.37 35.24 L240.65 37.28 L241.92 39.32" stroke-width="8.16"/><path d="M218.12 38.30 L218.67 38.30 L219.23 38.30 L219.78 38.30 L220.33 38.30 L220.88 38.30 L221.44 38.30 L221.99 38.30 L222.54 38.30 L223.09 38.30 L223.65 38.30 L224.20 38.30 L224.75 38.30 L225.30 38.30 L225.86 38.30 L226.41 38.30 L226.96 38.30" stroke-width="3.40"/><path d="M218.12 7.70 L218.59 7.70 L219.06 7.70 L219.52 7.70 L219.99 7.70 L220.46 7.70 L220.93 7.70 L221.39 7.70 L221.86 7.70 L222.33 7.70 L222.80 7.70 L223.26 7.70 L223.73 7.70 L224.20 7.70 L224.67 7.70 L225.13 7.70 L225.60 7.70" stroke-width="3.40"/><path d="M237.16 7.70 L237.67 7.70 L238.18 7.70 L238.69 7.70 L239.20 7.70 L239.71 7.70 L240.22 7.70 L240.73 7.70 L241.24 7.70 L241.75 7.70 L242.26 7.70 L242.77 7.70 L243.28 7.70 L243.79 7.70 L244.30 7.70 L244.81 7.70 L245.32 7.70" stroke-width="3.40"/><path d="M251.78 6.68 L251.78 8.76 L251.78 10.84 L251.78 12.93 L251.78 15.01 L251.78 17.09 L251.78 19.17 L251.78 21.26 L251.78 23.34 L251.78 25.42 L251.78 27.50 L251.78 29.59 L251.78 31.67 L251.78 33.75 L251.78 35.84 L251.78 37.92 L251.78 40.00" stroke-width="7.48"/><path d="M276.94 6.68 L276.94 8.76 L276.94 10.84 L276.94 12.93 L276.94 15.01 L276.94 17.09 L276.94 19.17 L276.94 21.26 L276.94 23.34 L276.94 25.42 L276.94 27.50 L276.94 29.59 L276.94 31.67 L276.94 33.75 L276.94 35.84 L276.94 37.92 L276.94 40.00" stroke-width="7.48"/><path d="M252.46 8.04 L253.20 9.53 L253.95 11.01 L254.69 12.50 L255.44 13.99 L256.18 15.48 L256.92 16.96 L257.67 18.45 L258.41 19.94 L259.15 21.43 L259.90 22.91 L260.64 24.40 L261.38 25.89 L262.13 27.38 L262.87 28.86 L263.62 30.35 L264.36 31.84" stroke-width="6.46"/><path d="M276.26 8.04 L275.52 9.53 L274.77 11.01 L274.03 12.50 L273.29 13.99 L272.54 15.48 L271.80 16.96 L271.05 18.45 L270.31 19.94 L269.57 21.43 L268.82 22.91 L268.08 24.40 L267.34 25.89 L266.59 27.38 L265.85 28.86 L265.10 30.35 L264.36 31.84" stroke-width="6.46"/><path d="M247.70 38.30 L248.25 38.30 L248.81 38.30 L249.36 38.30 L249.91 38.30 L250.46 38.30 L251.02 38.30 L251.57 38.30 L252.12 38.30 L252.67 38.30 L253.23 38.30 L253.78 38.30 L254.33 38.30 L254.88 38.30 L255.44 38.30 L255.99 38.30 L256.54 38.30" stroke-width="3.40"/><path d="M272.18 38.30 L272.73 38.30 L273.29 38.30 L273.84 38.30 L274.39 38.30 L274.94 38.30 L275.50 38.30 L276.05 38.30 L276.60 38.30 L277.15 38.30 L277.71 38.30 L278.26 38.30 L278.81 38.30 L279.36 38.30 L279.92 38.30 L280.47 38.30 L281.02 38.30" stroke-width="3.40"/><path d="M247.70 7.70 L248.00 7.70 L248.30 7.70 L248.59 7.70 L248.89 7.70 L249.19 7.70 L249.49 7.70 L249.78 7.70 L250.08 7.70 L250.38 7.70 L250.68 7.70 L250.97 7.70 L251.27 7.70 L251.57 7.70 L251.87 7.70 L252.16 7.70 L252.46 7.70" stroke-width="3.40"/><path d="M276.26 7.70 L276.56 7.70 L276.86 7.70 L277.15 7.70 L277.45 7.70 L277.75 7.70 L278.05 7.70 L278.34 7.70 L278.64 7.70 L278.94 7.70 L279.24 7.70 L279.53 7.70 L279.83 7.70 L280.13 7.70 L280.43 7.70 L280.72 7.70 L281.02 7.70" stroke-width="3.40"/><path d="M287.82 40.00 L288.29 37.92 L288.75 35.84 L289.22 33.75 L289.69 31.67 L290.16 29.59 L290.62 27.50 L291.09 25.42 L291.56 23.34 L292.03 21.26 L292.50 19.17 L292.96 17.09 L293.43 15.01 L293.90 12.93 L294.37 10.84 L294.83 8.76 L295.30 6.68" stroke-width="7.48"/><path d="M306.18 40.00 L305.71 37.92 L305.25 35.84 L304.78 33.75 L304.31 31.67 L303.84 29.59 L303.38 27.50 L302.91 25.42 L302.44 23.34 L301.97 21.26 L301.50 19.17 L301.04 17.09 L300.57 15.01 L300.10 12.93 L299.63 10.84 L299.17 8.76 L298.70 6.68" stroke-width="7.48"/><path d="M293.60 9.74 L294.02 9.74 L294.45 9.74 L294.88 9.74 L295.30 9.74 L295.73 9.74 L296.15 9.74 L296.58 9.74 L297.00 9.74 L297.43 9.74 L297.85 9.74 L298.27 9.74 L298.70 9.74 L299.12 9.74 L299.55 9.74 L299.98 9.74 L300.40 9.74" stroke-width="7.48"/><path d="M291.56 29.12 L292.24 29.12 L292.92 29.12 L293.60 29.12 L294.28 29.12 L294.96 29.12 L295.64 29.12 L296.32 29.12 L297.00 29.12 L297.68 29.12 L298.36 29.12 L299.04 29.12 L299.72 29.12 L300.40 29.12 L301.08 29.12 L301.76 29.12 L302.44 29.12" stroke-width="4.42"/><path d="M283.40 38.30 L283.97 38.30 L284.55 38.30 L285.12 38.30 L285.69 38.30 L286.27 38.30 L286.84 38.30 L287.42 38.30 L287.99 38.30 L288.56 38.30 L289.14 38.30 L289.71 38.30 L290.29 38.30 L290.86 38.30 L291.43 38.30 L292.01 38.30 L292.58 38.30" stroke-width="3.40"/><path d="M301.42 38.30 L301.99 38.30 L302.57 38.30 L303.14 38.30 L303.72 38.30 L304.29 38.30 L304.86 38.30 L305.44 38.30 L306.01 38.30 L306.58 38.30 L307.16 38.30 L307.73 38.30 L308.31 38.30 L308.88 38.30 L309.45 38.30 L310.03 38.30 L310.60 38.30" stroke-width="3.40"/><path d="M317.06 6.68 L317.06 8.76 L317.06 10.84 L317.06 12.93 L317.06 15.01 L317.06 17.09 L317.06 19.17 L317.06 21.26 L317.06 23.34 L317.06 25.42 L317.06 27.50 L317.06 29.59 L317.06 31.67 L317.06 33.75 L317.06 35.84 L317.06 37.92 L317.06 40.00" stroke-width="6.46"/><path d="M336.10 6.00 L336.10 8.08 L336.10 10.16 L336.10 12.25 L336.10 14.33 L336.10 16.41 L336.10 18.49 L336.10 20.58 L336.10 22.66 L336.10 24.74 L336.10 26.82 L336.10 28.91 L336.10 30.99 L336.10 33.07 L336.10 35.16 L336.10 37.24 L336.10 39.32" stroke-width="6.46"/><path d="M316.38 6.68 L317.65 8.72 L318.93 10.76 L320.21 12.80 L321.48 14.84 L322.75 16.88 L324.03 18.92 L325.31 20.96 L326.58 23.00 L327.86 25.04 L329.13 27.08 L330.40 29.12 L331.68 31.16 L332.96 33.20 L334.23 35.24 L335.50 37.28 L336.78 39.32" stroke-width="8.16"/><path d="M312.98 38.30 L313.53 38.30 L314.09 38.30 L314.64 38.30 L315.19 38.30 L315.74 38.30 L316.30 38.30 L316.85 38.30 L317.40 38.30 L317.95 38.30 L318.50 38.30 L319.06 38.30 L319.61 38.30 L320.16 38.30 L320.72 38.30 L321.27 38.30 L321.82 38.30" stroke-width="3.40"/><path d="M312.98 7.70 L313.45 7.70 L313.92 7.70 L314.38 7.70 L314.85 7.70 L315.32 7.70 L315.79 7.70 L316.25 7.70 L316.72 7.70 L317.19 7.70 L317.65 7.70 L318.12 7.70 L318.59 7.70 L319.06 7.70 L319.52 7.70 L319.99 7.70 L320.46 7.70" stroke-width="3.40"/><path d="M332.02 7.70 L332.53 7.70 L333.04 7.70 L333.55 7.70 L334.06 7.70 L334.57 7.70 L335.08 7.70 L335.59 7.70 L336.10 7.70 L336.61 7.70 L337.12 7.70 L337.63 7.70 L338.14 7.70 L338.65 7.70 L339.16 7.70 L339.67 7.70 L340.18 7.70" stroke-width="3.40"/></g></g></svg></h1>
+        <p id="countdown"></p>
+      </div>
+    </div>
+    <div class="legend">
+      <div class="legtext">
+        <div class="legtitle">Indian Creek Reservoir</div>
+        <div class="legsub"><span class="legstar">★</span> our primitive camp, off the FS finger roads</div>
+        <div class="stats" id="stats"></div>
+      </div>
+    </div>
+  </div>
+</header>
+<nav class="tabs" id="tabs" hidden>
+  <a href="#spots" data-t="spots">Spots</a><a href="#trips" data-t="trips">Trips</a><a href="#weather" data-t="weather">Weather</a><a href="#album" data-t="album">Album</a>
+</nav>
+<div class="wrap">
+  <div id="status"></div>
+  <div id="main"></div>
+</div>
+<div class="toast" id="toast"></div>
+
+<script type="module">
+/* ============================================================
+   PASTE YOUR FIREBASE CONFIG HERE
+   (Firebase console → Project settings → Your apps → Web app)
+   ============================================================ */
+const firebaseConfig = {
+  apiKey: "AIzaSyBMlaG1xx-BZgCZDEcnrDPW74BhoVm2fls",
+  authDomain: "camp-cranman.firebaseapp.com",
+  projectId: "camp-cranman",
+  storageBucket: "camp-cranman.firebasestorage.app",
+  messagingSenderId: "394236321327",
+  appId: "1:394236321327:web:fb6096bc78bbf7d1ff70da"
+};
+/* ============================================================ */
+
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import { getAuth, signInAnonymously, onAuthStateChanged, GoogleAuthProvider, signInWithPopup, signInWithRedirect, getRedirectResult, signOut } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+import { initializeFirestore, getFirestore, persistentLocalCache, persistentMultipleTabManager,
+  collection, doc, getDoc, setDoc, updateDoc, deleteDoc, onSnapshot, query, orderBy, limit, arrayRemove
+} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+const REF = { lat: 31.121049, lng: -92.478957, name: "Indian Creek Rec Area" };
+const TAGS = ["Waterfront","Shade","Hammock trees","Flat tent pads","Big group","Secluded","Fishing","Swimming","Kayak launch","Sunset view","Fire ring","Truck/trailer OK","Gets muddy"];
+const SIZES = ["", "1–2 tents", "3–5 tents", "Big group (6+)"];
+const CONDS = ["Great shape","Dry","Muddy","Flooded","Road rough","Occupied","Trash left","Bugs bad","Downed trees"];
+const BAD_CONDS = new Set(["Muddy","Flooded","Road rough","Occupied","Trash left","Bugs bad","Downed trees"]);
+const SLOTS = ["Breakfast","Lunch","Dinner","Snacks"];
+const GEAR_SUGGEST = ["Canopy","Camp stove","Propane","Water jugs","Cooler","Ice","Firewood","Lantern","Camp chairs","Folding table","First aid kit","Trash bags","Hatchet/saw","Toilet paper","Bug spray","Cast iron","Coffee setup"];
+
+let fs=null, auth=null, uid=null;
+let isMember=false, myName="", authChecked=false, listening=false;
+let spots=[], trips=[], items=[], checkins=[], thumbs=[], thumbsOn=false;
+let loaded=false, loadErr="", slow=false;
+let tab="spots";
+let q="", activeTags=new Set(), sortBy="number", albumFilter="all";
+const photoCache=new Map();
+let openSheet=null;
+let wx=null, wxAt=0, wxErr="", wxAlerts=[], wxLoading=null;
+
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const fmt=n=>Number(n).toFixed(6);
+const rid=()=>Date.now().toString(36)+Math.random().toString(36).slice(2,9);
+const ls={get:k=>{try{return localStorage.getItem(k)}catch(e){return null}},set:(k,v)=>{try{localStorage.setItem(k,v)}catch(e){}}};
+function toast(msg){const t=$("#toast");t.textContent=msg;t.classList.add("show");clearTimeout(toast._t);toast._t=setTimeout(()=>t.classList.remove("show"),2600);}
+
+/* ---------- dates ---------- */
+const ymd=d=>`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`;
+const today=()=>ymd(new Date());
+const dt=s=>new Date(s+"T12:00:00");
+const fmtDay=(s,opt={weekday:"short",month:"short",day:"numeric"})=>dt(s).toLocaleDateString(undefined,opt);
+function daysOf(a,b){const out=[];if(!a)return out;let d=dt(a),e=dt(b||a);let n=0;while(d<=e&&n<21){out.push(ymd(d));d.setDate(d.getDate()+1);n++;}return out;}
+function tripRange(t){const a=fmtDay(t.start,{weekday:"short",month:"short",day:"numeric"});if(!t.end||t.end===t.start)return a;return `${a} – ${fmtDay(t.end,{weekday:"short",month:"short",day:"numeric"})}`;}
+
+/* ---------- geo ---------- */
+function miles(a,b){const R=3958.8,r=x=>x*Math.PI/180;const dLat=r(b.lat-a.lat),dLng=r(b.lng-a.lng);
+  const h=Math.sin(dLat/2)**2+Math.cos(r(a.lat))*Math.cos(r(b.lat))*Math.sin(dLng/2)**2;return 2*R*Math.asin(Math.sqrt(h));}
+const links=s=>{const ll=`${fmt(s.lat)},${fmt(s.lng)}`,n=encodeURIComponent(s.name||"Camp spot");return{
+  apple:`https://maps.apple.com/?ll=${ll}&q=${n}`,appleDir:`https://maps.apple.com/?daddr=${ll}&dirflg=d`,
+  google:`https://www.google.com/maps/search/?api=1&query=${ll}`,googleDir:`https://www.google.com/maps/dir/?api=1&destination=${ll}`,
+  waze:`https://waze.com/ul?ll=${ll}&navigate=yes`};};
+function parseCoords(raw){
+  if(!raw)return null;let s=String(raw).trim();try{s=decodeURIComponent(s);}catch(e){}
+  let m,lat,lng,note="";
+  if((m=s.match(/!3d(-?\d+\.\d+)!4d(-?\d+\.\d+)/))){lat=+m[1];lng=+m[2];}
+  else if((m=s.match(/[?&](?:coordinate|ll|q|query|destination|daddr|sll|center)=\s*(-?\d+(?:\.\d+)?)\s*,\s*(-?\d+(?:\.\d+)?)/i))){lat=+m[1];lng=+m[2];}
+  else if((m=s.match(/@(-?\d+\.\d+),\s*(-?\d+\.\d+)/))){lat=+m[1];lng=+m[2];}
+  else if((m=s.match(/(\d+)\s*°\s*(\d+)\s*['′]\s*([\d.]+)\s*(?:["″]|'')?\s*([NS])[\s,]+(\d+)\s*°\s*(\d+)\s*['′]\s*([\d.]+)\s*(?:["″]|'')?\s*([EW])/i))){
+    lat=(+m[1]+m[2]/60+m[3]/3600)*(/s/i.test(m[4])?-1:1);lng=(+m[5]+m[6]/60+m[7]/3600)*(/w/i.test(m[8])?-1:1);}
+  else if((m=s.match(/(-?\d+\.\d+)\s*°?\s*([NS])?[\s,;]+(-?\d+\.\d+)\s*°?\s*([EW])?/i))){
+    lat=+m[1];lng=+m[3];if(m[2]&&/s/i.test(m[2]))lat=-Math.abs(lat);if(m[4]&&/w/i.test(m[4]))lng=-Math.abs(lng);
+    if(!m[4]&&lng>80&&lng<100&&lat>25&&lat<40){lng=-lng;note="Assumed West (negative) longitude.";}}
+  if(lat==null||!isFinite(lat)||!isFinite(lng)||Math.abs(lat)>90||Math.abs(lng)>180)return null;
+  return{lat,lng,note};
+}
+
+/* ---------- photos ---------- */
+async function exifGPS(file){
+  try{const buf=await file.slice(0,256*1024).arrayBuffer();const v=new DataView(buf);if(v.getUint16(0)!==0xFFD8)return null;let off=2;
+    while(off<v.byteLength-4){const marker=v.getUint16(off);const len=v.getUint16(off+2);
+      if(marker===0xFFE1&&v.getUint32(off+4)===0x45786966){const t=off+10,le=v.getUint16(t)===0x4949;
+        const u16=o=>v.getUint16(t+o,le),u32=o=>v.getUint32(t+o,le);const ifd0=u32(4);let gp=null;
+        for(let i=0,n=u16(ifd0);i<n;i++){const e=ifd0+2+i*12;if(u16(e)===0x8825)gp=u32(e+8);}
+        if(gp==null)return null;const g={};
+        for(let i=0,n=u16(gp);i<n;i++){const e=gp+2+i*12,tag=u16(e),type=u16(e+2),cnt=u32(e+4);
+          if(type===2)g[tag]=String.fromCharCode(v.getUint8(t+e+8));
+          else if(type===5){const p=u32(e+8),a=[];for(let k=0;k<cnt;k++)a.push(u32(p+k*8)/u32(p+k*8+4));g[tag]=a;}}
+        if(!g[2]||!g[4])return null;const dms=a=>a[0]+a[1]/60+a[2]/3600;
+        let lat=dms(g[2]),lng=dms(g[4]);if(g[1]==="S")lat=-lat;if(g[3]==="W")lng=-lng;if(!lat&&!lng)return null;return{lat,lng};}
+      if((marker&0xFF00)!==0xFF00)break;off+=2+len;}
+  }catch(e){}return null;
+}
+function loadImg(file){return new Promise((res,rej)=>{const url=URL.createObjectURL(file);const img=new Image();
+  img.onload=()=>{URL.revokeObjectURL(url);res(img);};img.onerror=()=>{URL.revokeObjectURL(url);rej(new Error("Couldn't read that image"));};img.src=url;});}
+function shrink(img,max,target){let qq=0.74,out;
+  for(let i=0;i<8;i++){const sc=Math.min(1,max/Math.max(img.naturalWidth,img.naturalHeight));
+    const c=document.createElement("canvas");c.width=Math.round(img.naturalWidth*sc);c.height=Math.round(img.naturalHeight*sc);
+    c.getContext("2d").drawImage(img,0,0,c.width,c.height);out=c.toDataURL("image/jpeg",qq);
+    if(out.length<target)break;if(qq>0.56)qq-=0.08;else max=Math.round(max*0.82);}
+  return out;}
+async function prepPhoto(file){const img=await loadImg(file);return{data:shrink(img,1400,200000),thumb:shrink(img,360,40000)};}
+async function savePhoto(p,meta){
+  const pid=rid(),at=Date.now();
+  await setDoc(doc(fs,"photos",pid),{data:p.data,spotId:meta.spotId||"",tripId:meta.tripId||"",at});
+  await setDoc(doc(fs,"thumbs",pid),{data:p.thumb,spotId:meta.spotId||"",tripId:meta.tripId||"",caption:meta.caption||"",by:myName,at});
+  photoCache.set(pid,Promise.resolve(p.data));return pid;
+}
+async function removePhoto(pid){await deleteDoc(doc(fs,"photos",pid));try{await deleteDoc(doc(fs,"thumbs",pid));}catch(e){}}
+function loadPhoto(pid){if(!photoCache.has(pid))photoCache.set(pid,getDoc(doc(fs,"photos",pid)).then(s=>s.exists()?s.data().data:null).catch(()=>null));return photoCache.get(pid);}
+const io=("IntersectionObserver" in window)?new IntersectionObserver(ents=>{ents.forEach(en=>{if(en.isIntersecting){io.unobserve(en.target);hydrate(en.target);}});},{rootMargin:"300px"}):null;
+function hydrate(img){const pid=img.dataset.pid;if(!pid||!fs)return;loadPhoto(pid).then(d=>{if(d){img.src=d;img.style.visibility="visible";}});}
+function wirePhotos(root){root.querySelectorAll("img[data-pid]").forEach(img=>{img.style.visibility="hidden";io?io.observe(img):hydrate(img);});}
+function pickFiles(multiple=true){return new Promise(res=>{const i=document.createElement("input");i.type="file";i.accept="image/*";i.multiple=multiple;i.onchange=()=>res([...i.files]);i.click();});}
+
+/* ---------- derived ---------- */
+function numbered(){const byAge=[...spots].sort((a,b)=>(a.createdAt||0)-(b.createdAt||0));byAge.forEach((s,i)=>s._n=i+1);return byAge;}
+const spotById=id=>spots.find(s=>s.id===id);
+const tripById=id=>trips.find(t=>t.id===id);
+const spotCheckins=id=>checkins.filter(c=>c.spotId===id).sort((a,b)=>(b.date||"").localeCompare(a.date||"")||(b.at||0)-(a.at||0));
+const tripItems=(id,kind)=>items.filter(i=>i.tripId===id&&i.kind===kind).sort((a,b)=>(a.at||0)-(b.at||0));
+function filteredSpots(){
+  const needle=q.trim().toLowerCase();
+  let out=spots.filter(s=>{if(activeTags.size&&![...activeTags].every(t=>(s.tags||[]).includes(t)))return false;if(!needle)return true;
+    return [s.name,s.description,s.directions,(s.tags||[]).join(" "),s.size,s.addedBy].join(" ").toLowerCase().includes(needle);});
+  if(sortBy==="number")out.sort((a,b)=>a._n-b._n);
+  else if(sortBy==="name")out.sort((a,b)=>String(a.name).localeCompare(b.name));
+  else if(sortBy==="near")out.sort((a,b)=>miles(REF,a)-miles(REF,b));
+  else if(sortBy==="new")out.sort((a,b)=>(b.updatedAt||b.createdAt||0)-(a.updatedAt||a.createdAt||0));
+  return out;
+}
+
+/* ============================================================
+   RENDER
+   ============================================================ */
+function gated(){return !!fs&&authChecked&&!isMember;}
+function renderGate(){
+  $("#tabs").hidden=true;$("#stats").innerHTML="";$("#main").innerHTML="";$("#main").dataset.view="";
+  if($("#gateForm"))return;
+  $("#status").innerHTML=`<div class="empty" style="text-align:left;max-width:420px;margin:28px auto">
+   <svg viewBox="20 0 560 660" style="width:210px;height:248px;display:block;margin:-4px auto 8px;filter:drop-shadow(0 3px 4px rgba(0,0,0,.18))" aria-label="Camp Cranman"><use href="#ccLake"/></svg>
+   <h3 style="text-align:center">🔒 Crew only</h3><p style="text-align:center;margin:-2px 0 6px;font-family:Oswald,Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;font-size:12px;color:var(--rust)">Thanksgiving at Indian Creek · Est. 2024</p>
+   <div id="gIntro"></div>
+   <form id="gateForm" novalidate>
+     <div class="field"><label for="uName">Your name</label><input class="inp" id="uName" maxlength="40" placeholder="So we know who found what" value="${esc(ls.get("ic_name")||"")}"></div>
+     <div class="field"><label for="uPass">Camp password</label><input class="inp" id="uPass" autocomplete="off" autocapitalize="off"></div>
+     <div id="uErr"></div>
+     <button class="btn primary" id="uGo" style="width:100%;justify-content:center">Unlock</button>
+   </form></div>`;
+  $("#gateForm").onsubmit=unlock;
+  paintGate();
+}
+function paintGate(){
+  if(!$("#gIntro"))return;
+  const u=auth&&auth.currentUser, g=u&&!u.isAnonymous;
+  $("#gIntro").innerHTML=g
+    ? `<p style="text-align:center;margin-top:0">Signed in as <b>${esc(u.email||u.displayName||"your Google account")}</b>. Enter the camp password once and this account is in on every device.</p>
+       <p style="text-align:center;margin:-4px 0 12px"><a href="#" id="gOut" style="font-size:13px">Use a different account</a></p>`
+    : `<button type="button" class="btn" id="gGoogle" style="width:100%;justify-content:center;background:#fff;border-color:#D8CDB8;margin:4px 0 6px">
+         <svg width="18" height="18" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.8 2.4 30.3 0 24 0 14.6 0 6.6 5.4 2.7 13.3l7.9 6.1C12.5 13.6 17.8 9.5 24 9.5z"/><path fill="#4285F4" d="M46.5 24.5c0-1.6-.1-3.1-.4-4.5H24v9h12.7c-.6 3-2.3 5.5-4.8 7.2l7.7 6c4.5-4.2 6.9-10.3 6.9-17.7z"/><path fill="#FBBC05" d="M10.6 28.6c-.5-1.4-.8-3-.8-4.6s.3-3.2.8-4.6l-7.9-6.1C1 16.6 0 20.2 0 24s1 7.4 2.7 10.7l7.9-6.1z"/><path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.7-6c-2.2 1.5-5 2.3-8.2 2.3-6.2 0-11.5-4.1-13.4-9.8l-7.9 6.1C6.6 42.6 14.6 48 24 48z"/></svg>
+         Continue with Google</button>
+       <p class="meta" style="text-align:center;margin:0 0 10px">Recommended: sign in once and you're in on every device.</p>
+       <div style="display:flex;align-items:center;gap:10px;margin:6px 0 14px;color:var(--muted);font-size:12px"><span style="flex:1;border-top:1px solid var(--line)"></span>or just use the password on this phone<span style="flex:1;border-top:1px solid var(--line)"></span></div>`;
+  if(g){const n=$("#uName");if(n&&!n.value)n.value=(u.displayName||"").split(" ")[0];}
+  const gb=$("#gGoogle");if(gb)gb.onclick=googleIn;
+  const go=$("#gOut");if(go)go.onclick=async e=>{e.preventDefault();try{await signOut(auth);}catch(x){}};
+}
+async function googleIn(){
+  const b=$("#gGoogle");if(b){b.disabled=true;}
+  const prov=new GoogleAuthProvider();prov.setCustomParameters({prompt:"select_account"});
+  try{await signInWithPopup(auth,prov);}
+  catch(x){
+    const c=x&&x.code;
+    if(c==="auth/popup-blocked"||c==="auth/operation-not-supported-in-this-environment"){try{await signInWithRedirect(auth,prov);return;}catch(y){x=y;}}
+    if(b)b.disabled=false;
+    if(c==="auth/popup-closed-by-user"||c==="auth/cancelled-popup-request")return;
+    $("#uErr").innerHTML=`<div class="notice warn">${c==="auth/operation-not-allowed"?"Google sign-in isn't turned on in Firebase yet.":c==="auth/unauthorized-domain"?"This web address isn't on Firebase's authorized domains list yet.":"Google sign-in didn't work — you can use the password instead."}</div>`;
+  }
+}
+function renderStatus(){
+  let h="";
+  if(loadErr)h=`<div class="notice warn">${loadErr}</div>`;
+  else if(isMember&&!loaded&&slow)h=`<div class="notice">Still trying to reach the camp data… probably a weak signal. It'll fill in once you're connected.</div>`;
+  else if(isMember&&!loaded)h=`<div class="notice">Loading…</div>`;
+  else if(!authChecked&&fs)h=`<div class="notice">Loading…</div>`;
+  $("#status").innerHTML=h;
+}
+function renderStats(){
+  if(!loaded){$("#stats").innerHTML="";return;}
+  const up=trips.filter(t=>(t.end||t.start)>=today()).length;
+  const photos=spots.reduce((n,s)=>n+(s.photoIds||[]).length,0);
+  $("#stats").innerHTML=`<div><b>${spots.length}</b>spots</div><div><b>${up}</b>upcoming trips</div><div><b>${photos}</b>spot photos</div>`;
+}
+function renderAll(){
+  if(gated()){renderGate();return;}
+  if($("#gateForm"))$("#status").innerHTML="";
+  renderStatus();renderStats();
+  const show=isMember&&loaded;
+  $("#tabs").hidden=!show;
+  if(!show){ $("#main").innerHTML=""; $("#main").dataset.view=""; return; }
+  document.querySelectorAll("#tabs a").forEach(a=>a.classList.toggle("on",a.dataset.t===tab));
+  if(tab==="trips")viewTrips();else if(tab==="weather")viewWeather();else if(tab==="album")viewAlbum();else viewSpots();
+  refreshSheet();
+}
+function setView(name,html){const m=$("#main");if(m.dataset.view!==name){m.innerHTML=html;m.dataset.view=name;return true;}return false;}
+window.addEventListener("hashchange",()=>{const t=location.hash.slice(1);if(["spots","trips","weather","album"].includes(t)){tab=t;window.scrollTo(0,0);renderAll();}});
+
+/* ---------- SPOTS ---------- */
+function viewSpots(){
+  if(setView("spots",`<div class="toolbar"><input class="search" id="q" type="search" placeholder="Search spots, notes, tags…" autocomplete="off"><button class="btn primary" id="addBtn">＋ Add spot</button></div>
+    <div id="mapArea"></div><div class="chips" id="chips"></div><div id="listArea"></div><footer class="tools" id="tools"></footer>`)){
+    $("#q").value=q;$("#q").addEventListener("input",e=>{q=e.target.value;renderMap();renderSpotList();});
+    $("#addBtn").onclick=()=>openSpotForm(null);
+  }
+  renderMap();renderChips();renderSpotList();renderTools();
+}
+function renderMap(){
+  const pts=numbered(),all=[...pts,REF];
+  let minLat=Math.min(...all.map(p=>p.lat)),maxLat=Math.max(...all.map(p=>p.lat)),minLng=Math.min(...all.map(p=>p.lng)),maxLng=Math.max(...all.map(p=>p.lng));
+  const k=Math.cos(((minLat+maxLat)/2)*Math.PI/180);let spanY=maxLat-minLat,spanX=(maxLng-minLng)*k;const minSpan=0.012;
+  if(spanY<minSpan){const c=(minLat+maxLat)/2;minLat=c-minSpan/2;maxLat=c+minSpan/2;spanY=minSpan;}
+  if(spanX<minSpan){const c=(minLng+maxLng)/2;minLng=c-minSpan/2/k;maxLng=c+minSpan/2/k;spanX=minSpan;}
+  const W=600,H=320,pad=36,sc=Math.min((W-2*pad)/spanX,(H-2*pad)/spanY),ox=(W-spanX*sc)/2,oy=(H-spanY*sc)/2;
+  const X=lng=>ox+(lng-minLng)*k*sc,Y=lat=>oy+(maxLat-lat)*sc;
+  const pxPerMile=sc/69.05,opts=[0.05,0.1,0.25,0.5,1,2,5];let mi=opts[0];for(const o of opts){if(o*pxPerMile<=150)mi=o;}const bar=mi*pxPerMile;
+  const vis=new Set(filteredSpots().map(s=>s.id));let g="";
+  for(let i=1;i<6;i++)g+=`<line x1="0" x2="${W}" y1="${i*H/6}" y2="${i*H/6}" stroke="#E6DFCD"/>`;
+  for(let i=1;i<10;i++)g+=`<line y1="0" y2="${H}" x1="${i*W/10}" x2="${i*W/10}" stroke="#E6DFCD"/>`;
+  const rx=X(REF.lng),ry=Y(REF.lat);
+  let marks=`<g><rect x="${rx-7}" y="${ry-7}" width="14" height="14" rx="3" fill="var(--pine)"/><text x="${rx+11}" y="${ry+4}" font-size="11" fill="var(--pine)" font-weight="600">${esc(REF.name)}</text></g>`;
+  pts.forEach(s=>{const x=X(s.lng),y=Y(s.lat),on=vis.has(s.id);
+    marks+=`<g class="mk" data-id="${esc(s.id)}" style="cursor:pointer;opacity:${on?1:.3}"><circle cx="${x}" cy="${y}" r="16" fill="transparent"/><circle cx="${x}" cy="${y}" r="11" fill="var(--rust)" stroke="#fff" stroke-width="2"/><text x="${x}" y="${y+4}" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">${s._n}</text></g>`;});
+  $("#mapArea").innerHTML=`<div class="mapbox"><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Relative positions of camp spots"><rect width="${W}" height="${H}" fill="#F7F3E8"/>${g}${marks}
+    <g transform="translate(${W-34},30)"><path d="M0 -14 L7 6 L0 2 L-7 6 Z" fill="var(--ink)"/><text y="20" text-anchor="middle" font-size="10" font-weight="600">N</text></g>
+    <g transform="translate(16,${H-18})"><rect width="${bar}" height="5" fill="var(--ink)"/><text y="-5" font-size="10">${mi} mi</text></g></svg>
+    <div class="mapcap"><span>Spot positions to scale. Tap a number for details, then open it in Maps for satellite view.</span></div></div>`;
+  $("#mapArea").querySelectorAll(".mk").forEach(el=>el.addEventListener("click",()=>openSpot(el.dataset.id)));
+}
+function renderChips(){
+  const used=TAGS.filter(t=>spots.some(s=>(s.tags||[]).includes(t)));
+  const sorts=[["number","#"],["name","A–Z"],["near","Closest to entrance"],["new","Recently updated"]];
+  let h=sorts.map(([k,l])=>`<button class="chip ${sortBy===k?"on":""}" data-sort="${k}">${l}</button>`).join("");
+  if(used.length)h+=`<span style="border-left:1px solid var(--line);margin:0 4px"></span>`+used.map(t=>`<button class="chip ${activeTags.has(t)?"on":""}" data-tag="${esc(t)}">${esc(t)}</button>`).join("");
+  $("#chips").innerHTML=spots.length?h:"";
+  $("#chips").querySelectorAll("[data-sort]").forEach(b=>b.onclick=()=>{sortBy=b.dataset.sort;viewSpots();});
+  $("#chips").querySelectorAll("[data-tag]").forEach(b=>b.onclick=()=>{const t=b.dataset.tag;activeTags.has(t)?activeTags.delete(t):activeTags.add(t);viewSpots();});
+}
+function lastCheckin(id){const c=spotCheckins(id)[0];if(!c)return"";return `Last check-in ${fmtDay(c.date,{month:"short",day:"numeric"})}${(c.conds||[]).length?" · "+c.conds.slice(0,2).join(", "):""}`;}
+function renderSpotList(){
+  numbered();
+  if(!spots.length){$("#listArea").innerHTML=`<div class="empty"><h3>No spots yet</h3><p>Add the first favorite — a name, coordinates and a few photos is all it takes.</p><button class="btn primary" id="emptyAdd">＋ Add the first spot</button></div>`;$("#emptyAdd").onclick=()=>openSpotForm(null);return;}
+  const list=filteredSpots();
+  if(!list.length){$("#listArea").innerHTML=`<div class="empty">No spots match that search.</div>`;return;}
+  $("#listArea").innerHTML=`<div class="list">${list.map(s=>{const L=links(s),pids=s.photoIds||[],d=miles(REF,s),lc=lastCheckin(s.id);
+    return `<article class="card" data-id="${esc(s.id)}"><div class="ph">${pids.length?`<img data-pid="${esc(pids[0])}" alt="">`:`<div class="nophoto">No photos yet</div>`}
+      <div class="num">${s._n}</div>${pids.length>1?`<div class="phcount">${pids.length} photos</div>`:""}</div>
+      <div class="body"><h3>${esc(s.name)}</h3><div class="meta">${d.toFixed(1)} mi from rec area pin${s.size?` · ${esc(s.size)}`:""}</div>
+      ${lc?`<div class="meta" style="color:var(--pine)">${esc(lc)}</div>`:""}
+      ${s.description?`<p class="desc">${esc(s.description)}</p>`:""}
+      ${(s.tags||[]).length?`<div class="tags">${s.tags.map(t=>`<span class="tag">${esc(t)}</span>`).join("")}</div>`:""}
+      <div class="actions"><a class="btn small" href="${L.apple}" target="_blank" rel="noopener">Apple Maps</a><a class="btn small" href="${L.google}" target="_blank" rel="noopener">Google Maps</a><button class="btn small" data-copy="${esc(s.id)}">Copy coords</button></div>
+      </div></article>`;}).join("")}</div>`;
+  $("#listArea").querySelectorAll(".card").forEach(c=>c.addEventListener("click",e=>{if(e.target.closest("a,button"))return;openSpot(c.dataset.id);}));
+  $("#listArea").querySelectorAll("[data-copy]").forEach(b=>b.onclick=e=>{e.stopPropagation();const s=spotById(b.dataset.copy);if(s)copy(`${fmt(s.lat)}, ${fmt(s.lng)}`,"Coordinates copied");});
+  wirePhotos($("#listArea"));
+}
+function renderTools(){
+  if(!spots.length){$("#tools").innerHTML="";return;}
+  $("#tools").innerHTML=`<div class="meta">Take the whole list with you</div><button class="btn small" id="csvBtn">Download CSV (Google My Maps)</button><button class="btn small" id="copyAll">Copy all spots as text</button><span class="meta" style="width:auto;margin-left:auto">Signed in as ${esc(myName||"a camper")}${auth&&auth.currentUser&&!auth.currentUser.isAnonymous?` · <a href="#" id="sOut">sign out</a>`:""}</span>`;
+  const so=$("#sOut");if(so)so.onclick=async e=>{e.preventDefault();try{await signOut(auth);}catch(x){}location.reload();};
+  $("#csvBtn").onclick=exportCSV;$("#copyAll").onclick=()=>copy(allText(),"All spots copied");
+}
+
+/* ---------- overlays ---------- */
+function overlay(html){closeOverlay(true);const o=document.createElement("div");o.className="overlay";o.id="ov";
+  o.innerHTML=`<div class="sheet" role="dialog" aria-modal="true">${html}</div>`;o.addEventListener("click",e=>{if(e.target===o)closeOverlay();});
+  document.body.appendChild(o);document.body.style.overflow="hidden";return o;}
+function closeOverlay(keep){const o=$("#ov");if(o)o.remove();document.body.style.overflow="";if(!keep)openSheet=null;}
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeOverlay();});
+function refreshSheet(){if(!openSheet)return;if(openSheet.type==="spot")refreshSpot();else if(openSheet.type==="trip")refreshTrip();}
+
+/* ---------- spot detail ---------- */
+function openSpot(id,tries=0){
+  const s=spotById(id);if(!s){if(tries<8)setTimeout(()=>openSpot(id,tries+1),250);else closeOverlay();return;}
+  const o=overlay(`<div class="sheet-head"><h3 id="spH"></h3><button class="x" aria-label="Close">✕</button></div>
+    <div id="spBody"></div>
+    <div class="pad" style="padding-top:0">
+      <div class="secthead"><div class="lbl">Check-ins</div><button class="btn tiny" id="ciToggle">＋ Check in</button></div>
+      <div id="ciForm"></div><div id="ciList"></div>
+      <div id="spFoot"></div>
+    </div>`);
+  openSheet={type:"spot",id};
+  o.querySelector(".x").onclick=()=>closeOverlay();
+  $("#ciToggle").onclick=()=>{const f=$("#ciForm");if(f.innerHTML){f.innerHTML="";return;}renderCheckinForm(id);};
+  refreshSpot(true);
+}
+function refreshSpot(fresh){
+  const s=spotById(openSheet.id);if(!s){closeOverlay();return;}numbered();
+  const L=links(s),pids=s.photoIds||[];
+  $("#spH").textContent=`#${s._n} · ${s.name}`;
+  const prevPids=$("#spBody").dataset.pids,pidsKey=pids.join(",");
+  const gallery=pids.length?`<div class="gallery">${pids.map(p=>`<img data-pid="${esc(p)}" alt="">`).join("")}</div>`:"";
+  $("#spBody").innerHTML=`${gallery}<div class="pad">
+      ${(s.tags||[]).length?`<div class="tags">${s.tags.map(t=>`<span class="tag">${esc(t)}</span>`).join("")}</div>`:""}
+      ${s.description?`<p class="longdesc">${esc(s.description)}</p>`:`<p class="meta">No description yet.</p>`}
+      ${s.size?`<div class="lbl">Fits</div><div>${esc(s.size)}</div>`:""}
+      ${s.directions?`<div class="lbl">Getting there</div><p class="longdesc" style="margin:0">${esc(s.directions)}</p>`:""}
+      <div class="lbl">Coordinates</div>
+      <div class="coord"><span>${fmt(s.lat)}, ${fmt(s.lng)}</span><button class="btn small" id="dCopy">Copy</button></div>
+      <div class="meta" style="margin-top:6px">${miles(REF,s).toFixed(2)} mi straight-line from the rec area pin</div>
+      <div class="navgrid">
+        <a class="btn pine" href="${L.appleDir}" target="_blank" rel="noopener">Directions · Apple</a><a class="btn pine" href="${L.googleDir}" target="_blank" rel="noopener">Directions · Google</a>
+        <a class="btn" href="${L.apple}" target="_blank" rel="noopener">View in Apple Maps</a><a class="btn" href="${L.google}" target="_blank" rel="noopener">View in Google Maps</a>
+        <a class="btn" href="${L.waze}" target="_blank" rel="noopener">Open in Waze</a><button class="btn" id="dShare">Share spot</button>
+      </div></div>`;
+  $("#spBody").dataset.pids=pidsKey;
+  $("#dCopy").onclick=()=>copy(`${fmt(s.lat)}, ${fmt(s.lng)}`,"Coordinates copied");
+  $("#dShare").onclick=async()=>{if(navigator.share){try{await navigator.share({title:s.name,text:shareText(s)});return;}catch(e){if(e&&e.name==="AbortError")return;}}copy(shareText(s),"Share text copied");};
+  wirePhotos($("#spBody"));
+  const cis=spotCheckins(s.id);
+  $("#ciList").innerHTML=cis.length?`<div class="rows">${cis.map(c=>`<div class="rowi"><div class="grow"><div><b>${esc(fmtDay(c.date))}</b> <span class="meta">· ${esc(c.by||"")}</span></div>
+      ${(c.conds||[]).length?`<div class="tags" style="margin-top:4px">${c.conds.map(x=>`<span class="tag ${BAD_CONDS.has(x)?"warnt":"goodt"}">${esc(x)}</span>`).join("")}</div>`:""}
+      ${c.note?`<div style="margin-top:4px;white-space:pre-wrap">${esc(c.note)}</div>`:""}</div><button class="del" data-ci="${esc(c.id)}" aria-label="Delete check-in">✕</button></div>`).join("")}</div>`
+    :`<p class="meta" style="margin:0">No check-ins yet. Next time you're out there, log how it looked.</p>`;
+  $("#ciList").querySelectorAll("[data-ci]").forEach(b=>b.onclick=async()=>{try{await deleteDoc(doc(fs,"checkins",b.dataset.ci));}catch(e){toast(writeMsg(e));}});
+  $("#spFoot").innerHTML=`<div class="meta" style="margin-top:16px">${s.addedBy?`Added by ${esc(s.addedBy)}`:"Added"}${s.createdAt?` ${new Date(s.createdAt).toLocaleDateString()}`:""}${s.updatedAt&&s.updatedAt!==s.createdAt?` · updated ${new Date(s.updatedAt).toLocaleDateString()}${s.updatedBy?` by ${esc(s.updatedBy)}`:""}`:""}</div>
+    <div style="display:flex;gap:8px;margin-top:12px"><button class="btn" id="dEdit">Edit spot</button><button class="btn" id="dDel" style="color:#9B3412">Delete</button></div>`;
+  $("#dEdit").onclick=()=>openSpotForm(s);$("#dDel").onclick=()=>confirmBox(`Delete “${s.name}”?`,`This removes the spot, its photos and check-ins for everyone. It can't be undone.`,"Delete spot",async()=>{
+    await deleteDoc(doc(fs,"spots",s.id));for(const p of(s.photoIds||[])){try{await removePhoto(p);}catch(e){}}
+    for(const c of spotCheckins(s.id)){try{await deleteDoc(doc(fs,"checkins",c.id));}catch(e){}}toast("Spot deleted");},()=>openSpot(s.id));
+}
+function renderCheckinForm(spotId){
+  $("#ciForm").innerHTML=`<div class="panel" style="margin:0 0 10px">
+    <div class="field"><label>Date</label><input class="inp" type="date" id="ciDate" value="${today()}"></div>
+    <div class="field"><label>How was it?</label><div class="tags" id="ciConds">${CONDS.map(c=>`<button type="button" class="chip" data-c="${esc(c)}">${esc(c)}</button>`).join("")}</div></div>
+    <div class="field"><label>Notes</label><textarea class="inp" id="ciNote" maxlength="1000" style="min-height:64px" placeholder="Road conditions, who was camped there, anything to know…"></textarea></div>
+    <div style="display:flex;justify-content:flex-end;gap:8px"><button class="btn small" id="ciCancel">Cancel</button><button class="btn small primary" id="ciSave">Save check-in</button></div></div>`;
+  $("#ciConds").querySelectorAll(".chip").forEach(c=>c.onclick=()=>c.classList.toggle("on"));
+  $("#ciCancel").onclick=()=>$("#ciForm").innerHTML="";
+  $("#ciSave").onclick=async()=>{
+    const conds=[...$("#ciConds").querySelectorAll(".chip.on")].map(c=>c.dataset.c),note=$("#ciNote").value.trim(),date=$("#ciDate").value||today();
+    if(!conds.length&&!note){toast("Pick a condition or add a note");return;}
+    $("#ciSave").disabled=true;
+    try{await setDoc(doc(fs,"checkins",rid()),{spotId,date,conds,note,by:myName,at:Date.now()});$("#ciForm").innerHTML="";toast("Checked in");}
+    catch(e){$("#ciSave").disabled=false;toast(writeMsg(e));}
+  };
+}
+function confirmBox(title,body,cta,action,back){
+  const o=overlay(`<div class="sheet-head"><h3>${esc(title)}</h3><button class="x">✕</button></div>
+   <div class="pad"><p>${esc(body)}</p><div style="display:flex;gap:8px"><button class="btn" id="cNo">Keep it</button><button class="btn primary" id="cYes">${esc(cta)}</button></div></div>`);
+  openSheet={type:"confirm"};const goBack=()=>back?back():closeOverlay();
+  o.querySelector(".x").onclick=goBack;$("#cNo").onclick=goBack;
+  $("#cYes").onclick=async()=>{$("#cYes").disabled=true;$("#cYes").textContent="Working…";try{await action();closeOverlay();}catch(e){toast(writeMsg(e));$("#cYes").disabled=false;$("#cYes").textContent=cta;}};
+}
+
+/* ---------- spot form ---------- */
+function openSpotForm(existing){
+  const s=existing||{};const st={photos:(s.photoIds||[]).map(id=>({id,existing:true})),removed:[]};const geo="geolocation" in navigator;
+  const o=overlay(`<div class="sheet-head"><h3>${existing?"Edit spot":"Add a camp spot"}</h3><button class="x" aria-label="Close">✕</button></div>
+   <form class="pad" id="spotForm" novalidate>
+    <div class="field"><label for="fName">Spot name *</label><input class="inp" id="fName" maxlength="80" placeholder="e.g. Big Oak Point" value="${esc(s.name||"")}"></div>
+    <div class="field"><label for="fCoords">Coordinates *</label>
+      ${geo?`<button type="button" class="btn pine" id="fHere" style="width:100%;justify-content:center;margin-bottom:8px">📍 Use where I'm standing</button>`:""}
+      <input class="inp" id="fCoords" placeholder="31.12345, -92.47890  — or paste a Maps link" value="${s.lat!=null?`${fmt(s.lat)}, ${fmt(s.lng)}`:""}">
+      <div class="hint" id="coordMsg"></div>
+      <details class="help"><summary>Other ways to get coordinates</summary><ol>
+        <li><b>Apple Maps:</b> press and hold to drop a pin, swipe up, copy the coordinates, paste here.</li>
+        <li><b>Google Maps:</b> press and hold on the spot; the coordinates show in the search bar. Copy and paste.</li>
+        <li><b>Photo:</b> add a photo taken at the site with location on and the GPS fills in. On iPhone, tap <i>Options</i> in the photo picker and turn on <i>Location</i> if it doesn't.</li></ol>
+        A whole Google or Apple Maps share link works too.</details></div>
+    <div class="field"><label>Photos</label><label class="filebtn">📷 Add photos<input type="file" id="fFiles" accept="image/*" multiple></label><div class="thumbs" id="thumbs"></div></div>
+    <div class="field"><label for="fDesc">Why we love it</label><textarea class="inp" id="fDesc" maxlength="3000" placeholder="View, shade, where the tent pads are, best season…">${esc(s.description||"")}</textarea></div>
+    <div class="field"><label for="fDir">Getting there</label><textarea class="inp" id="fDir" maxlength="1500" style="min-height:70px" placeholder="Which finger road off FS, landmarks, ruts to watch for…">${esc(s.directions||"")}</textarea></div>
+    <div class="field"><label for="fSize">Fits</label><select class="inp" id="fSize">${SIZES.map(z=>`<option value="${esc(z)}" ${z===(s.size||"")?"selected":""}>${z||"—"}</option>`).join("")}</select></div>
+    <div class="field"><label>Tags</label><div class="tags" id="fTags">${TAGS.map(t=>`<button type="button" class="chip ${(s.tags||[]).includes(t)?"on":""}" data-t="${esc(t)}">${esc(t)}</button>`).join("")}</div></div>
+    <div id="formErr"></div>
+    <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:8px"><button type="button" class="btn" id="fCancel">Cancel</button><button type="submit" class="btn primary" id="fSave">${existing?"Save changes":"Add spot"}</button></div>
+   </form>`);
+  openSheet={type:"form"};
+  const back=()=>existing?openSpot(existing.id):closeOverlay();
+  o.querySelector(".x").onclick=back;$("#fCancel").onclick=back;
+  $("#fTags").querySelectorAll(".chip").forEach(c=>c.onclick=()=>c.classList.toggle("on"));
+  const coordIn=$("#fCoords");
+  const check=()=>{const p=parseCoords(coordIn.value),m=$("#coordMsg");if(!coordIn.value.trim()){m.innerHTML="";return null;}
+    if(!p){m.innerHTML=`<span class="bad">Couldn't read coordinates from that.</span>`;return null;}const d=miles(REF,p);
+    m.innerHTML=`<span class="${d>5?"bad":"ok"}">${d>5?"⚠ ":"✓ "}${fmt(p.lat)}, ${fmt(p.lng)} — ${d.toFixed(1)} mi from the rec area${d>5?" (that's far — double-check)":""}</span>${p.note?` · ${esc(p.note)}`:""} · <a href="${links({...p,name:"Check"}).apple}" target="_blank" rel="noopener">check on map</a>`;return p;};
+  coordIn.addEventListener("input",check);check();
+  const here=$("#fHere");
+  if(here)here.onclick=()=>{here.disabled=true;here.textContent="Finding you…";
+    navigator.geolocation.getCurrentPosition(pos=>{coordIn.value=`${fmt(pos.coords.latitude)}, ${fmt(pos.coords.longitude)}`;check();here.disabled=false;here.textContent=`📍 Got it (±${Math.round(pos.coords.accuracy*3.28)} ft) — tap to retry`;},
+    err=>{here.disabled=false;here.textContent="📍 Use where I'm standing";toast(err.code===1?"Location permission was blocked — allow it in your browser settings":"Couldn't get a GPS fix — try again in the open");},
+    {enableHighAccuracy:true,timeout:20000,maximumAge:0});};
+  const drawThumbs=()=>{$("#thumbs").innerHTML=st.photos.map((p,i)=>`<div class="thumb">${p.thumb?`<img src="${p.thumb}" alt="">`:p.existing?`<img data-pid="${esc(p.id)}" alt="">`:""}${p.busy?`<div class="busy">Processing…</div>`:""}<button type="button" data-i="${i}" aria-label="Remove photo">✕</button></div>`).join("");
+    $("#thumbs").querySelectorAll("button[data-i]").forEach(b=>b.onclick=()=>{const p=st.photos.splice(+b.dataset.i,1)[0];if(p&&p.existing)st.removed.push(p.id);drawThumbs();});wirePhotos($("#thumbs"));};
+  drawThumbs();
+  $("#fFiles").onchange=async e=>{const files=[...e.target.files];e.target.value="";
+    for(const f of files){if(st.photos.length>=12){toast("12 photos max per spot");break;}const p={busy:true};st.photos.push(p);drawThumbs();
+      try{if(!coordIn.value.trim()){const g=await exifGPS(f);if(g){coordIn.value=`${fmt(g.lat)}, ${fmt(g.lng)}`;check();toast("Coordinates read from photo");}}
+        Object.assign(p,await prepPhoto(f));p.busy=false;}catch(err){st.photos.splice(st.photos.indexOf(p),1);toast(err.message||"Couldn't add that photo");}drawThumbs();}};
+  $("#spotForm").onsubmit=async e=>{e.preventDefault();const err=m=>{$("#formErr").innerHTML=`<div class="notice warn">${esc(m)}</div>`;};
+    const name=$("#fName").value.trim(),p=check();
+    if(!name)return err("Give the spot a name.");if(!p)return err("Add coordinates — tap “Use where I'm standing”, paste them, or add a photo with location.");
+    if(st.photos.some(x=>x.busy))return err("Hang on — photos are still processing.");
+    const btn=$("#fSave");btn.disabled=true;btn.textContent="Saving…";const id=existing?existing.id:rid(),now=Date.now();
+    try{const photoIds=[];let n=0;
+      for(const ph of st.photos){if(ph.existing){photoIds.push(ph.id);continue;}n++;btn.textContent=`Uploading photo ${n}…`;photoIds.push(await savePhoto(ph,{spotId:id}));}
+      await setDoc(doc(fs,"spots",id),{name,lat:+p.lat.toFixed(6),lng:+p.lng.toFixed(6),description:$("#fDesc").value.trim(),directions:$("#fDir").value.trim(),size:$("#fSize").value,
+        tags:[...$("#fTags").querySelectorAll(".chip.on")].map(c=>c.dataset.t),photoIds,createdAt:existing?(existing.createdAt||now):now,addedBy:existing?(existing.addedBy||""):myName,updatedAt:now,updatedBy:myName});
+      for(const r of st.removed){try{await removePhoto(r);}catch(x){}}
+      toast(existing?"Spot updated":"Spot added");openSpot(id);
+    }catch(x){btn.disabled=false;btn.textContent=existing?"Save changes":"Add spot";err(writeMsg(x));}};
+}
+
+/* ---------- TRIPS ---------- */
+function viewTrips(){
+  if(setView("trips",`<div class="secthead"><h2>Trips</h2><button class="btn primary" id="newTrip">＋ Plan a trip</button></div><div id="tripList"></div>`)){
+    $("#newTrip").onclick=()=>openTripForm(null);
+  }
+  const t0=today();
+  const up=trips.filter(t=>(t.end||t.start)>=t0).sort((a,b)=>a.start.localeCompare(b.start));
+  const past=trips.filter(t=>(t.end||t.start)<t0).sort((a,b)=>b.start.localeCompare(a.start));
+  const card=t=>{
+    const rs=Object.values(t.rsvps||{}),going=rs.filter(r=>r.status==="going").map(r=>r.name);
+    const shop=tripItems(t.id,"shop"),got=shop.filter(i=>i.done).length,meals=tripItems(t.id,"meal").length,sp=spotById(t.spotId);
+    const mine=(t.rsvps||{})[uid];const wxs=tripWx(t);
+    return `<div class="tripcard" data-trip="${esc(t.id)}"><h3>${esc(t.name)}</h3>
+      <div class="meta">${esc(tripRange(t))}${sp?` · ${esc(sp.name)}`:""}</div>
+      ${wxs.length?`<div style="margin-top:6px;font-size:13px">${wxs.map(d=>`${d.icon} ${Math.round(d.hi)}°/${Math.round(d.lo)}°`).join(" &nbsp;")}</div>`:""}
+      <div style="margin-top:6px;font-size:13px">${going.length?`👥 ${going.length} going: ${esc(going.slice(0,5).join(", "))}${going.length>5?"…":""}`:"Nobody's in yet"}${mine?` · you: <b>${esc(mine.status==="going"?"going":mine.status==="maybe"?"maybe":"out")}</b>`:""}</div>
+      <div class="meta" style="margin-top:4px">${meals} meal${meals===1?"":"s"} planned · ${got}/${shop.length} shopping items bought${tripItems(t.id,"log").length?` · 📓 ${tripItems(t.id,"log").length} log entr${tripItems(t.id,"log").length===1?"y":"ies"}`:""}</div>
+      ${shop.length?`<div class="prog"><i style="width:${Math.round(100*got/shop.length)}%"></i></div>`:""}</div>`;};
+  $("#tripList").innerHTML=(up.length?up.map(card).join(""):`<div class="empty"><h3>No trips planned</h3><p>Pick some dates, and the crew can RSVP, plan meals and split the shopping list.</p></div>`)
+    +(past.length?`<details style="margin-top:18px"><summary class="meta" style="cursor:pointer;font-size:14px">Past trips (${past.length})</summary>${past.map(card).join("")}</details>`:"");
+  $("#tripList").querySelectorAll("[data-trip]").forEach(c=>c.onclick=()=>openTrip(c.dataset.trip));
+  if(!wx&&!wxErr&&!wxLoading&&up.some(t=>t.start<=ymd(new Date(Date.now()+15*864e5))))ensureWx().then(()=>{if(wx&&tab==="trips")viewTrips();});
+}
+function openTripForm(existing){
+  const t=existing||{};
+  const o=overlay(`<div class="sheet-head"><h3>${existing?"Edit trip":"Plan a trip"}</h3><button class="x">✕</button></div>
+   <form class="pad" id="tripForm" novalidate>
+    <div class="field"><label>Trip name *</label><input class="inp" id="tName" maxlength="80" placeholder="e.g. Thanksgiving weekend" value="${esc(t.name||"")}"></div>
+    <div class="row2"><div class="field"><label>Arrive *</label><input class="inp" type="date" id="tStart" value="${esc(t.start||"")}"></div>
+    <div class="field"><label>Leave</label><input class="inp" type="date" id="tEnd" value="${esc(t.end||"")}"></div></div>
+    <div class="field"><label>Spot</label><select class="inp" id="tSpot"><option value="">Not decided yet</option>${numbered().map(s=>`<option value="${esc(s.id)}" ${s.id===t.spotId?"selected":""}>#${s._n} ${esc(s.name)}</option>`).join("")}</select></div>
+    <div class="field"><label>🎶 Spotify playlist link</label><input class="inp" id="tSpot1" placeholder="https://open.spotify.com/playlist/…" value="${esc(t.spotify||"")}"></div>
+    <div class="field"><label>Notes</label><textarea class="inp" id="tNotes" maxlength="2000" style="min-height:70px" placeholder="Meet-up time, who's driving, backup spot…">${esc(t.notes||"")}</textarea></div>
+    <div id="tErr"></div>
+    <div style="display:flex;justify-content:flex-end;gap:8px"><button type="button" class="btn" id="tCancel">Cancel</button><button class="btn primary" id="tSave">${existing?"Save":"Create trip"}</button></div>
+   </form>`);
+  openSheet={type:"form"};const back=()=>existing?openTrip(existing.id):closeOverlay();
+  o.querySelector(".x").onclick=back;$("#tCancel").onclick=back;
+  $("#tStart").onchange=()=>{if(!$("#tEnd").value||$("#tEnd").value<$("#tStart").value)$("#tEnd").value=$("#tStart").value;};
+  $("#tripForm").onsubmit=async e=>{e.preventDefault();const err=m=>$("#tErr").innerHTML=`<div class="notice warn">${esc(m)}</div>`;
+    const name=$("#tName").value.trim(),start=$("#tStart").value;let end=$("#tEnd").value||start;
+    if(!name)return err("Name the trip.");if(!start)return err("Pick the arrival date.");if(end<start)end=start;
+    if(daysOf(start,end).length>14)return err("Trips can be up to two weeks.");
+    const spotify=$("#tSpot1").value.trim();
+    if(spotify&&!spotifyId(spotify))return err("That Spotify link doesn't look like a playlist link.");
+    $("#tSave").disabled=true;const id=existing?existing.id:rid();
+    try{
+      if(existing)await updateDoc(doc(fs,"trips",id),{name,start,end,spotId:$("#tSpot").value,notes:$("#tNotes").value.trim(),spotify});
+      else await setDoc(doc(fs,"trips",id),{name,start,end,spotId:$("#tSpot").value,notes:$("#tNotes").value.trim(),spotify,createdBy:myName,createdAt:Date.now(),rsvps:{[uid]:{name:myName,status:"going"}}});
+      openTrip(id);
+    }catch(x){$("#tSave").disabled=false;err(writeMsg(x));}};
+}
+function openTrip(id,tries=0){
+  const t=tripById(id);if(!t){if(tries<8)setTimeout(()=>openTrip(id,tries+1),250);else closeOverlay();return;}
+  const o=overlay(`<div class="sheet-head"><h3 id="trH"></h3><button class="x">✕</button></div>
+   <div class="pad">
+     <div id="trInfo"></div>
+     <div class="lbl">Who's coming</div><div id="trRsvp"></div>
+     <div id="trWx"></div>
+     <div class="lbl">🎶 Trip playlist</div><div id="trMusic"></div>
+     <div class="lbl">Meals</div><div id="trMealForm"></div><div id="trMeals"></div>
+     <div class="secthead"><div class="lbl">Shopping list</div><span class="meta" id="trShopCount"></span></div>
+     <div id="trShop"></div>
+     <form class="addrow" id="shopAdd"><input class="inp" id="shopTxt" maxlength="120" placeholder="Add item (e.g. 2 bags of ice)"><button class="btn small pine">Add</button></form>
+     <div class="secthead"><div class="lbl">Gear · who's bringing what</div><span class="meta" id="trGearCount"></span></div>
+     <div id="trGear"></div>
+     <form class="addrow" id="gearAdd"><input class="inp" id="gearTxt" maxlength="120" placeholder="Add gear (e.g. canopy)"><button class="btn small pine">Add</button></form>
+     <div class="chips" id="gearSuggest"></div>
+     <div class="secthead"><div class="lbl">📓 Trip log</div><span class="meta" id="trLogCount"></span></div>
+     <div id="trLogForm"></div>
+     <div class="chips" id="trLogFilter" style="padding-top:4px"></div>
+     <div id="trLog"></div>
+     <div class="secthead"><div class="lbl">Trip photos</div><button class="btn tiny" id="trAddPh">＋ Add photos</button></div>
+     <div id="trPhotos"></div>
+     <div style="display:flex;gap:8px;margin-top:20px"><button class="btn" id="trEdit">Edit trip</button><button class="btn" id="trDel" style="color:#9B3412">Delete trip</button></div>
+   </div>`);
+  openSheet={type:"trip",id,mealEdit:null,logFilter:"all"};
+  renderLogForm(id);
+  o.querySelector(".x").onclick=()=>closeOverlay();
+  $("#shopAdd").onsubmit=e=>{e.preventDefault();const v=$("#shopTxt").value.trim();if(!v)return;$("#shopTxt").value="";addItem(id,"shop",v);};
+  $("#gearAdd").onsubmit=e=>{e.preventDefault();const v=$("#gearTxt").value.trim();if(!v)return;$("#gearTxt").value="";addItem(id,"gear",v);};
+  $("#trEdit").onclick=()=>openTripForm(tripById(id));
+  $("#trDel").onclick=()=>confirmBox(`Delete “${t.name}”?`,"This removes the trip with its meals, shopping list and gear list. Trip photos stay in the album.","Delete trip",async()=>{
+    for(const i of items.filter(i=>i.tripId===id)){try{await deleteDoc(doc(fs,"items",i.id));}catch(e){}}await deleteDoc(doc(fs,"trips",id));toast("Trip deleted");},()=>openTrip(id));
+  $("#trAddPh").onclick=async()=>{const files=await pickFiles();if(!files.length)return;await uploadMany(files,{tripId:id});};
+  ensureThumbs();ensureWx().then(()=>{if(openSheet&&openSheet.type==="trip"&&openSheet.id===id)refreshTrip();});
+  refreshTrip();
+}
+function refreshTrip(){
+  const id=openSheet.id,t=tripById(id);if(!t){closeOverlay();return;}
+  const sp=spotById(t.spotId);
+  $("#trH").textContent=t.name;
+  $("#trInfo").innerHTML=`<div style="font-weight:600">${esc(tripRange(t))}</div>
+    ${sp?`<div style="margin-top:4px">📍 <a href="#" id="trSpot">${esc(sp.name)}</a> · <a href="${links(sp).googleDir}" target="_blank" rel="noopener">directions</a></div>`:`<div class="meta">Spot not decided yet</div>`}
+    ${t.notes?`<p class="longdesc" style="margin-top:8px">${esc(t.notes)}</p>`:""}`;
+  const ts=$("#trSpot");if(ts)ts.onclick=e=>{e.preventDefault();openSpot(sp.id);};
+  // rsvp
+  const rs=t.rsvps||{},mine=rs[uid],people=Object.entries(rs);
+  const grp=s=>people.filter(([,r])=>r.status===s).map(([,r])=>r.name);
+  $("#trRsvp").innerHTML=`<div class="rsvp">${[["going","✅ I'm in"],["maybe","🤔 Maybe"],["out","❌ Can't"]].map(([k,l])=>`<button class="chip ${mine&&mine.status===k?"on":""}" data-r="${k}">${l}</button>`).join("")}</div>
+    <div class="people">${grp("going").map(n=>`<span class="person">${esc(n)}</span>`).join("")}${grp("maybe").map(n=>`<span class="person maybe">${esc(n)}?</span>`).join("")}${grp("out").map(n=>`<span class="person out">${esc(n)}</span>`).join("")}${people.length?"":`<span class="meta">No one's answered yet.</span>`}</div>`;
+  $("#trRsvp").querySelectorAll("[data-r]").forEach(b=>b.onclick=async()=>{try{await updateDoc(doc(fs,"trips",id),{[`rsvps.${uid}`]:{name:myName,status:b.dataset.r}});}catch(e){toast(writeMsg(e));}});
+  // weather
+  const wxs=tripWx(t);
+  $("#trWx").innerHTML=wxs.length?`<div class="lbl">Forecast for the trip</div><div class="rows">${wxs.map(d=>`<div class="rowi"><span style="font-size:20px">${d.icon}</span><div class="grow"><b>${esc(fmtDay(d.date))}</b> · ${esc(d.label)}<div class="meta">${Math.round(d.hi)}° / ${Math.round(d.lo)}° · ${d.rain}% rain · wind ${Math.round(d.wind)} mph${d.flags.length?` · <span style="color:#7A3417">${esc(d.flags.join(", "))}</span>`:""}</div></div></div>`).join("")}</div>`
+    :(t.start>ymd(new Date(Date.now()+15*864e5))?`<div class="meta" style="margin-top:10px">Forecast shows up here about two weeks before the trip.</div>`:"");
+  renderMusic(t);
+  // meals
+  const meals=tripItems(id,"meal"),days=daysOf(t.start,t.end);
+  $("#trMeals").innerHTML=days.map(d=>`<div class="mealday"><h4>${esc(fmtDay(d,{weekday:"long",month:"short",day:"numeric"}))}</h4>${SLOTS.map(sl=>{
+      const ms=meals.filter(m=>m.day===d&&m.slot===sl);
+      return `<div class="meal"><div class="slot">${sl}</div><div class="dish">${ms.map(m=>`<div style="margin-bottom:4px"><a href="#" data-meal="${esc(m.id)}" style="color:var(--ink);font-weight:600;text-decoration:none">${esc(m.text)}</a>${m.who?` <span class="meta">· ${esc(m.who)} cooking</span>`:""}</div>`).join("")}
+        <button class="addm" data-add="${d}|${sl}">${ms.length?"＋ another":"＋ add"}</button></div></div>`;}).join("")}</div>`).join("");
+  $("#trMeals").querySelectorAll("[data-add]").forEach(b=>b.onclick=()=>{const[d,sl]=b.dataset.add.split("|");mealForm(id,{day:d,slot:sl});});
+  $("#trMeals").querySelectorAll("[data-meal]").forEach(a=>a.onclick=e=>{e.preventDefault();const m=items.find(i=>i.id===a.dataset.meal);if(m)mealForm(id,m);});
+  // shop + gear
+  renderItemList("shop",id,"#trShop","#trShopCount","bought","buying");
+  renderItemList("gear",id,"#trGear","#trGearCount","packed","bringing");
+  renderLog(id);
+  const have=new Set(tripItems(id,"gear").map(i=>i.text.toLowerCase()));
+  $("#gearSuggest").innerHTML=GEAR_SUGGEST.filter(g=>!have.has(g.toLowerCase())).map(g=>`<button class="chip" data-g="${esc(g)}">＋ ${esc(g)}</button>`).join("");
+  $("#gearSuggest").querySelectorAll("[data-g]").forEach(b=>b.onclick=()=>addItem(id,"gear",b.dataset.g));
+  // photos
+  const ph=thumbs.filter(p=>p.tripId===id);
+  $("#trPhotos").innerHTML=ph.length?`<div class="grid">${ph.map(p=>`<button data-ph="${esc(p.id)}"><img src="${p.data}" alt=""></button>`).join("")}</div>`:`<p class="meta" style="margin:0">${thumbsOn?"No trip photos yet.":"Loading…"}</p>`;
+  $("#trPhotos").querySelectorAll("[data-ph]").forEach(b=>b.onclick=()=>openPhoto(b.dataset.ph,()=>openTrip(id)));
+}
+const LOG_TYPES=[["quote","💬","Quote"],["topic","🗣️","Topic"],["game","🎲","Game"],["story","📖","Story"],["joke","😂","Inside joke"],["moment","✨","Moment"]];
+const logType=k=>LOG_TYPES.find(t=>t[0]===k)||LOG_TYPES[5];
+const LOG_HINT={quote:"What did they say? (word for word)",topic:"What did the fire-side debate cover?",game:"Name it and how it's played…",story:"What happened?",joke:"The joke, and how it started…",moment:"What made it memorable?"};
+function renderLogForm(tripId){
+  const t=tripById(tripId);const days=daysOf(t.start,t.end);const td=today();
+  const st={type:"quote"};
+  $("#trLogForm").innerHTML=`<div class="panel" style="margin:0 0 6px">
+    <div class="tags" id="lgTypes">${LOG_TYPES.map(([k,i,l])=>`<button type="button" class="chip ${k==="quote"?"on":""}" data-lt="${k}">${i} ${l}</button>`).join("")}</div>
+    <textarea class="inp" id="lgText" maxlength="2000" style="min-height:70px;margin-top:10px" placeholder="${LOG_HINT.quote}"></textarea>
+    <div class="row2" style="margin-top:8px">
+      <input class="inp" id="lgWho" maxlength="60" placeholder="Who said it?">
+      <select class="inp" id="lgDay">${days.map(d=>`<option value="${d}" ${d===td?"selected":""}>${esc(fmtDay(d))}</option>`).join("")}</select>
+    </div>
+    <div style="display:flex;justify-content:flex-end;margin-top:8px"><button class="btn small primary" id="lgAdd">Add to log</button></div></div>`;
+  $("#lgTypes").querySelectorAll("[data-lt]").forEach(b=>b.onclick=()=>{
+    st.type=b.dataset.lt;$("#lgTypes").querySelectorAll(".chip").forEach(c=>c.classList.toggle("on",c===b));
+    $("#lgText").placeholder=LOG_HINT[st.type];
+    $("#lgWho").placeholder=st.type==="quote"?"Who said it?":st.type==="game"?"Who made it up? (optional)":"Who was involved? (optional)";});
+  $("#lgAdd").onclick=async()=>{
+    const text=$("#lgText").value.trim();if(!text){toast("Write something first");return;}
+    $("#lgAdd").disabled=true;
+    try{await setDoc(doc(fs,"items",rid()),{tripId,kind:"log",logType:st.type,text,who:$("#lgWho").value.trim(),day:$("#lgDay").value||t.start,done:false,by:myName,at:Date.now()});
+      $("#lgText").value="";$("#lgWho").value="";toast("Added to the trip log");}
+    catch(e){toast(writeMsg(e));}
+    $("#lgAdd").disabled=false;
+  };
+}
+function renderLog(tripId){
+  const all=tripItems(tripId,"log");const f=(openSheet&&openSheet.logFilter)||"all";
+  $("#trLogCount").textContent=all.length?`${all.length} entr${all.length===1?"y":"ies"}`:"";
+  const used=LOG_TYPES.filter(([k])=>all.some(e=>e.logType===k));
+  $("#trLogFilter").innerHTML=used.length>1?[["all","","All"],...used].map(([k,i,l])=>`<button class="chip ${f===k?"on":""}" data-lf="${k}">${i} ${l}</button>`).join(""):"";
+  $("#trLogFilter").querySelectorAll("[data-lf]").forEach(b=>b.onclick=()=>{openSheet.logFilter=b.dataset.lf;renderLog(tripId);});
+  const list=all.filter(e=>f==="all"||e.logType===f).sort((a,b)=>(a.day||"").localeCompare(b.day||"")||(a.at||0)-(b.at||0));
+  if(!list.length){$("#trLog").innerHTML=`<p class="meta" style="margin:0">Nothing logged yet. Quotes, fire-side topics, games you invent — write them down before everyone forgets.</p>`;return;}
+  let html="",lastDay="";
+  for(const e of list){
+    if(e.day!==lastDay){lastDay=e.day;html+=`<div class="logday">${esc(fmtDay(e.day,{weekday:"long",month:"short",day:"numeric"}))}</div>`;}
+    const [k,icon,label]=logType(e.logType);
+    const body=k==="quote"?`<div class="logquote">“${esc(e.text)}”</div>${e.who?`<div class="logwho">— ${esc(e.who)}</div>`:""}`
+      :`<div class="logtext">${esc(e.text)}</div>${e.who?`<div class="meta">${k==="game"?"Made up by":"With"} ${esc(e.who)}</div>`:""}`;
+    html+=`<div class="logentry ${k}"><div class="logicon" title="${label}">${icon}</div><div class="grow">${body}<div class="meta" style="margin-top:4px">${label} · added by ${esc(e.by||"someone")}</div></div><button class="del" data-ld="${esc(e.id)}" aria-label="Delete entry">✕</button></div>`;
+  }
+  $("#trLog").innerHTML=html;
+  $("#trLog").querySelectorAll("[data-ld]").forEach(b=>b.onclick=async()=>{
+    if(confirmLogDel._id!==b.dataset.ld||Date.now()-confirmLogDel._t>4000){confirmLogDel._id=b.dataset.ld;confirmLogDel._t=Date.now();toast("Tap ✕ again to delete");return;}
+    try{await deleteDoc(doc(fs,"items",b.dataset.ld));}catch(e){toast(writeMsg(e));}});
+}
+function confirmLogDel(){}
+function renderItemList(kind,tripId,listSel,countSel,doneWord,whoWord){
+  const list=tripItems(tripId,kind).sort((a,b)=>(a.done?1:0)-(b.done?1:0)||(a.at||0)-(b.at||0));
+  $(countSel).textContent=list.length?`${list.filter(i=>i.done).length}/${list.length} ${doneWord}`:"";
+  $(listSel).innerHTML=list.length?`<div class="rows">${list.map(i=>`<div class="rowi ${i.done?"done":""}">
+      <button class="chk ${i.done?"on":""}" data-done="${esc(i.id)}" aria-label="Mark ${doneWord}">${i.done?"✓":""}</button>
+      <div class="grow"><span class="txt">${esc(i.text)}</span>${i.forMeal?`<div class="meta">for ${esc(i.forMeal)}</div>`:""}</div>
+      <button class="who ${i.who===myName?"mine":i.who?"set":""}" data-who="${esc(i.id)}">${i.who?esc(i.who===myName?"Me":i.who):`I'm ${whoWord}`}</button>
+      <button class="del" data-del="${esc(i.id)}" aria-label="Remove">✕</button></div>`).join("")}</div>`:`<p class="meta" style="margin:0">Nothing yet.</p>`;
+  const L=$(listSel);
+  L.querySelectorAll("[data-done]").forEach(b=>b.onclick=()=>{const i=items.find(x=>x.id===b.dataset.done);if(i)updItem(i.id,{done:!i.done});});
+  L.querySelectorAll("[data-who]").forEach(b=>b.onclick=()=>{const i=items.find(x=>x.id===b.dataset.who);if(!i)return;
+    if(i.who&&i.who!==myName&&!confirmTake(i))return;updItem(i.id,{who:i.who===myName?"":myName});});
+  L.querySelectorAll("[data-del]").forEach(b=>b.onclick=async()=>{try{await deleteDoc(doc(fs,"items",b.dataset.del));}catch(e){toast(writeMsg(e));}});
+}
+function confirmTake(i){const now=Date.now();if(confirmTake._id===i.id&&now-confirmTake._t<4000)return true;confirmTake._id=i.id;confirmTake._t=now;toast(`${i.who} has this — tap again to take it over`);return false;}
+async function addItem(tripId,kind,text,extra={}){try{await setDoc(doc(fs,"items",rid()),{tripId,kind,text,who:"",done:false,by:myName,at:Date.now(),...extra});}catch(e){toast(writeMsg(e));}}
+async function updItem(id,patch){try{await updateDoc(doc(fs,"items",id),patch);}catch(e){toast(writeMsg(e));}}
+function mealForm(tripId,m){
+  const isNew=!m.id;const t=tripById(tripId);
+  $("#trMealForm").innerHTML=`<div class="panel" style="margin:4px 0 10px">
+    <div class="row2"><div class="field"><label>Day</label><select class="inp" id="mDay">${daysOf(t.start,t.end).map(d=>`<option value="${d}" ${d===m.day?"selected":""}>${esc(fmtDay(d))}</option>`).join("")}</select></div>
+    <div class="field"><label>Meal</label><select class="inp" id="mSlot">${SLOTS.map(s=>`<option ${s===m.slot?"selected":""}>${s}</option>`).join("")}</select></div></div>
+    <div class="field"><label>What's cooking *</label><input class="inp" id="mText" maxlength="100" placeholder="e.g. Chicken & sausage gumbo" value="${esc(m.text||"")}"></div>
+    <div class="field"><label>Who's cooking</label><input class="inp" id="mWho" maxlength="40" placeholder="Name" value="${esc(m.who||"")}"></div>
+    <div class="field"><label>Ingredients</label><textarea class="inp" id="mIng" maxlength="1500" style="min-height:80px" placeholder="One per line — they can go straight onto the shopping list">${esc(m.ingredients||"")}</textarea>
+      <label style="display:flex;gap:8px;align-items:center;font-weight:400;margin-top:6px"><input type="checkbox" id="mToShop" ${isNew?"checked":""}> Add ingredients to the shopping list</label></div>
+    <div style="display:flex;gap:8px;justify-content:flex-end;flex-wrap:wrap">${isNew?"":`<button class="btn small" id="mDel" style="color:#9B3412;margin-right:auto">Delete</button>`}<button class="btn small" id="mCancel">Cancel</button><button class="btn small primary" id="mSave">${isNew?"Add meal":"Save"}</button></div></div>`;
+  $("#trMealForm").scrollIntoView({behavior:"smooth",block:"center"});
+  $("#mCancel").onclick=()=>$("#trMealForm").innerHTML="";
+  if(!isNew)$("#mDel").onclick=async()=>{try{await deleteDoc(doc(fs,"items",m.id));$("#trMealForm").innerHTML="";}catch(e){toast(writeMsg(e));}};
+  $("#mSave").onclick=async()=>{
+    const text=$("#mText").value.trim();if(!text){toast("Name the dish");return;}
+    const body={day:$("#mDay").value,slot:$("#mSlot").value,text,who:$("#mWho").value.trim(),ingredients:$("#mIng").value.trim()};
+    $("#mSave").disabled=true;
+    try{
+      if(isNew)await setDoc(doc(fs,"items",rid()),{tripId,kind:"meal",done:false,by:myName,at:Date.now(),...body});
+      else await updateDoc(doc(fs,"items",m.id),body);
+      if($("#mToShop").checked&&body.ingredients){
+        const have=new Set(tripItems(tripId,"shop").map(i=>i.text.toLowerCase()));
+        const lines=body.ingredients.split(/\n|,(?![^(]*\))/).map(s=>s.replace(/^[-•*\s]+/,"").trim()).filter(Boolean).filter(s=>!have.has(s.toLowerCase()));
+        for(const l of lines.slice(0,40))await addItem(tripId,"shop",l.slice(0,120),{forMeal:text});
+        if(lines.length)toast(`${lines.length} item${lines.length===1?"":"s"} added to shopping`);
+      }
+      $("#trMealForm").innerHTML="";
+    }catch(e){$("#mSave").disabled=false;toast(writeMsg(e));}
+  };
+}
+
+/* ---------- MUSIC ---------- */
+function spotifyId(u){const m=String(u||"").match(/^https:\/\/open\.spotify\.com\/(?:intl-[a-z]{2}\/)?playlist\/([A-Za-z0-9]{10,40})/);return m?m[1]:null;}
+function renderMusic(t){
+  const box=$("#trMusic"),key=t.spotify||"";
+  if(box.dataset.key===key&&box.innerHTML)return;box.dataset.key=key;
+  const sid=spotifyId(t.spotify);
+  if(!sid){
+    box.innerHTML=`<div class="panel" style="margin-top:0">
+      <p style="margin-top:0">No playlist yet. Make a <b>collaborative</b> Spotify playlist so everyone can add songs, then paste its link.</p>
+      <div class="addrow" style="margin-top:0"><input class="inp" id="muS" placeholder="https://open.spotify.com/playlist/…"><button class="btn small primary" id="muSave">Save</button></div>
+      <details class="help" style="margin-top:10px"><summary>How to make one</summary><ol>
+        <li>In Spotify, create a playlist for the trip.</li>
+        <li>Tap ⋯ → <i>Invite collaborators</i> so the crew can add songs.</li>
+        <li>Tap ⋯ → <i>Share</i> → <i>Copy link</i>, and paste it here.</li></ol></details></div>`;
+    $("#muSave").onclick=async()=>{const s=$("#muS").value.trim();
+      if(!spotifyId(s)){toast("That isn't a Spotify playlist link");return;}
+      try{await updateDoc(doc(fs,"trips",t.id),{spotify:s});}catch(e){toast(writeMsg(e));}};
+    return;
+  }
+  box.innerHTML=`<iframe title="Spotify playlist" src="https://open.spotify.com/embed/playlist/${sid}" width="100%" height="352" frameborder="0" style="border-radius:12px;display:block" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:8px"><a class="btn small" href="https://open.spotify.com/playlist/${sid}" target="_blank" rel="noopener">Open in Spotify</a><span class="meta" style="align-self:center">Change it via Edit trip.</span></div>`;
+}
+
+/* ---------- WEATHER ---------- */
+const WMO={0:["☀️","Clear"],1:["🌤️","Mostly clear"],2:["⛅","Partly cloudy"],3:["☁️","Cloudy"],45:["🌫️","Fog"],48:["🌫️","Freezing fog"],51:["🌦️","Light drizzle"],53:["🌦️","Drizzle"],55:["🌧️","Heavy drizzle"],56:["🧊","Freezing drizzle"],57:["🧊","Freezing drizzle"],
+  61:["🌧️","Light rain"],63:["🌧️","Rain"],65:["🌧️","Heavy rain"],66:["🧊","Freezing rain"],67:["🧊","Freezing rain"],71:["🌨️","Light snow"],73:["🌨️","Snow"],75:["❄️","Heavy snow"],77:["❄️","Snow grains"],
+  80:["🌦️","Showers"],81:["🌧️","Showers"],82:["⛈️","Heavy showers"],85:["🌨️","Snow showers"],86:["🌨️","Snow showers"],95:["⛈️","Thunderstorms"],96:["⛈️","Storms & hail"],99:["⛈️","Storms & hail"]};
+const wmo=c=>WMO[c]||["🌡️","—"];
+const WX_URL=`https://api.open-meteo.com/v1/forecast?latitude=${REF.lat}&longitude=${REF.lng}`+
+  `&current=temperature_2m,apparent_temperature,relative_humidity_2m,weather_code,wind_speed_10m,wind_gusts_10m`+
+  `&hourly=temperature_2m,precipitation_probability,weather_code`+
+  `&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max,precipitation_sum,wind_speed_10m_max,wind_gusts_10m_max,sunrise,sunset,uv_index_max`+
+  `&temperature_unit=fahrenheit&wind_speed_unit=mph&precipitation_unit=inch&timezone=America%2FChicago&forecast_days=16`;
+function ensureWx(force){
+  if(!force&&wx&&Date.now()-wxAt<30*60e3)return Promise.resolve(wx);
+  if(wxLoading)return wxLoading;
+  wxLoading=(async()=>{
+    try{const r=await fetch(WX_URL);if(!r.ok)throw new Error(r.status);wx=await r.json();wxAt=Date.now();wxErr="";}
+    catch(e){wxErr="Couldn't load the forecast — check your signal and try again.";}
+    try{const r=await fetch(`https://api.weather.gov/alerts/active?point=${REF.lat},${REF.lng}`,{headers:{Accept:"application/geo+json"}});
+      if(r.ok){const j=await r.json();wxAlerts=(j.features||[]).map(f=>f.properties||{});}}catch(e){}
+    wxLoading=null;return wx;})();
+  return wxLoading;
+}
+function dayInfo(i){const D=wx.daily;const[icon,label]=wmo(D.weather_code[i]);const hi=D.temperature_2m_max[i],lo=D.temperature_2m_min[i],rain=D.precipitation_probability_max[i]??0,gust=D.wind_gusts_10m_max[i]??0;
+  const flags=[];if(rain>=60)flags.push("wet — finger roads may get muddy");if(lo<=32)flags.push("freezing overnight");else if(lo<=40)flags.push("cold night");
+  if(gust>=30)flags.push(`gusts to ${Math.round(gust)} mph`);if(hi>=95)flags.push("very hot");if([95,96,99].includes(D.weather_code[i]))flags.push("storms");
+  return{date:D.time[i],icon,label,hi,lo,rain,wind:D.wind_speed_10m_max[i]??0,gust,flags,sunrise:D.sunrise[i],sunset:D.sunset[i],precip:D.precipitation_sum[i]??0};}
+function tripWx(t){if(!wx||!wx.daily)return[];const set=new Set(daysOf(t.start,t.end));const out=[];wx.daily.time.forEach((d,i)=>{if(set.has(d))out.push(dayInfo(i));});return out;}
+const hm=s=>new Date(s).toLocaleTimeString(undefined,{hour:"numeric",minute:"2-digit"});
+function viewWeather(){
+  if(setView("weather",`<div class="secthead"><h2>Weather at Indian Creek</h2><button class="btn small" id="wxRefresh">↻ Refresh</button></div><div id="wxBody"><div class="notice">Loading forecast…</div></div>`)){
+    $("#wxRefresh").onclick=()=>{$("#wxBody").innerHTML=`<div class="notice">Loading forecast…</div>`;ensureWx(true).then(drawWx);};
+  }
+  if(wx)drawWx();ensureWx().then(drawWx);
+}
+function drawWx(){
+  if(tab!=="weather"||!$("#wxBody"))return;
+  if(!wx){$("#wxBody").innerHTML=`<div class="notice warn">${esc(wxErr||"Couldn't load the forecast.")}</div>${wxLinks()}`;return;}
+  const C=wx.current,[ci,cl]=wmo(C.weather_code),H=wx.hourly;
+  const nowH=C.time.slice(0,13);let start=H.time.findIndex(t=>t.slice(0,13)>=nowH);if(start<0)start=0;
+  const hours=H.time.slice(start,start+24).map((t,k)=>{const i=start+k;const h=new Date(t).toLocaleTimeString(undefined,{hour:"numeric"});
+    return `<div class="hr"><div class="t">${k===0?"Now":esc(h)}</div><div class="i">${wmo(H.weather_code[i])[0]}</div><div>${Math.round(H.temperature_2m[i])}°</div><div class="p">${H.precipitation_probability[i]??0}%</div></div>`;}).join("");
+  const days=wx.daily.time.map((_,i)=>dayInfo(i));
+  const lo=Math.min(...days.map(d=>d.lo)),hi=Math.max(...days.map(d=>d.hi)),span=Math.max(1,hi-lo);
+  const row=(d,i)=>`<div class="day"><div class="d">${i===0?"Today":esc(fmtDay(d.date,{weekday:"short",month:"numeric",day:"numeric"}))}</div><div class="i" title="${esc(d.label)}">${d.icon}</div>
+    <div><div class="rng"><i style="left:${(d.lo-lo)/span*100}%;right:${(hi-d.hi)/span*100}%"></i></div><div class="hl"><span>${Math.round(d.lo)}°</span><span>${Math.round(d.hi)}°</span></div></div>
+    <div class="rp">💧${d.rain}%</div>${d.flags.length?`<div class="flags">${esc(d.flags.join(" · "))}</div>`:""}</div>`;
+  const t0=days[0];
+  $("#wxBody").innerHTML=`
+    ${wxAlerts.map(a=>`<div class="notice alert"><b>⚠ ${esc(a.event||"Weather alert")}</b>${a.headline?`<div style="margin-top:4px">${esc(a.headline)}</div>`:""}</div>`).join("")}
+    <div class="panel"><div class="wxnow"><div class="ico">${ci}</div><div><div class="big">${Math.round(C.temperature_2m)}°</div><div>${esc(cl)} · feels ${Math.round(C.apparent_temperature)}°</div></div></div>
+      <div class="meta" style="margin-top:8px">Wind ${Math.round(C.wind_speed_10m)} mph (gusts ${Math.round(C.wind_gusts_10m)}) · Humidity ${C.relative_humidity_2m}% · Today ${Math.round(t0.hi)}°/${Math.round(t0.lo)}°</div>
+      <div class="meta">🌅 ${esc(hm(t0.sunrise))} · 🌇 ${esc(hm(t0.sunset))}</div></div>
+    <div class="lbl">Next 24 hours · chance of rain</div><div class="hourly">${hours}</div>
+    <div class="lbl">This week</div><div class="rows">${days.slice(0,7).map(row).join("")}</div>
+    <div class="lbl">Next week+ <span style="text-transform:none;letter-spacing:0;font-weight:400">· rougher guess the further out</span></div><div class="rows">${days.slice(7).map((d,i)=>row(d,i+7)).join("")}</div>
+    ${wxLinks()}
+    <p class="meta" style="margin-top:14px">Forecast for the rec area pin, updated ${esc(new Date(wxAt).toLocaleTimeString(undefined,{hour:"numeric",minute:"2-digit"}))}. Weather data by <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo.com</a> (CC BY 4.0); alerts from the National Weather Service.</p>`;
+}
+function wxLinks(){return `<div class="lbl">Before you go</div><div class="navgrid">
+  <a class="btn" href="https://forecast.weather.gov/MapClick.php?lat=${REF.lat}&lon=${REF.lng}" target="_blank" rel="noopener">NWS forecast</a>
+  <a class="btn" href="https://www.facebook.com/LAOSFM" target="_blank" rel="noopener">Burn ban · State Fire Marshal</a>
+  <a class="btn" href="https://www.ldaf.la.gov/about/news" target="_blank" rel="noopener">Burn ban · LDAF news</a>
+  <a class="btn" href="https://radar.weather.gov/" target="_blank" rel="noopener">Live radar</a></div>
+  <p class="meta">Parishes can set their own burn bans too; check Rapides Parish news if it's been dry.</p>`;}
+
+/* ---------- ALBUM ---------- */
+function ensureThumbs(){
+  if(thumbsOn)return;thumbsOn=true;
+  onSnapshot(query(collection(fs,"thumbs"),orderBy("at","desc"),limit(600)),snap=>{
+    thumbs=snap.docs.map(d=>Object.assign({id:d.id},d.data()));
+    if(tab==="album")viewAlbum();if(openSheet&&openSheet.type==="trip")refreshTrip();
+  },()=>{thumbsOn=false;});
+}
+function viewAlbum(){
+  ensureThumbs();
+  if(setView("album",`<div class="secthead"><h2>Album</h2><button class="btn primary" id="alAdd">＋ Add photos</button></div><div class="chips" id="alChips"></div><div id="alGrid"></div>`)){
+    $("#alAdd").onclick=openAlbumUpload;
+  }
+  const f=albumFilter;
+  const tripsWith=[...new Set(thumbs.filter(p=>p.tripId).map(p=>p.tripId))].map(tripById).filter(Boolean);
+  const opts=[["all","All"],["spots","Spot photos"],["trips","Trip photos"],...tripsWith.map(t=>["t:"+t.id,t.name])];
+  $("#alChips").innerHTML=opts.map(([k,l])=>`<button class="chip ${f===k?"on":""}" data-f="${esc(k)}">${esc(l)}</button>`).join("");
+  $("#alChips").querySelectorAll("[data-f]").forEach(b=>b.onclick=()=>{albumFilter=b.dataset.f;viewAlbum();});
+  const list=thumbs.filter(p=>f==="all"||(f==="spots"&&p.spotId)||(f==="trips"&&p.tripId)||(f.startsWith("t:")&&p.tripId===f.slice(2)));
+  $("#alGrid").innerHTML=!thumbsOn?"":list.length?`<div class="grid">${list.map(p=>`<button data-ph="${esc(p.id)}"><img src="${p.data}" alt="${esc(p.caption||"")}" loading="lazy"></button>`).join("")}</div><p class="meta">${list.length} photo${list.length===1?"":"s"}</p>`
+    :`<div class="empty"><h3>No photos yet</h3><p>Photos added to spots and trips show up here, or add some straight to the album.</p></div>`;
+  $("#alGrid").querySelectorAll("[data-ph]").forEach(b=>b.onclick=()=>openPhoto(b.dataset.ph));
+}
+function openAlbumUpload(){
+  const up=trips.slice().sort((a,b)=>b.start.localeCompare(a.start));
+  const o=overlay(`<div class="sheet-head"><h3>Add photos</h3><button class="x">✕</button></div><div class="pad">
+    <div class="field"><label>Which trip?</label><select class="inp" id="auTrip"><option value="">No particular trip</option>${up.map(t=>`<option value="${esc(t.id)}">${esc(t.name)} · ${esc(tripRange(t))}</option>`).join("")}</select></div>
+    <div class="field"><label>Caption (optional)</label><input class="inp" id="auCap" maxlength="140" placeholder="Applies to all photos in this batch"></div>
+    <button class="btn primary" id="auPick" style="width:100%;justify-content:center">📷 Choose photos</button></div>`);
+  openSheet={type:"form"};o.querySelector(".x").onclick=()=>closeOverlay();
+  $("#auPick").onclick=async()=>{const files=await pickFiles();if(!files.length)return;const meta={tripId:$("#auTrip").value,caption:$("#auCap").value.trim()};closeOverlay();await uploadMany(files,meta);};
+}
+async function uploadMany(files,meta){
+  let n=0;for(const f of files.slice(0,30)){n++;toast(`Uploading photo ${n} of ${Math.min(files.length,30)}…`);
+    try{await savePhoto(await prepPhoto(f),meta);}catch(e){toast(e.code?writeMsg(e):(e.message||"Couldn't add a photo"));return;}}
+  toast(`${n} photo${n===1?"":"s"} added`);
+}
+function openPhoto(pid,back){
+  const p=thumbs.find(x=>x.id===pid);if(!p)return;const sp=spotById(p.spotId),tr=tripById(p.tripId);
+  const o=overlay(`<div class="sheet-head"><h3>${esc(p.caption||sp?.name||tr?.name||"Photo")}</h3><button class="x">✕</button></div>
+    <img class="lightimg" id="lbImg" src="${p.data}" alt="">
+    <div class="pad"><div class="meta">${p.by?`Added by ${esc(p.by)} · `:""}${new Date(p.at).toLocaleDateString()}</div>
+      ${sp?`<div style="margin-top:6px">📍 <a href="#" id="lbSpot">${esc(sp.name)}</a></div>`:""}${tr?`<div style="margin-top:6px">🏕 <a href="#" id="lbTrip">${esc(tr.name)}</a></div>`:""}
+      <div style="display:flex;gap:8px;margin-top:14px"><button class="btn small" id="lbDel" style="color:#9B3412">Delete photo</button></div></div>`);
+  openSheet={type:"photo"};const goBack=()=>back?back():closeOverlay();o.querySelector(".x").onclick=goBack;
+  loadPhoto(pid).then(d=>{if(d&&$("#lbImg"))$("#lbImg").src=d;});
+  if(sp)$("#lbSpot").onclick=e=>{e.preventDefault();openSpot(sp.id);};
+  if(tr)$("#lbTrip").onclick=e=>{e.preventDefault();openTrip(tr.id);};
+  $("#lbDel").onclick=()=>confirmBox("Delete this photo?","It'll be removed for everyone.","Delete photo",async()=>{
+    if(sp)await updateDoc(doc(fs,"spots",sp.id),{photoIds:arrayRemove(pid)});await removePhoto(pid);toast("Photo deleted");},()=>openPhoto(pid,back));
+}
+
+/* ---------- unlock ---------- */
+async function unlock(e){
+  e.preventDefault();const name=$("#uName").value.trim(),pass=$("#uPass").value.trim();
+  const err=m=>$("#uErr").innerHTML=`<div class="notice warn">${esc(m)}</div>`;
+  if(!name)return err("Add your name.");if(!pass||pass.includes("/"))return err("Enter the camp password.");
+  const b=$("#uGo");b.disabled=true;b.textContent="Checking…";
+  try{if(!auth.currentUser)await signInAnonymously(auth);uid=auth.currentUser.uid;
+    const ref=doc(fs,"members",uid);const ex=await getDoc(ref);if(!ex.exists())await setDoc(ref,{k:pass,name,at:Date.now()});
+    isMember=true;myName=name;ls.set("ic_name",name);$("#status").innerHTML="";startListening();renderAll();toast("Welcome, "+name);
+  }catch(x){b.disabled=false;b.textContent="Unlock";
+    err(x&&x.code==="permission-denied"?"That password didn't work.":x&&x.code==="auth/operation-not-allowed"?"Password sign-in isn't turned on in Firebase yet (enable Anonymous under Authentication).":"Couldn't check right now — try again with better signal.");}
+}
+function writeMsg(e){const c=e&&e.code;
+  if(c==="permission-denied")return "This phone isn't unlocked anymore — reload the page and enter the camp password.";
+  if(c==="resource-exhausted")return "The free daily limit was hit. Try again tomorrow.";
+  return "Couldn't save just now (signal?). Try again in a moment.";}
+
+/* ---------- copy / export ---------- */
+function shareText(s){const L=links(s);return `${s.name} — Camp Cranman · Indian Creek\n${fmt(s.lat)}, ${fmt(s.lng)}\nApple Maps: ${L.apple}\nGoogle Maps: ${L.google}`;}
+function allText(){return numbered().map(s=>`#${s._n} ${shareText(s)}${s.description?`\n${s.description}`:""}`).join("\n\n");}
+async function copy(text,msg){try{await navigator.clipboard.writeText(text);toast(msg);}catch(e){
+  const o=overlay(`<div class="sheet-head"><h3>Copy this</h3><button class="x">✕</button></div><div class="pad"><textarea class="inp" style="min-height:200px" readonly>${esc(text)}</textarea><p class="meta">Select all and copy.</p></div>`);
+  openSheet={type:"copy"};o.querySelector(".x").onclick=()=>closeOverlay();const ta=o.querySelector("textarea");ta.focus();ta.select();}}
+function csvCell(v){v=String(v??"");return /[",\n]/.test(v)?`"${v.replace(/"/g,'""')}"`:v;}
+function exportCSV(){
+  const rows=[["Number","Name","Latitude","Longitude","Description","Getting there","Fits","Tags","Added by","Apple Maps","Google Maps"]];
+  numbered().forEach(s=>{const L=links(s);rows.push([s._n,s.name,fmt(s.lat),fmt(s.lng),s.description,s.directions,s.size,(s.tags||[]).join("; "),s.addedBy,L.apple,L.google]);});
+  const csv=rows.map(r=>r.map(csvCell).join(",")).join("\n");
+  const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([csv],{type:"text/csv"}));a.download="indian-creek-camp-spots.csv";
+  document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),5000);}
+
+/* ---------- countdown ---------- */
+function thanksgiving(y){const d=new Date(y,10,1);const off=(4-d.getDay()+7)%7;return new Date(y,10,1+off+21);}
+function roman(n){const m=[[10,"X"],[9,"IX"],[5,"V"],[4,"IV"],[1,"I"]];let s="";for(const[v,r]of m)while(n>=v){s+=r;n-=v;}return s;}
+function renderCountdown(){
+  const now=new Date();now.setHours(0,0,0,0);let y=now.getFullYear();let tg=thanksgiving(y);
+  const end=new Date(tg);end.setDate(tg.getDate()+3);if(now>end){y++;tg=thanksgiving(y);}
+  const days=Math.round((tg-now)/864e5),yr=roman(y-2023);
+  const msg=days<=0||now>=new Date(tg.getFullYear(),tg.getMonth(),tg.getDate()-1)?`<b>Year ${yr}</b> · It's Camp Cranman week 🦃🔥`:`<b>Year ${yr}</b> · ${days} day${days===1?"":"s"} till Thanksgiving 🦃`;
+  $("#countdown").innerHTML=msg;
+}
+renderCountdown();
+
+/* ---------- boot ---------- */
+{const t=location.hash.slice(1);if(["spots","trips","weather","album"].includes(t))tab=t;}
+renderAll();
+if(String(firebaseConfig.apiKey).includes("PASTE")){
+  loadErr="Almost there — this page still needs its Firebase settings pasted in (setup step 5).";renderStatus();
+}else{
+  const app=initializeApp(firebaseConfig);
+  try{fs=initializeFirestore(app,{localCache:persistentLocalCache({tabManager:persistentMultipleTabManager()})});}catch(e){fs=getFirestore(app);}
+  auth=getAuth(app);renderStatus();
+  getRedirectResult(auth).catch(()=>{});
+  onAuthStateChanged(auth,async u=>{
+    uid=u?u.uid:null;isMember=false;
+    if(uid){try{const m=await getDoc(doc(fs,"members",uid));if(m.exists()){isMember=true;myName=m.data().name||ls.get("ic_name")||"";}}catch(e){}}
+    if(isMember&&u&&!u.isAnonymous&&!myName)myName=(u.displayName||"").split(" ")[0];
+    authChecked=true;if(isMember)startListening();renderAll();paintGate();
+  });
+}
+function startListening(){
+  if(listening)return;listening=true;
+  const timer=setTimeout(()=>{slow=true;renderStatus();},10000);
+  const onErr=err=>{clearTimeout(timer);if(err&&err.code==="permission-denied"){isMember=false;listening=false;renderAll();return;}loadErr="Couldn't load the camp data. Reload to try again.";renderAll();};
+  onSnapshot(collection(fs,"spots"),snap=>{if(!snap.metadata.fromCache){clearTimeout(timer);slow=false;}
+    spots=snap.docs.map(d=>Object.assign({id:d.id},d.data()));loaded=true;renderAll();},onErr);
+  onSnapshot(collection(fs,"trips"),snap=>{trips=snap.docs.map(d=>Object.assign({id:d.id},d.data())).filter(t=>t.start);if(loaded)renderAll();},onErr);
+  onSnapshot(collection(fs,"items"),snap=>{items=snap.docs.map(d=>Object.assign({id:d.id},d.data()));if(loaded)renderAll();},onErr);
+  onSnapshot(collection(fs,"checkins"),snap=>{checkins=snap.docs.map(d=>Object.assign({id:d.id},d.data()));if(loaded)renderAll();},onErr);
+}
+</script>
+</body>
+</html>
