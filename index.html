@@ -163,6 +163,14 @@ details.help ol{margin:6px 0 2px;padding-left:18px}
 .meal .slot{width:74px;flex:0 0 auto;font-size:12px;font-weight:600;color:var(--muted);padding-top:2px}
 .meal .dish{flex:1;min-width:0}
 .meal .addm{color:var(--water);background:none;border:none;padding:0;cursor:pointer;font-size:13px}
+.covenant{background:#FBF6EA;border:1.5px solid #CDB98F;outline:1px solid #CDB98F;outline-offset:-6px;border-radius:6px;padding:16px 16px 12px;margin:4px 0 14px;font-family:Fraunces,Georgia,serif;color:#2B1D14;font-size:13px;line-height:1.5}
+.covenant p{margin:0 0 8px}
+.cov-head{font-family:Fraunces,Georgia,serif;font-weight:700;text-align:center;font-size:16px;letter-spacing:.04em;font-variant:small-caps}
+.cov-sub{text-align:center;font-family:Oswald,Inter,sans-serif;text-transform:uppercase;letter-spacing:.16em;font-size:10px;color:var(--rust);margin:2px 0 10px;padding-bottom:8px;border-bottom:1px solid #DCCBA6}
+.cov-check{display:flex;gap:10px;align-items:flex-start;background:#F3E9D3;border:1px dashed #B9A06C;border-radius:6px;padding:10px;margin:4px 0 10px;cursor:pointer;font-size:13.5px}
+.cov-check input{width:20px;height:20px;flex:0 0 auto;margin-top:2px;accent-color:#A9461F}
+.cov-fine{font-size:11px;color:#6B5D4F;font-style:italic}
+.covenant.cov-need .cov-check{border-color:#A9461F;background:#F6DDD0}
 .logday{font-family:Oswald,Inter,sans-serif;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--pine);margin:12px 0 6px;border-bottom:1px dashed var(--line);padding-bottom:3px}
 .logentry{display:flex;gap:10px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin-bottom:8px}
 .logentry.quote{border-left:4px solid var(--rust)}
@@ -381,8 +389,16 @@ function renderGate(){
    <form id="gateForm" novalidate>
      <div class="field"><label for="uName">Your name</label><input class="inp" id="uName" maxlength="40" placeholder="So we know who found what" value="${esc(ls.get("ic_name")||"")}"></div>
      <div class="field"><label for="uPass">Camp password</label><input class="inp" id="uPass" autocomplete="off" autocapitalize="off"></div>
+     <div class="covenant">
+       <div class="cov-head">Camp Cranman Covenant of Silence</div>
+       <div class="cov-sub">Article VII · Section 3(b) · Binding in Perpetuity</div>
+       <p>WHEREAS the undersigned (hereinafter, the <i>“Camper”</i>) seeks entry to the grounds, records and privileges of Camp Cranman, Indian Creek, Louisiana (hereinafter, <i>“the Camp”</i>), est. 2024; and WHEREAS certain names are, by long-standing custom of the Camp, not to be spoken;</p>
+       <p>NOW, THEREFORE, in consideration of continued access to the Camp, the Camper hereby agrees, irrevocably and without reservation, to the following:</p>
+       <label class="cov-check"><input type="checkbox" id="uSwear"> <span><b>I solemnly swear to not mention C.C. Adcock at Camp Cranman under any circumstances whatsoever. I agree to sacrifice my first born upon doing so.</b></span></label>
+       <p class="cov-fine">This Covenant shall survive the Camper’s departure from the Camp, any change of residence, and the heat death of the universe. Ignorance of this Covenant is no defense. Witnessed and enforced by Cranman. Executed this ${new Date().getDate()}${["th","st","nd","rd"][((d=>d%100>10&&d%100<14?0:d%10)(new Date().getDate()))<4?((d=>d%100>10&&d%100<14?0:d%10)(new Date().getDate())):0]} day of ${new Date().toLocaleDateString("en-US",{month:"long"})}, ${new Date().getFullYear()}.</p>
+     </div>
      <div id="uErr"></div>
-     <button class="btn primary" id="uGo" style="width:100%;justify-content:center">Unlock</button>
+     <button class="btn primary" id="uGo" style="width:100%;justify-content:center">I Agree &amp; Unlock</button>
    </form></div>`;
   $("#gateForm").onsubmit=unlock;
   paintGate();
@@ -1016,11 +1032,12 @@ async function unlock(e){
   e.preventDefault();const name=$("#uName").value.trim(),pass=$("#uPass").value.trim();
   const err=m=>$("#uErr").innerHTML=`<div class="notice warn">${esc(m)}</div>`;
   if(!name)return err("Add your name.");if(!pass||pass.includes("/"))return err("Enter the camp password.");
+  if(!$("#uSwear").checked){$(".covenant").classList.add("cov-need");return err("You must swear the Covenant of Silence before entering the Camp.");}
   const b=$("#uGo");b.disabled=true;b.textContent="Checking…";
   try{if(!auth.currentUser)await signInAnonymously(auth);uid=auth.currentUser.uid;
     const ref=doc(fs,"members",uid);const ex=await getDoc(ref);if(!ex.exists())await setDoc(ref,{k:pass,name,at:Date.now()});
     isMember=true;myName=name;ls.set("ic_name",name);$("#status").innerHTML="";startListening();renderAll();toast("Welcome, "+name);
-  }catch(x){b.disabled=false;b.textContent="Unlock";
+  }catch(x){b.disabled=false;b.textContent="I Agree & Unlock";
     err(x&&x.code==="permission-denied"?"That password didn't work.":x&&x.code==="auth/operation-not-allowed"?"Password sign-in isn't turned on in Firebase yet (enable Anonymous under Authentication).":"Couldn't check right now — try again with better signal.");}
 }
 function writeMsg(e){const c=e&&e.code;
