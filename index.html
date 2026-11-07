@@ -185,6 +185,8 @@ details.help ol{margin:6px 0 2px;padding-left:18px}
 @keyframes cpWobble{0%,100%{transform:rotate(0)}25%{transform:rotate(-3deg)}75%{transform:rotate(3deg)}}
 @keyframes shakeX{0%,100%{transform:translateX(0)}20%,60%{transform:translateX(-8px)}40%,80%{transform:translateX(8px)}}
 .shake{animation:shakeX .45s}
+header.hero.herofade{animation:heroFade .8s ease}
+@keyframes heroFade{from{filter:brightness(.6)}to{filter:none}}
 .logday{font-family:Oswald,Inter,sans-serif;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--pine);margin:12px 0 6px;border-bottom:1px dashed var(--line);padding-bottom:3px}
 .logentry{display:flex;gap:10px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin-bottom:8px}
 .logentry.quote{border-left:4px solid var(--rust)}
@@ -1210,7 +1212,23 @@ function ensureThumbs(){
   onSnapshot(query(collection(fs,"thumbs"),orderBy("at","desc"),limit(600)),snap=>{
     thumbs=snap.docs.map(d=>Object.assign({id:d.id},d.data()));
     if(tab==="album")viewAlbum();if(openSheet&&openSheet.type==="trip")refreshTrip();
+    if(!heroPicked&&!snap.metadata.fromCache)pickHero();
   },()=>{thumbsOn=false;});
+}
+/* header photo: a random album photo on every visit (falls back to the campfire photo) */
+let heroPicked=false;
+function pickHero(){
+  heroPicked=true;
+  if(!thumbs.length)return;
+  let last=ls.get("ic_hero_last"),pool=thumbs.filter(t=>t.id!==last);if(!pool.length)pool=thumbs;
+  const pick=pool[Math.floor(Math.random()*pool.length)];ls.set("ic_hero_last",pick.id);
+  loadPhoto(pick.id).then(d=>{
+    if(!d)return;const hero=document.querySelector("header.hero");if(!hero)return;
+    const img=new Image();img.onload=()=>{
+      hero.style.backgroundImage=`linear-gradient(180deg,rgba(10,20,26,.55) 0%,rgba(10,20,26,.05) 34%,rgba(10,20,26,.25) 58%,rgba(10,20,26,.92) 100%),url(${d})`;
+      hero.style.backgroundPosition="center 40%";hero.classList.add("herofade");
+    };img.src=d;
+  });
 }
 function viewAlbum(){
   ensureThumbs();
@@ -1257,11 +1275,11 @@ function openPhoto(pid,back){
 }
 
 /* ---------- unlock ---------- */
-const CRAN_INSULTS=["Cher, you spell like you got a crawfish for a brain.", "Wrong. Did you leave your memory back at the boat launch?", "That password's more off than three-day-old boudin.", "You forgot it already? Cranman remembers EVERYTHING.", "Bless your heart. Try again. Slowly this time.", "Even the cypress knees know the password, and they ain't got brains.", "Spelled wrong. Again. Were you raised by nutria?", "Mais non! That's not it, you couyon.", "Capital letters matter, genius.", "Is your keyboard wet, or is it just you?", "I've seen better guesses from a sack of rice.", "One password. ONE. And you still blew it.", "Who let you near a fire pit with a memory like that?", "Wrong. Cranman is disappointed but not surprised.", "That's not a password, that's a cry for help.", "Try remembering harder. Use both brain cells this time.", "Spelling bee champion you are NOT.", "Did you type that with your elbows?", "Your memory's leakier than Beau's tent.", "Close… just kidding. Not even close."];
+const CRAN_INSULTS=["{name}, you spell like you got a crawfish for a brain.", "Wrong, {name}. Did you leave your memory back at the boat launch?", "{name}, that password's more off than three-day-old boudin.", "You forgot it already, {name}? Cranman remembers EVERYTHING.", "Bless your heart, {name}. Try again. Slowly this time.", "Even the cypress knees know the password, {name}, and they ain't got brains.", "Spelled wrong. Again. Were you raised by nutria, {name}?", "Mais non! That's not it, {name}, you couyon.", "Capital letters matter, {name}. Look it up.", "Is your keyboard wet, {name}, or is it just you?", "I've seen better guesses from a sack of rice, {name}.", "One password, {name}. ONE. And you still blew it.", "Who let {name} near a fire pit with a memory like that?", "Wrong. Cranman is disappointed in {name}, but not surprised.", "{name}, that's not a password, that's a cry for help.", "Use both brain cells this time, {name}.", "Spelling bee champion {name} is NOT.", "Did you type that with your elbows, {name}?", "{name}'s memory is leakier than a ten-dollar tent.", "Close, {name}… just kidding. Not even close."];
 function cranmanSays(){
   const pop=$("#cranPop"),say=$("#cpSay");if(!pop)return;
   let i;do{i=Math.floor(Math.random()*CRAN_INSULTS.length);}while(CRAN_INSULTS.length>1&&i===cranmanSays._last);
-  cranmanSays._last=i;say.textContent=CRAN_INSULTS[i];
+  cranmanSays._last=i;const nm=(($("#uName")&&$("#uName").value.trim())||"cher").split(/\s+/)[0];say.textContent=CRAN_INSULTS[i].split("{name}").join(nm);
   const sc=$("#cranScrim");pop.classList.remove("show");void pop.offsetWidth;pop.classList.add("show");sc&&sc.classList.add("show");
   clearTimeout(cranmanSays._t);cranmanSays._t=setTimeout(()=>{pop.classList.remove("show");sc&&sc.classList.remove("show");},4200);
   const f=$("#uPass");if(f){f.classList.remove("shake");void f.offsetWidth;f.classList.add("shake");f.select&&f.select();}
@@ -1327,6 +1345,7 @@ if(String(firebaseConfig.apiKey).includes("PASTE")){
 }
 function startListening(){
   if(listening)return;listening=true;
+  ensureThumbs();
   const timer=setTimeout(()=>{slow=true;renderStatus();},10000);
   const onErr=err=>{clearTimeout(timer);if(err&&err.code==="permission-denied"){isMember=false;listening=false;renderAll();return;}loadErr="Couldn't load the camp data. Reload to try again.";renderAll();};
   onSnapshot(collection(fs,"spots"),snap=>{if(!snap.metadata.fromCache){clearTimeout(timer);slow=false;}
